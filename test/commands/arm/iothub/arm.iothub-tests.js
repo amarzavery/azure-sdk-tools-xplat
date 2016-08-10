@@ -107,6 +107,7 @@ describe('arm', function () {
         function showIotHubMustSucceed() {
           suite.execute('iothub show --name %s --resource-group %s --json', iothubName, testResourceGroup, function (result) {
             result.exitStatus.should.be.equal(0);
+            console.log(result.text);
             var iothub = JSON.parse(result.text);
             iothub.name.should.be.equal(iothubName);
             done();
@@ -121,6 +122,7 @@ describe('arm', function () {
         function showIotHubQuotaMustSucceed() {
           suite.execute('iothub show-quota-metrics --name %s --resource-group %s --json', iothubName, testResourceGroup, function (result) {
             result.exitStatus.should.be.equal(0);
+            console.log(result.text);
             var iothubQuota = JSON.parse(result.text);
             iothubQuota[0].name.should.be.equal('TotalMessages');
             iothubQuota[0].currentValue.should.equal(0);
@@ -132,6 +134,7 @@ describe('arm', function () {
         function showIotHubRegistryStatsMustSucceed() {
           suite.execute('iothub show-registry-stats --name %s --resource-group %s --json', iothubName, testResourceGroup, function (result) {
             result.exitStatus.should.be.equal(0);
+            console.log(result.text);
             var iothubStats = JSON.parse(result.text);
             iothubStats.totalDeviceCount.should.be.equal(0);
             iothubStats.enabledDeviceCount.should.be.equal(0);
@@ -144,6 +147,7 @@ describe('arm', function () {
       it('set sku commands should work', function (done) {
         suite.execute('iothub sku set --name %s --resource-group %s --sku-name %s --units %s --json', iothubName, testResourceGroup, 'S2', '2', function (result) {
           result.exitStatus.should.be.equal(0);
+          console.log(result.text);
           var iothub = JSON.parse(result.text);
           iothub.name.should.be.equal(iothubName);
           iothub.sku.name.should.equal('S2');
@@ -165,6 +169,7 @@ describe('arm', function () {
       it('update c2d commands should work', function (done) {
         suite.execute('iothub cloud-to-device-properties set --name %s --resource-group %s --c2d-max-delivery-count %s --json', iothubName, testResourceGroup, '50', function (result) {
           result.exitStatus.should.be.equal(0);
+          console.log(result.text);
           var iothub = JSON.parse(result.text);
           iothub.name.should.be.equal(iothubName);
           iothub.properties.cloudToDevice.maxDeliveryCount.should.equal(50);
