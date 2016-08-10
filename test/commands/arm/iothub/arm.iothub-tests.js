@@ -110,7 +110,7 @@ describe('arm', function () {
             result.exitStatus.should.be.equal(0);
             console.log('>>>>>');
             console.log(result.text);
-            testLogger.logData(result.text);
+            testLogger.logData(result);
             var iothub = JSON.parse(result.text);
             iothub.name.should.be.equal(iothubName);
             done();
@@ -127,7 +127,7 @@ describe('arm', function () {
             result.exitStatus.should.be.equal(0);
             console.log('>>>>>');
             console.log(result.text);
-            testLogger.logData(result.text);
+            testLogger.logData(result);
             var iothubQuota = JSON.parse(result.text);
             iothubQuota[0].name.should.be.equal('TotalMessages');
             iothubQuota[0].currentValue.should.equal(0);
@@ -141,7 +141,7 @@ describe('arm', function () {
             result.exitStatus.should.be.equal(0);
             console.log('>>>>>');
             console.log(result.text);
-            testLogger.logData(result.text);
+            testLogger.logData(result);
             var iothubStats = JSON.parse(result.text);
             iothubStats.totalDeviceCount.should.be.equal(0);
             iothubStats.enabledDeviceCount.should.be.equal(0);
@@ -156,7 +156,7 @@ describe('arm', function () {
           result.exitStatus.should.be.equal(0);
           console.log('>>>>>');
           console.log(result.text);
-          testLogger.logData(result.text);
+          testLogger.logData(result);
           var iothub = JSON.parse(result.text);
           iothub.name.should.be.equal(iothubName);
           iothub.sku.name.should.equal('S2');
@@ -170,7 +170,7 @@ describe('arm', function () {
           result.exitStatus.should.be.equal(0);
           console.log('>>>>>');
           console.log(result.text);
-          testLogger.logData(result.text);
+          testLogger.logData(result);
           var iothub = JSON.parse(result.text);
           iothub.name.should.be.equal(iothubName);
           iothub.properties.eventHubEndpoints["events"].retentionTimeInDays.should.equal(5);
@@ -183,7 +183,7 @@ describe('arm', function () {
           result.exitStatus.should.be.equal(0);
           console.log('>>>>>');
           console.log(result.text);
-          testLogger.logData(result.text);
+          testLogger.logData(result);
           var iothub = JSON.parse(result.text);
           iothub.name.should.be.equal(iothubName);
           iothub.properties.cloudToDevice.maxDeliveryCount.should.equal(50);
@@ -196,7 +196,7 @@ describe('arm', function () {
           result.exitStatus.should.be.equal(0);
           console.log('>>>>>');
           console.log(result.text);
-          testLogger.logData(result.text);
+          testLogger.logData(result);
           var iothub = JSON.parse(result.text);
           iothub.name.should.be.equal(iothubName);
           iothub.tags.should.not.be.empty;
@@ -220,7 +220,7 @@ describe('arm', function () {
             result.exitStatus.should.be.equal(0);
             console.log('>>>>>');
             console.log(result.text);
-            testLogger.logData(result.text);
+            testLogger.logData(result);
             var ehcg = JSON.parse(result.text);
             ehcg[0].should.be.equal('$Default');
             ehcg[1].should.be.equal('cg1');
@@ -295,7 +295,7 @@ describe('arm', function () {
             result.exitStatus.should.be.equal(0);
             console.log('>>>>>');
             console.log(result.text);
-            testLogger.logData(result.text);
+            testLogger.logData(result);
             result.text.should.include('key1');
             listIotHubKeyAfterCreateMustSucceed();
           });
