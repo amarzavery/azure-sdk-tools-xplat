@@ -79,10 +79,13 @@ describe('arm', function () {
       cacheName = suite.generateId(cachePrefix, knownNames);
       storageName = cacheName;
       newCacheName = suite.generateId(cachePrefix, knownNames);
-      
-      suite.execute('group create %s --location %s --json', testResourceGroup, testLocation, function () {
+      if (!suite.isPlayback()) {
+        suite.execute('group create %s --location %s --json', testResourceGroup, testLocation, function () {
+          done();
+        });
+      } else {
         done();
-      });
+      }
     });
   });
   

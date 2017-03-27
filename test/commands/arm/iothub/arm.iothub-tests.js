@@ -173,7 +173,7 @@ describe('arm', function () {
       });
     });
 
-    describe.skip('All Tests', function () {
+    describe('All Tests', function () {
 
       it('create command should work', function (done) {
         iothubName = suite.generateId(iothubPrefix, knownNames);
@@ -366,7 +366,7 @@ describe('arm', function () {
 
       });
 
-      it('delete iothub key command should work', function (done) {
+      it.skip('delete iothub key command should work', function (done) {
 
         deleteIotHubKeyMustSucceed()
 
