@@ -34,7 +34,7 @@ exports.setEnvironment = function() {
 exports.scopes = [[function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/3e82a90d-d19e-42f9-bb43-9112945846ef/resourceGroups/sdktest/providers/Microsoft.ServerManagement/gateways/sdk_test7604?api-version=2015-07-01-preview&$expand=status')
+  .get('/subscriptions/3e82a90d-d19e-42f9-bb43-9112945846ef/resourceGroups/sdktest/providers/Microsoft.ServerManagement/gateways/sdk_test7604?api-version=2016-07-01-preview&$expand=status')
   .reply(404, "{\"error\":{\"code\":\"ResourceNotFound\",\"message\":\"The Resource 'Microsoft.ServerManagement/gateways/sdk_test7604' under resource group 'sdktest' was not found.\"}}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-type': 'application/json; charset=utf-8',
@@ -51,7 +51,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/3e82a90d-d19e-42f9-bb43-9112945846ef/resourceGroups/sdktest/providers/Microsoft.ServerManagement/gateways/sdk_test7604?api-version=2015-07-01-preview&$expand=status')
+  .get('/subscriptions/3e82a90d-d19e-42f9-bb43-9112945846ef/resourceGroups/sdktest/providers/Microsoft.ServerManagement/gateways/sdk_test7604?api-version=2016-07-01-preview&$expand=status')
   .reply(404, "{\"error\":{\"code\":\"ResourceNotFound\",\"message\":\"The Resource 'Microsoft.ServerManagement/gateways/sdk_test7604' under resource group 'sdktest' was not found.\"}}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-type': 'application/json; charset=utf-8',

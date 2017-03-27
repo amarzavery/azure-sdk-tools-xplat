@@ -34,7 +34,7 @@ exports.setEnvironment = function() {
 exports.scopes = [[function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/3e82a90d-d19e-42f9-bb43-9112945846ef/resourceGroups/sdktest/providers/Microsoft.ServerManagement/gateways/mygateway?api-version=2015-07-01-preview&$expand=status')
+  .get('/subscriptions/3e82a90d-d19e-42f9-bb43-9112945846ef/resourceGroups/sdktest/providers/Microsoft.ServerManagement/gateways/mygateway?api-version=2016-07-01-preview&$expand=status')
   .reply(200, "{\"id\":\"/subscriptions/3e82a90d-d19e-42f9-bb43-9112945846ef/resourcegroups/sdktest/providers/microsoft.servermanagement/gateways/mygateway\",\"name\":\"mygateway\",\"type\":\"microsoft.servermanagement/gateways\",\"location\":\"centralus\",\"etag\":\"W/\\\"datetime'2016-05-11T19%3A37%3A20.35435Z'\\\"\",\"properties\":{\"created\":\"2016-05-11T19:37:19.2231412Z\",\"updated\":\"2016-05-11T19:37:19.2231412Z\",\"autoUpgrade\":\"Off\",\"desiredVersion\":null,\"minimumVersion\":\"1.0.0.0\",\"betaFeatures\":\"Off\",\"instances\":[{\"availableMemoryMByte\":3334.0,\"gatewayWorkingSetMByte\":108.904449,\"totalCpuUtilizationPercent\":2.59400558,\"gatewayCpuUtilizationPercent\":0.0,\"gatewayVersion\":\"1.0.1187.3\",\"friendlyOsName\":\"Microsoft Windows 10 Enterprise Insider Preview\",\"installedDate\":\"2016-05-05T20:45:05Z\",\"logicalProcessorCount\":8,\"name\":\"SADDLEBAGS\",\"gatewayId\":\"/subscriptions/3e82a90d-d19e-42f9-bb43-9112945846ef/resourcegroups/sdktest/providers/microsoft.servermanagement/gateways/mygateway\",\"statusUpdated\":\"2016-05-16T21:27:06.0000000Z\"}],\"activeMessageCount\":0,\"latestPublishedMsiVersion\":\"1.0.1187.3\",\"publishedTimeUtc\":\"2016-05-03T18:46:28.0000000Z\"}}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '1114',
@@ -56,7 +56,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/3e82a90d-d19e-42f9-bb43-9112945846ef/resourceGroups/sdktest/providers/Microsoft.ServerManagement/gateways/mygateway?api-version=2015-07-01-preview&$expand=status')
+  .get('/subscriptions/3e82a90d-d19e-42f9-bb43-9112945846ef/resourceGroups/sdktest/providers/Microsoft.ServerManagement/gateways/mygateway?api-version=2016-07-01-preview&$expand=status')
   .reply(200, "{\"id\":\"/subscriptions/3e82a90d-d19e-42f9-bb43-9112945846ef/resourcegroups/sdktest/providers/microsoft.servermanagement/gateways/mygateway\",\"name\":\"mygateway\",\"type\":\"microsoft.servermanagement/gateways\",\"location\":\"centralus\",\"etag\":\"W/\\\"datetime'2016-05-11T19%3A37%3A20.35435Z'\\\"\",\"properties\":{\"created\":\"2016-05-11T19:37:19.2231412Z\",\"updated\":\"2016-05-11T19:37:19.2231412Z\",\"autoUpgrade\":\"Off\",\"desiredVersion\":null,\"minimumVersion\":\"1.0.0.0\",\"betaFeatures\":\"Off\",\"instances\":[{\"availableMemoryMByte\":3334.0,\"gatewayWorkingSetMByte\":108.904449,\"totalCpuUtilizationPercent\":2.59400558,\"gatewayCpuUtilizationPercent\":0.0,\"gatewayVersion\":\"1.0.1187.3\",\"friendlyOsName\":\"Microsoft Windows 10 Enterprise Insider Preview\",\"installedDate\":\"2016-05-05T20:45:05Z\",\"logicalProcessorCount\":8,\"name\":\"SADDLEBAGS\",\"gatewayId\":\"/subscriptions/3e82a90d-d19e-42f9-bb43-9112945846ef/resourcegroups/sdktest/providers/microsoft.servermanagement/gateways/mygateway\",\"statusUpdated\":\"2016-05-16T21:27:06.0000000Z\"}],\"activeMessageCount\":0,\"latestPublishedMsiVersion\":\"1.0.1187.3\",\"publishedTimeUtc\":\"2016-05-03T18:46:28.0000000Z\"}}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '1114',
@@ -78,7 +78,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/3e82a90d-d19e-42f9-bb43-9112945846ef/resourceGroups/sdktest/providers/Microsoft.ServerManagement/nodes/saddlebags?api-version=2015-07-01-preview')
+  .get('/subscriptions/3e82a90d-d19e-42f9-bb43-9112945846ef/resourceGroups/sdktest/providers/Microsoft.ServerManagement/nodes/saddlebags?api-version=2016-07-01-preview')
   .reply(200, "{\"id\":\"/subscriptions/3e82a90d-d19e-42f9-bb43-9112945846ef/resourcegroups/sdktest/providers/microsoft.servermanagement/nodes/saddlebags\",\"name\":\"saddlebags\",\"type\":\"microsoft.servermanagement/nodes\",\"location\":\"centralus\",\"etag\":\"W/\\\"datetime'2016-05-16T20%3A27%3A01.3768044Z'\\\"\",\"properties\":{\"gatewayId\":\"/subscriptions/3e82a90d-d19e-42f9-bb43-9112945846ef/resourcegroups/sdktest/providers/microsoft.servermanagement/gateways/mygateway\",\"connectionName\":\"saddlebags\",\"created\":\"2016-05-11T19:48:15.2968818Z\",\"updated\":\"2016-05-16T20:27:01.6398251Z\"}}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '552',
@@ -100,7 +100,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/3e82a90d-d19e-42f9-bb43-9112945846ef/resourceGroups/sdktest/providers/Microsoft.ServerManagement/nodes/saddlebags?api-version=2015-07-01-preview')
+  .get('/subscriptions/3e82a90d-d19e-42f9-bb43-9112945846ef/resourceGroups/sdktest/providers/Microsoft.ServerManagement/nodes/saddlebags?api-version=2016-07-01-preview')
   .reply(200, "{\"id\":\"/subscriptions/3e82a90d-d19e-42f9-bb43-9112945846ef/resourcegroups/sdktest/providers/microsoft.servermanagement/nodes/saddlebags\",\"name\":\"saddlebags\",\"type\":\"microsoft.servermanagement/nodes\",\"location\":\"centralus\",\"etag\":\"W/\\\"datetime'2016-05-16T20%3A27%3A01.3768044Z'\\\"\",\"properties\":{\"gatewayId\":\"/subscriptions/3e82a90d-d19e-42f9-bb43-9112945846ef/resourcegroups/sdktest/providers/microsoft.servermanagement/gateways/mygateway\",\"connectionName\":\"saddlebags\",\"created\":\"2016-05-11T19:48:15.2968818Z\",\"updated\":\"2016-05-16T20:27:01.6398251Z\"}}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '552',
@@ -123,7 +123,7 @@ function (nock) {
 var result = 
 nock('http://management.azure.com:443')
   .filteringRequestBody(function (path) { return '*';})
-.put('/subscriptions/3e82a90d-d19e-42f9-bb43-9112945846ef/resourceGroups/sdktest/providers/Microsoft.ServerManagement/nodes/saddlebags/sessions/session_7911?api-version=2015-07-01-preview', '*')
+.put('/subscriptions/3e82a90d-d19e-42f9-bb43-9112945846ef/resourceGroups/sdktest/providers/Microsoft.ServerManagement/nodes/saddlebags/sessions/session_7911?api-version=2016-07-01-preview', '*')
   .reply(200, "{\"id\":\"/subscriptions/3e82a90d-d19e-42f9-bb43-9112945846ef/resourcegroups/sdktest/providers/microsoft.servermanagement/nodes/saddlebags/sessions/session_7911\",\"name\":\"session_7911\",\"type\":\"microsoft.servermanagement/nodes/sessions\",\"properties\":{\"userName\":\"gsAdmin\",\"created\":\"2016-05-16T21:27:47.3171217Z\",\"updated\":\"2016-05-16T21:27:47.3171217Z\"}}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '350',
@@ -146,7 +146,7 @@ function (nock) {
 var result = 
 nock('https://management.azure.com:443')
   .filteringRequestBody(function (path) { return '*';})
-.put('/subscriptions/3e82a90d-d19e-42f9-bb43-9112945846ef/resourceGroups/sdktest/providers/Microsoft.ServerManagement/nodes/saddlebags/sessions/session_7911?api-version=2015-07-01-preview', '*')
+.put('/subscriptions/3e82a90d-d19e-42f9-bb43-9112945846ef/resourceGroups/sdktest/providers/Microsoft.ServerManagement/nodes/saddlebags/sessions/session_7911?api-version=2016-07-01-preview', '*')
   .reply(200, "{\"id\":\"/subscriptions/3e82a90d-d19e-42f9-bb43-9112945846ef/resourcegroups/sdktest/providers/microsoft.servermanagement/nodes/saddlebags/sessions/session_7911\",\"name\":\"session_7911\",\"type\":\"microsoft.servermanagement/nodes/sessions\",\"properties\":{\"userName\":\"gsAdmin\",\"created\":\"2016-05-16T21:27:47.3171217Z\",\"updated\":\"2016-05-16T21:27:47.3171217Z\"}}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '350',
@@ -168,7 +168,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .put('/subscriptions/3e82a90d-d19e-42f9-bb43-9112945846ef/resourceGroups/sdktest/providers/Microsoft.ServerManagement/nodes/saddlebags/sessions/session_7911/features/powerShellConsole/pssessions/00000000-0000-0000-0000-000000000000?api-version=2015-07-01-preview')
+  .put('/subscriptions/3e82a90d-d19e-42f9-bb43-9112945846ef/resourceGroups/sdktest/providers/Microsoft.ServerManagement/nodes/saddlebags/sessions/session_7911/features/powerShellConsole/pssessions/00000000-0000-0000-0000-000000000000?api-version=2016-07-01-preview')
   .reply(200, "{\"id\":\"/subscriptions/3e82a90d-d19e-42f9-bb43-9112945846ef/resourceGroups/sdktest/providers/Microsoft.ServerManagement/nodes/saddlebags/sessions/session_7911/features/powerShellConsole/pssessions/00000000-0000-0000-0000-000000000000\",\"name\":\"00000000-0000-0000-0000-000000000000\",\"type\":\"Microsoft.ServerManagement/nodes/features/pssessions\",\"properties\":{\"sessionId\":\"9523c6a6-1bc4-4124-9178-a986d177dae7\"}}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '408',
@@ -191,7 +191,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .put('/subscriptions/3e82a90d-d19e-42f9-bb43-9112945846ef/resourceGroups/sdktest/providers/Microsoft.ServerManagement/nodes/saddlebags/sessions/session_7911/features/powerShellConsole/pssessions/00000000-0000-0000-0000-000000000000?api-version=2015-07-01-preview')
+  .put('/subscriptions/3e82a90d-d19e-42f9-bb43-9112945846ef/resourceGroups/sdktest/providers/Microsoft.ServerManagement/nodes/saddlebags/sessions/session_7911/features/powerShellConsole/pssessions/00000000-0000-0000-0000-000000000000?api-version=2016-07-01-preview')
   .reply(200, "{\"id\":\"/subscriptions/3e82a90d-d19e-42f9-bb43-9112945846ef/resourceGroups/sdktest/providers/Microsoft.ServerManagement/nodes/saddlebags/sessions/session_7911/features/powerShellConsole/pssessions/00000000-0000-0000-0000-000000000000\",\"name\":\"00000000-0000-0000-0000-000000000000\",\"type\":\"Microsoft.ServerManagement/nodes/features/pssessions\",\"properties\":{\"sessionId\":\"9523c6a6-1bc4-4124-9178-a986d177dae7\"}}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '408',
@@ -215,7 +215,7 @@ function (nock) {
 var result = 
 nock('http://management.azure.com:443')
   .filteringRequestBody(function (path) { return '*';})
-.post('/subscriptions/3e82a90d-d19e-42f9-bb43-9112945846ef/resourceGroups/sdktest/providers/Microsoft.ServerManagement/nodes/saddlebags/sessions/session_7911/features/powerShellConsole/pssessions/9523c6a6-1bc4-4124-9178-a986d177dae7/invokeCommand?api-version=2015-07-01-preview', '*')
+.post('/subscriptions/3e82a90d-d19e-42f9-bb43-9112945846ef/resourceGroups/sdktest/providers/Microsoft.ServerManagement/nodes/saddlebags/sessions/session_7911/features/powerShellConsole/pssessions/9523c6a6-1bc4-4124-9178-a986d177dae7/invokeCommand?api-version=2016-07-01-preview', '*')
   .reply(200, "{\"results\":[{\"foregroundColor\":\"#FFFFFF\",\"backgroundColor\":\"#012456\",\"value\":\"\\r\\nName                           Value                                                                                   \\r\\n----                           -----                                                                                   \\r\\nPSVersion                      5.1.14346.1000                                                                          \\r\\nPSEdition                      Desktop                                                                                 \\r\\nPSCompatibleVersions           {1.0, 2.0, 3.0, 4.0...}                                                                 \\r\\nCLRVersion                     4.0.30319.42000                                                                         \\r\\nBuildVersion                   10.0.14346.1000                                                                         \\r\\nWSManStackVersion              3.0                                                                                     \\r\\nPSRemotingProtocolVersion      2.3                                                                                     \\r\\nSerializationVersion           1.1.0.1                                                                                 \\r\\n\\r\\n\",\"messageType\":107},{\"prompt\":\"PS C:\\\\Users\\\\gsAdmin\\\\Documents> \",\"messageType\":0}],\"sessionId\":\"9523c6a6-1bc4-4124-9178-a986d177dae7\",\"commandId\":\"4addbc5b-e622-4ba3-b371-08a61cbea864\",\"command\":\"$PSVersionTable\",\"completed\":\"true\"}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '1551',
@@ -239,7 +239,7 @@ function (nock) {
 var result = 
 nock('https://management.azure.com:443')
   .filteringRequestBody(function (path) { return '*';})
-.post('/subscriptions/3e82a90d-d19e-42f9-bb43-9112945846ef/resourceGroups/sdktest/providers/Microsoft.ServerManagement/nodes/saddlebags/sessions/session_7911/features/powerShellConsole/pssessions/9523c6a6-1bc4-4124-9178-a986d177dae7/invokeCommand?api-version=2015-07-01-preview', '*')
+.post('/subscriptions/3e82a90d-d19e-42f9-bb43-9112945846ef/resourceGroups/sdktest/providers/Microsoft.ServerManagement/nodes/saddlebags/sessions/session_7911/features/powerShellConsole/pssessions/9523c6a6-1bc4-4124-9178-a986d177dae7/invokeCommand?api-version=2016-07-01-preview', '*')
   .reply(200, "{\"results\":[{\"foregroundColor\":\"#FFFFFF\",\"backgroundColor\":\"#012456\",\"value\":\"\\r\\nName                           Value                                                                                   \\r\\n----                           -----                                                                                   \\r\\nPSVersion                      5.1.14346.1000                                                                          \\r\\nPSEdition                      Desktop                                                                                 \\r\\nPSCompatibleVersions           {1.0, 2.0, 3.0, 4.0...}                                                                 \\r\\nCLRVersion                     4.0.30319.42000                                                                         \\r\\nBuildVersion                   10.0.14346.1000                                                                         \\r\\nWSManStackVersion              3.0                                                                                     \\r\\nPSRemotingProtocolVersion      2.3                                                                                     \\r\\nSerializationVersion           1.1.0.1                                                                                 \\r\\n\\r\\n\",\"messageType\":107},{\"prompt\":\"PS C:\\\\Users\\\\gsAdmin\\\\Documents> \",\"messageType\":0}],\"sessionId\":\"9523c6a6-1bc4-4124-9178-a986d177dae7\",\"commandId\":\"4addbc5b-e622-4ba3-b371-08a61cbea864\",\"command\":\"$PSVersionTable\",\"completed\":\"true\"}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '1551',
@@ -262,7 +262,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .delete('/subscriptions/3e82a90d-d19e-42f9-bb43-9112945846ef/resourceGroups/sdktest/providers/Microsoft.ServerManagement/nodes/saddlebags/sessions/session_7911?api-version=2015-07-01-preview')
+  .delete('/subscriptions/3e82a90d-d19e-42f9-bb43-9112945846ef/resourceGroups/sdktest/providers/Microsoft.ServerManagement/nodes/saddlebags/sessions/session_7911?api-version=2016-07-01-preview')
   .reply(200, "", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '0',
@@ -283,7 +283,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .delete('/subscriptions/3e82a90d-d19e-42f9-bb43-9112945846ef/resourceGroups/sdktest/providers/Microsoft.ServerManagement/nodes/saddlebags/sessions/session_7911?api-version=2015-07-01-preview')
+  .delete('/subscriptions/3e82a90d-d19e-42f9-bb43-9112945846ef/resourceGroups/sdktest/providers/Microsoft.ServerManagement/nodes/saddlebags/sessions/session_7911?api-version=2016-07-01-preview')
   .reply(200, "", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '0',
