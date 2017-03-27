@@ -27,7 +27,7 @@ exports.setEnvironment = function() {
 exports.scopes = [[function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/bfb5e0bf-124b-4d0c-9352-7c0a9f4d9948/resourceGroups/xplatTestGCreateDR/providers/Microsoft.Network/dnszones/xplattestgcreatedr.xplattestdrs/A/xplattestdnsrecord?api-version=2015-05-04-preview')
+  .get('/subscriptions/bfb5e0bf-124b-4d0c-9352-7c0a9f4d9948/resourceGroups/xplatTestGCreateDR/providers/Microsoft.Network/dnsZones/xplattestgcreatedr.xplattestdrs/A/xplattestdnsrecord?api-version=2016-04-01')
   .reply(200, "{\"id\":\"\\/subscriptions\\/bfb5e0bf-124b-4d0c-9352-7c0a9f4d9948\\/resourceGroups\\/xplatTestGCreateDR\\/providers\\/Microsoft.Network\\/dnszones\\/xplattestgcreatedr.xplattestdrs\\/A\\/xplattestdnsrecord\",\"name\":\"xplattestdnsrecord\",\"type\":\"Microsoft.Network\\/dnszones\\/A\",\"etag\":\"0816c477-d775-4f67-9e66-646f73216519\",\"location\":\"global\",\"tags\":{},\"properties\":{\"fqdn\":\"xplattestdnsrecord.xplattestgcreatedr.xplattestdrs\",\"TTL\":255}}", { 'cache-control': 'private',
   'content-length': '423',
   'content-type': 'application/json; charset=utf-8',
@@ -47,7 +47,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/bfb5e0bf-124b-4d0c-9352-7c0a9f4d9948/resourceGroups/xplatTestGCreateDR/providers/Microsoft.Network/dnszones/xplattestgcreatedr.xplattestdrs/A/xplattestdnsrecord?api-version=2015-05-04-preview')
+  .get('/subscriptions/bfb5e0bf-124b-4d0c-9352-7c0a9f4d9948/resourceGroups/xplatTestGCreateDR/providers/Microsoft.Network/dnsZones/xplattestgcreatedr.xplattestdrs/A/xplattestdnsrecord?api-version=2016-04-01')
   .reply(200, "{\"id\":\"\\/subscriptions\\/bfb5e0bf-124b-4d0c-9352-7c0a9f4d9948\\/resourceGroups\\/xplatTestGCreateDR\\/providers\\/Microsoft.Network\\/dnszones\\/xplattestgcreatedr.xplattestdrs\\/A\\/xplattestdnsrecord\",\"name\":\"xplattestdnsrecord\",\"type\":\"Microsoft.Network\\/dnszones\\/A\",\"etag\":\"0816c477-d775-4f67-9e66-646f73216519\",\"location\":\"global\",\"tags\":{},\"properties\":{\"fqdn\":\"xplattestdnsrecord.xplattestgcreatedr.xplattestdrs\",\"TTL\":255}}", { 'cache-control': 'private',
   'content-length': '423',
   'content-type': 'application/json; charset=utf-8',

@@ -29,7 +29,7 @@ exports.setEnvironment = function() {
 exports.scopes = [[function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-local-gateway/providers/Microsoft.Network/localNetworkGateways/localNetworkGatewaysName?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-local-gateway/providers\/Microsoft.Network/localNetworkGateways/localNetworkGatewaysName?api-version=2017-03-01')
   .reply(200, "{\r\n  \"name\": \"localNetworkGatewaysName\",\r\n  \"id\": \"/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-local-gateway/providers/Microsoft.Network/localNetworkGateways/localNetworkGatewaysName\",\r\n  \"etag\": \"W/\\\"7ddab003-7e92-41dc-939f-0fb8e3945d2f\\\"\",\r\n  \"type\": \"Microsoft.Network/localNetworkGateways\",\r\n  \"location\": \"westus\",\r\n  \"properties\": {\r\n    \"provisioningState\": \"Succeeded\",\r\n    \"resourceGuid\": \"2466441e-9313-47b1-805b-2c63fb24aaef\",\r\n    \"localNetworkAddressSpace\": {\r\n      \"addressPrefixes\": [\r\n        \"10.0.0.0/8\"\r\n      ]\r\n    },\r\n    \"gatewayIpAddress\": \"10.0.0.42\",\r\n    \"bgpSettings\": {\r\n      \"asn\": 125,\r\n      \"bgpPeeringAddress\": \"11.0.0.11\",\r\n      \"peerWeight\": 15\r\n    }\r\n  }\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '733',
@@ -48,7 +48,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-local-gateway/providers/Microsoft.Network/localNetworkGateways/localNetworkGatewaysName?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-local-gateway/providers\/Microsoft.Network/localNetworkGateways/localNetworkGatewaysName?api-version=2017-03-01')
   .reply(200, "{\r\n  \"name\": \"localNetworkGatewaysName\",\r\n  \"id\": \"/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-local-gateway/providers/Microsoft.Network/localNetworkGateways/localNetworkGatewaysName\",\r\n  \"etag\": \"W/\\\"7ddab003-7e92-41dc-939f-0fb8e3945d2f\\\"\",\r\n  \"type\": \"Microsoft.Network/localNetworkGateways\",\r\n  \"location\": \"westus\",\r\n  \"properties\": {\r\n    \"provisioningState\": \"Succeeded\",\r\n    \"resourceGuid\": \"2466441e-9313-47b1-805b-2c63fb24aaef\",\r\n    \"localNetworkAddressSpace\": {\r\n      \"addressPrefixes\": [\r\n        \"10.0.0.0/8\"\r\n      ]\r\n    },\r\n    \"gatewayIpAddress\": \"10.0.0.42\",\r\n    \"bgpSettings\": {\r\n      \"asn\": 125,\r\n      \"bgpPeeringAddress\": \"11.0.0.11\",\r\n      \"peerWeight\": 15\r\n    }\r\n  }\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '733',
@@ -68,7 +68,7 @@ function (nock) {
 var result = 
 nock('http://management.azure.com:443')
   .filteringRequestBody(function (path) { return '*';})
-.put('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-local-gateway/providers/Microsoft.Network/localNetworkGateways/localNetworkGatewaysName?api-version=2016-09-01', '*')
+.put('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-local-gateway/providers\/Microsoft.Network/localNetworkGateways/localNetworkGatewaysName?api-version=2017-03-01', '*')
   .reply(200, "{\r\n  \"name\": \"localNetworkGatewaysName\",\r\n  \"id\": \"/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-local-gateway/providers/Microsoft.Network/localNetworkGateways/localNetworkGatewaysName\",\r\n  \"etag\": \"W/\\\"4a02b7b9-3074-4567-b9a0-7c33679178ac\\\"\",\r\n  \"type\": \"Microsoft.Network/localNetworkGateways\",\r\n  \"location\": \"westus\",\r\n  \"properties\": {\r\n    \"provisioningState\": \"Updating\",\r\n    \"resourceGuid\": \"2466441e-9313-47b1-805b-2c63fb24aaef\",\r\n    \"localNetworkAddressSpace\": {\r\n      \"addressPrefixes\": [\r\n        \"10.0.0.0/8\",\r\n        \"192.168.0.0/16\"\r\n      ]\r\n    },\r\n    \"gatewayIpAddress\": \"10.0.0.24\",\r\n    \"bgpSettings\": {\r\n      \"asn\": 142,\r\n      \"bgpPeeringAddress\": \"11.0.0.12\",\r\n      \"peerWeight\": 25\r\n    }\r\n  }\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '759',
@@ -76,7 +76,7 @@ nock('http://management.azure.com:443')
   expires: '-1',
   'retry-after': '10',
   'x-ms-request-id': 'bb5fb9a6-39c5-4c8e-b430-98770fda6dbc',
-  'azure-asyncoperation': 'https://management.azure.com/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westus.validation/operations/bb5fb9a6-39c5-4c8e-b430-98770fda6dbc?api-version=2016-09-01',
+  'azure-asyncoperation': 'https://management.azure.com/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westus.validation/operations/bb5fb9a6-39c5-4c8e-b430-98770fda6dbc?api-version=2017-03-01',
   'strict-transport-security': 'max-age=31536000; includeSubDomains',
   server: 'Microsoft-HTTPAPI/2.0, Microsoft-HTTPAPI/2.0',
   'x-ms-ratelimit-remaining-subscription-writes': '1196',
@@ -89,7 +89,7 @@ function (nock) {
 var result = 
 nock('https://management.azure.com:443')
   .filteringRequestBody(function (path) { return '*';})
-.put('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-local-gateway/providers/Microsoft.Network/localNetworkGateways/localNetworkGatewaysName?api-version=2016-09-01', '*')
+.put('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-local-gateway/providers\/Microsoft.Network/localNetworkGateways/localNetworkGatewaysName?api-version=2017-03-01', '*')
   .reply(200, "{\r\n  \"name\": \"localNetworkGatewaysName\",\r\n  \"id\": \"/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-local-gateway/providers/Microsoft.Network/localNetworkGateways/localNetworkGatewaysName\",\r\n  \"etag\": \"W/\\\"4a02b7b9-3074-4567-b9a0-7c33679178ac\\\"\",\r\n  \"type\": \"Microsoft.Network/localNetworkGateways\",\r\n  \"location\": \"westus\",\r\n  \"properties\": {\r\n    \"provisioningState\": \"Updating\",\r\n    \"resourceGuid\": \"2466441e-9313-47b1-805b-2c63fb24aaef\",\r\n    \"localNetworkAddressSpace\": {\r\n      \"addressPrefixes\": [\r\n        \"10.0.0.0/8\",\r\n        \"192.168.0.0/16\"\r\n      ]\r\n    },\r\n    \"gatewayIpAddress\": \"10.0.0.24\",\r\n    \"bgpSettings\": {\r\n      \"asn\": 142,\r\n      \"bgpPeeringAddress\": \"11.0.0.12\",\r\n      \"peerWeight\": 25\r\n    }\r\n  }\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '759',
@@ -97,7 +97,7 @@ nock('https://management.azure.com:443')
   expires: '-1',
   'retry-after': '10',
   'x-ms-request-id': 'bb5fb9a6-39c5-4c8e-b430-98770fda6dbc',
-  'azure-asyncoperation': 'https://management.azure.com/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westus.validation/operations/bb5fb9a6-39c5-4c8e-b430-98770fda6dbc?api-version=2016-09-01',
+  'azure-asyncoperation': 'https://management.azure.com/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westus.validation/operations/bb5fb9a6-39c5-4c8e-b430-98770fda6dbc?api-version=2017-03-01',
   'strict-transport-security': 'max-age=31536000; includeSubDomains',
   server: 'Microsoft-HTTPAPI/2.0, Microsoft-HTTPAPI/2.0',
   'x-ms-ratelimit-remaining-subscription-writes': '1196',
@@ -109,7 +109,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westus.validation/operations/bb5fb9a6-39c5-4c8e-b430-98770fda6dbc?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westus.validation/operations/bb5fb9a6-39c5-4c8e-b430-98770fda6dbc?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"Succeeded\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '29',
@@ -127,7 +127,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westus.validation/operations/bb5fb9a6-39c5-4c8e-b430-98770fda6dbc?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westus.validation/operations/bb5fb9a6-39c5-4c8e-b430-98770fda6dbc?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"Succeeded\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '29',
@@ -145,7 +145,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-local-gateway/providers/Microsoft.Network/localNetworkGateways/localNetworkGatewaysName?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-local-gateway/providers\/Microsoft.Network/localNetworkGateways/localNetworkGatewaysName?api-version=2017-03-01')
   .reply(200, "{\r\n  \"name\": \"localNetworkGatewaysName\",\r\n  \"id\": \"/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-local-gateway/providers/Microsoft.Network/localNetworkGateways/localNetworkGatewaysName\",\r\n  \"etag\": \"W/\\\"525d62d3-da95-47b5-9524-8b8672a8dc69\\\"\",\r\n  \"type\": \"Microsoft.Network/localNetworkGateways\",\r\n  \"location\": \"westus\",\r\n  \"properties\": {\r\n    \"provisioningState\": \"Succeeded\",\r\n    \"resourceGuid\": \"2466441e-9313-47b1-805b-2c63fb24aaef\",\r\n    \"localNetworkAddressSpace\": {\r\n      \"addressPrefixes\": [\r\n        \"10.0.0.0/8\",\r\n        \"192.168.0.0/16\"\r\n      ]\r\n    },\r\n    \"gatewayIpAddress\": \"10.0.0.24\",\r\n    \"bgpSettings\": {\r\n      \"asn\": 142,\r\n      \"bgpPeeringAddress\": \"11.0.0.12\",\r\n      \"peerWeight\": 25\r\n    }\r\n  }\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '760',
@@ -164,7 +164,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-local-gateway/providers/Microsoft.Network/localNetworkGateways/localNetworkGatewaysName?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-local-gateway/providers\/Microsoft.Network/localNetworkGateways/localNetworkGatewaysName?api-version=2017-03-01')
   .reply(200, "{\r\n  \"name\": \"localNetworkGatewaysName\",\r\n  \"id\": \"/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-local-gateway/providers/Microsoft.Network/localNetworkGateways/localNetworkGatewaysName\",\r\n  \"etag\": \"W/\\\"525d62d3-da95-47b5-9524-8b8672a8dc69\\\"\",\r\n  \"type\": \"Microsoft.Network/localNetworkGateways\",\r\n  \"location\": \"westus\",\r\n  \"properties\": {\r\n    \"provisioningState\": \"Succeeded\",\r\n    \"resourceGuid\": \"2466441e-9313-47b1-805b-2c63fb24aaef\",\r\n    \"localNetworkAddressSpace\": {\r\n      \"addressPrefixes\": [\r\n        \"10.0.0.0/8\",\r\n        \"192.168.0.0/16\"\r\n      ]\r\n    },\r\n    \"gatewayIpAddress\": \"10.0.0.24\",\r\n    \"bgpSettings\": {\r\n      \"asn\": 142,\r\n      \"bgpPeeringAddress\": \"11.0.0.12\",\r\n      \"peerWeight\": 25\r\n    }\r\n  }\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '760',

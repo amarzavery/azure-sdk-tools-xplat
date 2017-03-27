@@ -101,7 +101,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-vpn-gateway/providers/Microsoft.Network/virtualNetworks/test-vnet?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-vpn-gateway/providers\/Microsoft.Network/virtualNetworks/test-vnet?api-version=2017-03-01')
   .reply(404, "{\"error\":{\"code\":\"ResourceNotFound\",\"message\":\"The Resource 'Microsoft.Network/virtualNetworks/test-vnet' under resource group 'xplat-test-vpn-gateway' was not found.\"}}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-type': 'application/json; charset=utf-8',
@@ -118,7 +118,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-vpn-gateway/providers/Microsoft.Network/virtualNetworks/test-vnet?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-vpn-gateway/providers\/Microsoft.Network/virtualNetworks/test-vnet?api-version=2017-03-01')
   .reply(404, "{\"error\":{\"code\":\"ResourceNotFound\",\"message\":\"The Resource 'Microsoft.Network/virtualNetworks/test-vnet' under resource group 'xplat-test-vpn-gateway' was not found.\"}}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-type': 'application/json; charset=utf-8',
@@ -136,7 +136,7 @@ function (nock) {
 var result = 
 nock('http://management.azure.com:443')
   .filteringRequestBody(function (path) { return '*';})
-.put('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-vpn-gateway/providers/Microsoft.Network/virtualNetworks/test-vnet?api-version=2016-09-01', '*')
+.put('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-vpn-gateway/providers\/Microsoft.Network/virtualNetworks/test-vnet?api-version=2017-03-01', '*')
   .reply(201, "{\r\n  \"name\": \"test-vnet\",\r\n  \"id\": \"/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-vpn-gateway/providers/Microsoft.Network/virtualNetworks/test-vnet\",\r\n  \"etag\": \"W/\\\"dba4015d-090d-429c-8e58-3a803b328259\\\"\",\r\n  \"type\": \"Microsoft.Network/virtualNetworks\",\r\n  \"location\": \"westeurope\",\r\n  \"properties\": {\r\n    \"provisioningState\": \"Updating\",\r\n    \"resourceGuid\": \"0d543481-bd76-47e3-a771-dfff2c21f46b\",\r\n    \"addressSpace\": {\r\n      \"addressPrefixes\": [\r\n        \"10.1.0.0/16\"\r\n      ]\r\n    },\r\n    \"dhcpOptions\": {\r\n      \"dnsServers\": []\r\n    },\r\n    \"subnets\": [],\r\n    \"virtualNetworkPeerings\": []\r\n  }\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '640',
@@ -144,7 +144,7 @@ nock('http://management.azure.com:443')
   expires: '-1',
   'retry-after': '3',
   'x-ms-request-id': '5e1d0fc8-29f3-43cb-ac2f-ce26e2d74d1f',
-  'azure-asyncoperation': 'https://management.azure.com/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/5e1d0fc8-29f3-43cb-ac2f-ce26e2d74d1f?api-version=2016-09-01',
+  'azure-asyncoperation': 'https://management.azure.com/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/5e1d0fc8-29f3-43cb-ac2f-ce26e2d74d1f?api-version=2017-03-01',
   'strict-transport-security': 'max-age=31536000; includeSubDomains',
   server: 'Microsoft-HTTPAPI/2.0, Microsoft-HTTPAPI/2.0',
   'x-ms-ratelimit-remaining-subscription-writes': '1199',
@@ -157,7 +157,7 @@ function (nock) {
 var result = 
 nock('https://management.azure.com:443')
   .filteringRequestBody(function (path) { return '*';})
-.put('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-vpn-gateway/providers/Microsoft.Network/virtualNetworks/test-vnet?api-version=2016-09-01', '*')
+.put('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-vpn-gateway/providers\/Microsoft.Network/virtualNetworks/test-vnet?api-version=2017-03-01', '*')
   .reply(201, "{\r\n  \"name\": \"test-vnet\",\r\n  \"id\": \"/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-vpn-gateway/providers/Microsoft.Network/virtualNetworks/test-vnet\",\r\n  \"etag\": \"W/\\\"dba4015d-090d-429c-8e58-3a803b328259\\\"\",\r\n  \"type\": \"Microsoft.Network/virtualNetworks\",\r\n  \"location\": \"westeurope\",\r\n  \"properties\": {\r\n    \"provisioningState\": \"Updating\",\r\n    \"resourceGuid\": \"0d543481-bd76-47e3-a771-dfff2c21f46b\",\r\n    \"addressSpace\": {\r\n      \"addressPrefixes\": [\r\n        \"10.1.0.0/16\"\r\n      ]\r\n    },\r\n    \"dhcpOptions\": {\r\n      \"dnsServers\": []\r\n    },\r\n    \"subnets\": [],\r\n    \"virtualNetworkPeerings\": []\r\n  }\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '640',
@@ -165,7 +165,7 @@ nock('https://management.azure.com:443')
   expires: '-1',
   'retry-after': '3',
   'x-ms-request-id': '5e1d0fc8-29f3-43cb-ac2f-ce26e2d74d1f',
-  'azure-asyncoperation': 'https://management.azure.com/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/5e1d0fc8-29f3-43cb-ac2f-ce26e2d74d1f?api-version=2016-09-01',
+  'azure-asyncoperation': 'https://management.azure.com/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/5e1d0fc8-29f3-43cb-ac2f-ce26e2d74d1f?api-version=2017-03-01',
   'strict-transport-security': 'max-age=31536000; includeSubDomains',
   server: 'Microsoft-HTTPAPI/2.0, Microsoft-HTTPAPI/2.0',
   'x-ms-ratelimit-remaining-subscription-writes': '1199',
@@ -177,7 +177,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/5e1d0fc8-29f3-43cb-ac2f-ce26e2d74d1f?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/5e1d0fc8-29f3-43cb-ac2f-ce26e2d74d1f?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"Succeeded\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '29',
@@ -195,7 +195,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/5e1d0fc8-29f3-43cb-ac2f-ce26e2d74d1f?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/5e1d0fc8-29f3-43cb-ac2f-ce26e2d74d1f?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"Succeeded\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '29',
@@ -213,7 +213,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-vpn-gateway/providers/Microsoft.Network/virtualNetworks/test-vnet?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-vpn-gateway/providers\/Microsoft.Network/virtualNetworks/test-vnet?api-version=2017-03-01')
   .reply(200, "{\r\n  \"name\": \"test-vnet\",\r\n  \"id\": \"/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-vpn-gateway/providers/Microsoft.Network/virtualNetworks/test-vnet\",\r\n  \"etag\": \"W/\\\"487e806e-06aa-4907-bf3f-df6d08b52d60\\\"\",\r\n  \"type\": \"Microsoft.Network/virtualNetworks\",\r\n  \"location\": \"westeurope\",\r\n  \"properties\": {\r\n    \"provisioningState\": \"Succeeded\",\r\n    \"resourceGuid\": \"0d543481-bd76-47e3-a771-dfff2c21f46b\",\r\n    \"addressSpace\": {\r\n      \"addressPrefixes\": [\r\n        \"10.1.0.0/16\"\r\n      ]\r\n    },\r\n    \"dhcpOptions\": {\r\n      \"dnsServers\": []\r\n    },\r\n    \"subnets\": [],\r\n    \"virtualNetworkPeerings\": []\r\n  }\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '641',
@@ -232,7 +232,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-vpn-gateway/providers/Microsoft.Network/virtualNetworks/test-vnet?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-vpn-gateway/providers\/Microsoft.Network/virtualNetworks/test-vnet?api-version=2017-03-01')
   .reply(200, "{\r\n  \"name\": \"test-vnet\",\r\n  \"id\": \"/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-vpn-gateway/providers/Microsoft.Network/virtualNetworks/test-vnet\",\r\n  \"etag\": \"W/\\\"487e806e-06aa-4907-bf3f-df6d08b52d60\\\"\",\r\n  \"type\": \"Microsoft.Network/virtualNetworks\",\r\n  \"location\": \"westeurope\",\r\n  \"properties\": {\r\n    \"provisioningState\": \"Succeeded\",\r\n    \"resourceGuid\": \"0d543481-bd76-47e3-a771-dfff2c21f46b\",\r\n    \"addressSpace\": {\r\n      \"addressPrefixes\": [\r\n        \"10.1.0.0/16\"\r\n      ]\r\n    },\r\n    \"dhcpOptions\": {\r\n      \"dnsServers\": []\r\n    },\r\n    \"subnets\": [],\r\n    \"virtualNetworkPeerings\": []\r\n  }\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '641',
@@ -251,7 +251,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-vpn-gateway/providers/Microsoft.Network/virtualNetworks/test-vnet?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-vpn-gateway/providers\/Microsoft.Network/virtualNetworks/test-vnet?api-version=2017-03-01')
   .reply(200, "{\r\n  \"name\": \"test-vnet\",\r\n  \"id\": \"/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-vpn-gateway/providers/Microsoft.Network/virtualNetworks/test-vnet\",\r\n  \"etag\": \"W/\\\"487e806e-06aa-4907-bf3f-df6d08b52d60\\\"\",\r\n  \"type\": \"Microsoft.Network/virtualNetworks\",\r\n  \"location\": \"westeurope\",\r\n  \"properties\": {\r\n    \"provisioningState\": \"Succeeded\",\r\n    \"resourceGuid\": \"0d543481-bd76-47e3-a771-dfff2c21f46b\",\r\n    \"addressSpace\": {\r\n      \"addressPrefixes\": [\r\n        \"10.1.0.0/16\"\r\n      ]\r\n    },\r\n    \"dhcpOptions\": {\r\n      \"dnsServers\": []\r\n    },\r\n    \"subnets\": [],\r\n    \"virtualNetworkPeerings\": []\r\n  }\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '641',
@@ -270,7 +270,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-vpn-gateway/providers/Microsoft.Network/virtualNetworks/test-vnet?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-vpn-gateway/providers\/Microsoft.Network/virtualNetworks/test-vnet?api-version=2017-03-01')
   .reply(200, "{\r\n  \"name\": \"test-vnet\",\r\n  \"id\": \"/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-vpn-gateway/providers/Microsoft.Network/virtualNetworks/test-vnet\",\r\n  \"etag\": \"W/\\\"487e806e-06aa-4907-bf3f-df6d08b52d60\\\"\",\r\n  \"type\": \"Microsoft.Network/virtualNetworks\",\r\n  \"location\": \"westeurope\",\r\n  \"properties\": {\r\n    \"provisioningState\": \"Succeeded\",\r\n    \"resourceGuid\": \"0d543481-bd76-47e3-a771-dfff2c21f46b\",\r\n    \"addressSpace\": {\r\n      \"addressPrefixes\": [\r\n        \"10.1.0.0/16\"\r\n      ]\r\n    },\r\n    \"dhcpOptions\": {\r\n      \"dnsServers\": []\r\n    },\r\n    \"subnets\": [],\r\n    \"virtualNetworkPeerings\": []\r\n  }\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '641',
@@ -289,7 +289,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-vpn-gateway/providers/Microsoft.Network/virtualNetworks/test-vnet/subnets/GatewaySubnet?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-vpn-gateway/providers\/Microsoft.Network/virtualNetworks/test-vnet/subnets/GatewaySubnet?api-version=2017-03-01')
   .reply(404, "{\r\n  \"error\": {\r\n    \"code\": \"NotFound\",\r\n    \"message\": \"Resource /subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-vpn-gateway/providers/Microsoft.Network/virtualNetworks/test-vnet/subnets/GatewaySubnet not found.\",\r\n    \"details\": []\r\n  }\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '272',
@@ -307,7 +307,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-vpn-gateway/providers/Microsoft.Network/virtualNetworks/test-vnet/subnets/GatewaySubnet?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-vpn-gateway/providers\/Microsoft.Network/virtualNetworks/test-vnet/subnets/GatewaySubnet?api-version=2017-03-01')
   .reply(404, "{\r\n  \"error\": {\r\n    \"code\": \"NotFound\",\r\n    \"message\": \"Resource /subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-vpn-gateway/providers/Microsoft.Network/virtualNetworks/test-vnet/subnets/GatewaySubnet not found.\",\r\n    \"details\": []\r\n  }\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '272',
@@ -326,7 +326,7 @@ function (nock) {
 var result = 
 nock('http://management.azure.com:443')
   .filteringRequestBody(function (path) { return '*';})
-.put('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-vpn-gateway/providers/Microsoft.Network/virtualNetworks/test-vnet/subnets/GatewaySubnet?api-version=2016-09-01', '*')
+.put('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-vpn-gateway/providers\/Microsoft.Network/virtualNetworks/test-vnet/subnets/GatewaySubnet?api-version=2017-03-01', '*')
   .reply(201, "{\r\n  \"name\": \"GatewaySubnet\",\r\n  \"id\": \"/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-vpn-gateway/providers/Microsoft.Network/virtualNetworks/test-vnet/subnets/GatewaySubnet\",\r\n  \"etag\": \"W/\\\"e01d8c67-512b-42ec-9a28-9a48cd0f1d88\\\"\",\r\n  \"properties\": {\r\n    \"provisioningState\": \"Updating\",\r\n    \"addressPrefix\": \"10.1.0.0/28\",\r\n    \"serviceTunnels\": []\r\n  }\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '392',
@@ -334,7 +334,7 @@ nock('http://management.azure.com:443')
   expires: '-1',
   'retry-after': '3',
   'x-ms-request-id': 'b0674943-7dd9-43bf-b140-384586e911eb',
-  'azure-asyncoperation': 'https://management.azure.com/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/b0674943-7dd9-43bf-b140-384586e911eb?api-version=2016-09-01',
+  'azure-asyncoperation': 'https://management.azure.com/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/b0674943-7dd9-43bf-b140-384586e911eb?api-version=2017-03-01',
   'strict-transport-security': 'max-age=31536000; includeSubDomains',
   server: 'Microsoft-HTTPAPI/2.0, Microsoft-HTTPAPI/2.0',
   'x-ms-ratelimit-remaining-subscription-writes': '1199',
@@ -347,7 +347,7 @@ function (nock) {
 var result = 
 nock('https://management.azure.com:443')
   .filteringRequestBody(function (path) { return '*';})
-.put('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-vpn-gateway/providers/Microsoft.Network/virtualNetworks/test-vnet/subnets/GatewaySubnet?api-version=2016-09-01', '*')
+.put('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-vpn-gateway/providers\/Microsoft.Network/virtualNetworks/test-vnet/subnets/GatewaySubnet?api-version=2017-03-01', '*')
   .reply(201, "{\r\n  \"name\": \"GatewaySubnet\",\r\n  \"id\": \"/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-vpn-gateway/providers/Microsoft.Network/virtualNetworks/test-vnet/subnets/GatewaySubnet\",\r\n  \"etag\": \"W/\\\"e01d8c67-512b-42ec-9a28-9a48cd0f1d88\\\"\",\r\n  \"properties\": {\r\n    \"provisioningState\": \"Updating\",\r\n    \"addressPrefix\": \"10.1.0.0/28\",\r\n    \"serviceTunnels\": []\r\n  }\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '392',
@@ -355,7 +355,7 @@ nock('https://management.azure.com:443')
   expires: '-1',
   'retry-after': '3',
   'x-ms-request-id': 'b0674943-7dd9-43bf-b140-384586e911eb',
-  'azure-asyncoperation': 'https://management.azure.com/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/b0674943-7dd9-43bf-b140-384586e911eb?api-version=2016-09-01',
+  'azure-asyncoperation': 'https://management.azure.com/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/b0674943-7dd9-43bf-b140-384586e911eb?api-version=2017-03-01',
   'strict-transport-security': 'max-age=31536000; includeSubDomains',
   server: 'Microsoft-HTTPAPI/2.0, Microsoft-HTTPAPI/2.0',
   'x-ms-ratelimit-remaining-subscription-writes': '1199',
@@ -367,7 +367,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/b0674943-7dd9-43bf-b140-384586e911eb?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/b0674943-7dd9-43bf-b140-384586e911eb?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"Succeeded\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '29',
@@ -385,7 +385,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/b0674943-7dd9-43bf-b140-384586e911eb?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/b0674943-7dd9-43bf-b140-384586e911eb?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"Succeeded\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '29',
@@ -403,7 +403,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-vpn-gateway/providers/Microsoft.Network/virtualNetworks/test-vnet/subnets/GatewaySubnet?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-vpn-gateway/providers\/Microsoft.Network/virtualNetworks/test-vnet/subnets/GatewaySubnet?api-version=2017-03-01')
   .reply(200, "{\r\n  \"name\": \"GatewaySubnet\",\r\n  \"id\": \"/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-vpn-gateway/providers/Microsoft.Network/virtualNetworks/test-vnet/subnets/GatewaySubnet\",\r\n  \"etag\": \"W/\\\"03ec7c06-dd1c-43b0-ae86-c6359702b34c\\\"\",\r\n  \"properties\": {\r\n    \"provisioningState\": \"Succeeded\",\r\n    \"addressPrefix\": \"10.1.0.0/28\",\r\n    \"serviceTunnels\": []\r\n  }\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '393',
@@ -422,7 +422,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-vpn-gateway/providers/Microsoft.Network/virtualNetworks/test-vnet/subnets/GatewaySubnet?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-vpn-gateway/providers\/Microsoft.Network/virtualNetworks/test-vnet/subnets/GatewaySubnet?api-version=2017-03-01')
   .reply(200, "{\r\n  \"name\": \"GatewaySubnet\",\r\n  \"id\": \"/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-vpn-gateway/providers/Microsoft.Network/virtualNetworks/test-vnet/subnets/GatewaySubnet\",\r\n  \"etag\": \"W/\\\"03ec7c06-dd1c-43b0-ae86-c6359702b34c\\\"\",\r\n  \"properties\": {\r\n    \"provisioningState\": \"Succeeded\",\r\n    \"addressPrefix\": \"10.1.0.0/28\",\r\n    \"serviceTunnels\": []\r\n  }\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '393',
@@ -441,7 +441,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-vpn-gateway/providers/Microsoft.Network/publicIPAddresses/test-ip?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-vpn-gateway/providers\/Microsoft.Network/publicIPAddresses/test-ip?api-version=2017-03-01')
   .reply(404, "{\"error\":{\"code\":\"ResourceNotFound\",\"message\":\"The Resource 'Microsoft.Network/publicIPAddresses/test-ip' under resource group 'xplat-test-vpn-gateway' was not found.\"}}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-type': 'application/json; charset=utf-8',
@@ -458,7 +458,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-vpn-gateway/providers/Microsoft.Network/publicIPAddresses/test-ip?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-vpn-gateway/providers\/Microsoft.Network/publicIPAddresses/test-ip?api-version=2017-03-01')
   .reply(404, "{\"error\":{\"code\":\"ResourceNotFound\",\"message\":\"The Resource 'Microsoft.Network/publicIPAddresses/test-ip' under resource group 'xplat-test-vpn-gateway' was not found.\"}}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-type': 'application/json; charset=utf-8',
@@ -476,7 +476,7 @@ function (nock) {
 var result = 
 nock('http://management.azure.com:443')
   .filteringRequestBody(function (path) { return '*';})
-.put('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-vpn-gateway/providers/Microsoft.Network/publicIPAddresses/test-ip?api-version=2016-09-01', '*')
+.put('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-vpn-gateway/providers\/Microsoft.Network/publicIPAddresses/test-ip?api-version=2017-03-01', '*')
   .reply(201, "{\r\n  \"name\": \"test-ip\",\r\n  \"id\": \"/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-vpn-gateway/providers/Microsoft.Network/publicIPAddresses/test-ip\",\r\n  \"etag\": \"W/\\\"88c1b126-7354-4523-8906-7bb7f8baa6b9\\\"\",\r\n  \"type\": \"Microsoft.Network/publicIPAddresses\",\r\n  \"location\": \"westeurope\",\r\n  \"properties\": {\r\n    \"provisioningState\": \"Updating\",\r\n    \"resourceGuid\": \"f0823455-c481-44b9-855c-ceba78e1fde9\",\r\n    \"publicIPAddressVersion\": \"IPv4\",\r\n    \"publicIPAllocationMethod\": \"Dynamic\",\r\n    \"idleTimeoutInMinutes\": 4\r\n  }\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '555',
@@ -484,7 +484,7 @@ nock('http://management.azure.com:443')
   expires: '-1',
   'retry-after': '3',
   'x-ms-request-id': '8e326fb6-f99e-4ea3-85d3-2d9e7bb533a5',
-  'azure-asyncoperation': 'https://management.azure.com/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/8e326fb6-f99e-4ea3-85d3-2d9e7bb533a5?api-version=2016-09-01',
+  'azure-asyncoperation': 'https://management.azure.com/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/8e326fb6-f99e-4ea3-85d3-2d9e7bb533a5?api-version=2017-03-01',
   'strict-transport-security': 'max-age=31536000; includeSubDomains',
   server: 'Microsoft-HTTPAPI/2.0, Microsoft-HTTPAPI/2.0',
   'x-ms-ratelimit-remaining-subscription-writes': '1199',
@@ -497,7 +497,7 @@ function (nock) {
 var result = 
 nock('https://management.azure.com:443')
   .filteringRequestBody(function (path) { return '*';})
-.put('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-vpn-gateway/providers/Microsoft.Network/publicIPAddresses/test-ip?api-version=2016-09-01', '*')
+.put('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-vpn-gateway/providers\/Microsoft.Network/publicIPAddresses/test-ip?api-version=2017-03-01', '*')
   .reply(201, "{\r\n  \"name\": \"test-ip\",\r\n  \"id\": \"/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-vpn-gateway/providers/Microsoft.Network/publicIPAddresses/test-ip\",\r\n  \"etag\": \"W/\\\"88c1b126-7354-4523-8906-7bb7f8baa6b9\\\"\",\r\n  \"type\": \"Microsoft.Network/publicIPAddresses\",\r\n  \"location\": \"westeurope\",\r\n  \"properties\": {\r\n    \"provisioningState\": \"Updating\",\r\n    \"resourceGuid\": \"f0823455-c481-44b9-855c-ceba78e1fde9\",\r\n    \"publicIPAddressVersion\": \"IPv4\",\r\n    \"publicIPAllocationMethod\": \"Dynamic\",\r\n    \"idleTimeoutInMinutes\": 4\r\n  }\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '555',
@@ -505,7 +505,7 @@ nock('https://management.azure.com:443')
   expires: '-1',
   'retry-after': '3',
   'x-ms-request-id': '8e326fb6-f99e-4ea3-85d3-2d9e7bb533a5',
-  'azure-asyncoperation': 'https://management.azure.com/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/8e326fb6-f99e-4ea3-85d3-2d9e7bb533a5?api-version=2016-09-01',
+  'azure-asyncoperation': 'https://management.azure.com/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/8e326fb6-f99e-4ea3-85d3-2d9e7bb533a5?api-version=2017-03-01',
   'strict-transport-security': 'max-age=31536000; includeSubDomains',
   server: 'Microsoft-HTTPAPI/2.0, Microsoft-HTTPAPI/2.0',
   'x-ms-ratelimit-remaining-subscription-writes': '1199',
@@ -517,7 +517,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/8e326fb6-f99e-4ea3-85d3-2d9e7bb533a5?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/8e326fb6-f99e-4ea3-85d3-2d9e7bb533a5?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"Succeeded\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '29',
@@ -535,7 +535,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/8e326fb6-f99e-4ea3-85d3-2d9e7bb533a5?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/8e326fb6-f99e-4ea3-85d3-2d9e7bb533a5?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"Succeeded\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '29',
@@ -553,7 +553,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-vpn-gateway/providers/Microsoft.Network/publicIPAddresses/test-ip?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-vpn-gateway/providers\/Microsoft.Network/publicIPAddresses/test-ip?api-version=2017-03-01')
   .reply(200, "{\r\n  \"name\": \"test-ip\",\r\n  \"id\": \"/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-vpn-gateway/providers/Microsoft.Network/publicIPAddresses/test-ip\",\r\n  \"etag\": \"W/\\\"6a7c4b1e-102e-4284-9323-0697b46b9098\\\"\",\r\n  \"type\": \"Microsoft.Network/publicIPAddresses\",\r\n  \"location\": \"westeurope\",\r\n  \"properties\": {\r\n    \"provisioningState\": \"Succeeded\",\r\n    \"resourceGuid\": \"f0823455-c481-44b9-855c-ceba78e1fde9\",\r\n    \"publicIPAddressVersion\": \"IPv4\",\r\n    \"publicIPAllocationMethod\": \"Dynamic\",\r\n    \"idleTimeoutInMinutes\": 4\r\n  }\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '556',
@@ -572,7 +572,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-vpn-gateway/providers/Microsoft.Network/publicIPAddresses/test-ip?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-vpn-gateway/providers\/Microsoft.Network/publicIPAddresses/test-ip?api-version=2017-03-01')
   .reply(200, "{\r\n  \"name\": \"test-ip\",\r\n  \"id\": \"/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-vpn-gateway/providers/Microsoft.Network/publicIPAddresses/test-ip\",\r\n  \"etag\": \"W/\\\"6a7c4b1e-102e-4284-9323-0697b46b9098\\\"\",\r\n  \"type\": \"Microsoft.Network/publicIPAddresses\",\r\n  \"location\": \"westeurope\",\r\n  \"properties\": {\r\n    \"provisioningState\": \"Succeeded\",\r\n    \"resourceGuid\": \"f0823455-c481-44b9-855c-ceba78e1fde9\",\r\n    \"publicIPAddressVersion\": \"IPv4\",\r\n    \"publicIPAllocationMethod\": \"Dynamic\",\r\n    \"idleTimeoutInMinutes\": 4\r\n  }\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '556',
@@ -591,7 +591,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-vpn-gateway/providers/Microsoft.Network/virtualNetworkGateways/test-vpn-gateway?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-vpn-gateway/providers\/Microsoft.Network/virtualNetworkGateways/test-vpn-gateway?api-version=2017-03-01')
   .reply(404, "{\"error\":{\"code\":\"ResourceNotFound\",\"message\":\"The Resource 'Microsoft.Network/virtualNetworkGateways/test-vpn-gateway' under resource group 'xplat-test-vpn-gateway' was not found.\"}}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-type': 'application/json; charset=utf-8',
@@ -608,7 +608,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-vpn-gateway/providers/Microsoft.Network/virtualNetworkGateways/test-vpn-gateway?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-vpn-gateway/providers\/Microsoft.Network/virtualNetworkGateways/test-vpn-gateway?api-version=2017-03-01')
   .reply(404, "{\"error\":{\"code\":\"ResourceNotFound\",\"message\":\"The Resource 'Microsoft.Network/virtualNetworkGateways/test-vpn-gateway' under resource group 'xplat-test-vpn-gateway' was not found.\"}}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-type': 'application/json; charset=utf-8',
@@ -626,7 +626,7 @@ function (nock) {
 var result = 
 nock('http://management.azure.com:443')
   .filteringRequestBody(function (path) { return '*';})
-.put('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-vpn-gateway/providers/Microsoft.Network/virtualNetworkGateways/test-vpn-gateway?api-version=2016-09-01', '*')
+.put('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-vpn-gateway/providers\/Microsoft.Network/virtualNetworkGateways/test-vpn-gateway?api-version=2017-03-01', '*')
   .reply(201, "{\r\n  \"name\": \"test-vpn-gateway\",\r\n  \"id\": \"/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-vpn-gateway/providers/Microsoft.Network/virtualNetworkGateways/test-vpn-gateway\",\r\n  \"etag\": \"W/\\\"05de52c3-9133-4c41-af72-4f562aac733c\\\"\",\r\n  \"type\": \"Microsoft.Network/virtualNetworkGateways\",\r\n  \"location\": \"westeurope\",\r\n  \"tags\": {\r\n    \"tag1\": \"aaa\",\r\n    \"tag2\": \"bbb\"\r\n  },\r\n  \"properties\": {\r\n    \"provisioningState\": \"Updating\",\r\n    \"resourceGuid\": \"972068d3-5d66-4d1e-9fa7-e8b03d42c58a\",\r\n    \"ipConfigurations\": [\r\n      {\r\n        \"name\": \"ip-config\",\r\n        \"id\": \"/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-vpn-gateway/providers/Microsoft.Network/virtualNetworkGateways/test-vpn-gateway/ipConfigurations/ip-config\",\r\n        \"etag\": \"W/\\\"05de52c3-9133-4c41-af72-4f562aac733c\\\"\",\r\n        \"properties\": {\r\n          \"provisioningState\": \"Updating\",\r\n          \"privateIPAllocationMethod\": \"Dynamic\",\r\n          \"publicIPAddress\": {\r\n            \"id\": \"/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-vpn-gateway/providers/Microsoft.Network/publicIPAddresses/test-ip\"\r\n          },\r\n          \"subnet\": {\r\n            \"id\": \"/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-vpn-gateway/providers/Microsoft.Network/virtualNetworks/test-vnet/subnets/GatewaySubnet\"\r\n          }\r\n        }\r\n      }\r\n    ],\r\n    \"sku\": {\r\n      \"name\": \"Standard\",\r\n      \"tier\": \"Standard\",\r\n      \"capacity\": 2\r\n    },\r\n    \"gatewayType\": \"Vpn\",\r\n    \"vpnType\": \"RouteBased\",\r\n    \"enableBgp\": false,\r\n    \"activeActive\": false,\r\n    \"vpnClientConfiguration\": {\r\n      \"vpnClientAddressPool\": {\r\n        \"addressPrefixes\": []\r\n      },\r\n      \"vpnClientRootCertificates\": [],\r\n      \"vpnClientRevokedCertificates\": []\r\n    },\r\n    \"bgpSettings\": {\r\n      \"asn\": 65010,\r\n      \"bgpPeeringAddress\": \"10.12.255.30\",\r\n      \"peerWeight\": 0\r\n    }\r\n  }\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '1962',
@@ -634,7 +634,7 @@ nock('http://management.azure.com:443')
   expires: '-1',
   'retry-after': '10',
   'x-ms-request-id': '30c8ee68-4d99-4d18-b53b-559af3be1418',
-  'azure-asyncoperation': 'https://management.azure.com/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01',
+  'azure-asyncoperation': 'https://management.azure.com/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01',
   'strict-transport-security': 'max-age=31536000; includeSubDomains',
   server: 'Microsoft-HTTPAPI/2.0, Microsoft-HTTPAPI/2.0',
   'x-ms-ratelimit-remaining-subscription-writes': '1198',
@@ -647,7 +647,7 @@ function (nock) {
 var result = 
 nock('https://management.azure.com:443')
   .filteringRequestBody(function (path) { return '*';})
-.put('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-vpn-gateway/providers/Microsoft.Network/virtualNetworkGateways/test-vpn-gateway?api-version=2016-09-01', '*')
+.put('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-vpn-gateway/providers\/Microsoft.Network/virtualNetworkGateways/test-vpn-gateway?api-version=2017-03-01', '*')
   .reply(201, "{\r\n  \"name\": \"test-vpn-gateway\",\r\n  \"id\": \"/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-vpn-gateway/providers/Microsoft.Network/virtualNetworkGateways/test-vpn-gateway\",\r\n  \"etag\": \"W/\\\"05de52c3-9133-4c41-af72-4f562aac733c\\\"\",\r\n  \"type\": \"Microsoft.Network/virtualNetworkGateways\",\r\n  \"location\": \"westeurope\",\r\n  \"tags\": {\r\n    \"tag1\": \"aaa\",\r\n    \"tag2\": \"bbb\"\r\n  },\r\n  \"properties\": {\r\n    \"provisioningState\": \"Updating\",\r\n    \"resourceGuid\": \"972068d3-5d66-4d1e-9fa7-e8b03d42c58a\",\r\n    \"ipConfigurations\": [\r\n      {\r\n        \"name\": \"ip-config\",\r\n        \"id\": \"/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-vpn-gateway/providers/Microsoft.Network/virtualNetworkGateways/test-vpn-gateway/ipConfigurations/ip-config\",\r\n        \"etag\": \"W/\\\"05de52c3-9133-4c41-af72-4f562aac733c\\\"\",\r\n        \"properties\": {\r\n          \"provisioningState\": \"Updating\",\r\n          \"privateIPAllocationMethod\": \"Dynamic\",\r\n          \"publicIPAddress\": {\r\n            \"id\": \"/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-vpn-gateway/providers/Microsoft.Network/publicIPAddresses/test-ip\"\r\n          },\r\n          \"subnet\": {\r\n            \"id\": \"/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-vpn-gateway/providers/Microsoft.Network/virtualNetworks/test-vnet/subnets/GatewaySubnet\"\r\n          }\r\n        }\r\n      }\r\n    ],\r\n    \"sku\": {\r\n      \"name\": \"Standard\",\r\n      \"tier\": \"Standard\",\r\n      \"capacity\": 2\r\n    },\r\n    \"gatewayType\": \"Vpn\",\r\n    \"vpnType\": \"RouteBased\",\r\n    \"enableBgp\": false,\r\n    \"activeActive\": false,\r\n    \"vpnClientConfiguration\": {\r\n      \"vpnClientAddressPool\": {\r\n        \"addressPrefixes\": []\r\n      },\r\n      \"vpnClientRootCertificates\": [],\r\n      \"vpnClientRevokedCertificates\": []\r\n    },\r\n    \"bgpSettings\": {\r\n      \"asn\": 65010,\r\n      \"bgpPeeringAddress\": \"10.12.255.30\",\r\n      \"peerWeight\": 0\r\n    }\r\n  }\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '1962',
@@ -655,7 +655,7 @@ nock('https://management.azure.com:443')
   expires: '-1',
   'retry-after': '10',
   'x-ms-request-id': '30c8ee68-4d99-4d18-b53b-559af3be1418',
-  'azure-asyncoperation': 'https://management.azure.com/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01',
+  'azure-asyncoperation': 'https://management.azure.com/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01',
   'strict-transport-security': 'max-age=31536000; includeSubDomains',
   server: 'Microsoft-HTTPAPI/2.0, Microsoft-HTTPAPI/2.0',
   'x-ms-ratelimit-remaining-subscription-writes': '1198',
@@ -667,7 +667,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -686,7 +686,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -705,7 +705,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -724,7 +724,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -743,7 +743,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -762,7 +762,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -781,7 +781,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -800,7 +800,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -819,7 +819,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -838,7 +838,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -857,7 +857,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -876,7 +876,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -895,7 +895,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -914,7 +914,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -933,7 +933,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -952,7 +952,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -971,7 +971,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -990,7 +990,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -1009,7 +1009,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -1028,7 +1028,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -1047,7 +1047,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -1066,7 +1066,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -1085,7 +1085,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -1104,7 +1104,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -1123,7 +1123,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -1142,7 +1142,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -1161,7 +1161,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -1180,7 +1180,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -1199,7 +1199,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -1218,7 +1218,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -1237,7 +1237,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -1256,7 +1256,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -1275,7 +1275,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -1294,7 +1294,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -1313,7 +1313,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -1332,7 +1332,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -1351,7 +1351,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -1370,7 +1370,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -1389,7 +1389,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -1408,7 +1408,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -1427,7 +1427,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -1446,7 +1446,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -1465,7 +1465,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -1484,7 +1484,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -1503,7 +1503,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -1522,7 +1522,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -1541,7 +1541,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -1560,7 +1560,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -1579,7 +1579,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -1598,7 +1598,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -1617,7 +1617,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -1636,7 +1636,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -1655,7 +1655,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -1674,7 +1674,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -1693,7 +1693,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -1712,7 +1712,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -1731,7 +1731,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -1750,7 +1750,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -1769,7 +1769,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -1788,7 +1788,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -1807,7 +1807,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -1826,7 +1826,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -1845,7 +1845,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -1864,7 +1864,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -1883,7 +1883,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -1902,7 +1902,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -1921,7 +1921,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -1940,7 +1940,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -1959,7 +1959,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -1978,7 +1978,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -1997,7 +1997,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -2016,7 +2016,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -2035,7 +2035,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -2054,7 +2054,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -2073,7 +2073,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -2092,7 +2092,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -2111,7 +2111,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -2130,7 +2130,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -2149,7 +2149,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -2168,7 +2168,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -2187,7 +2187,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -2206,7 +2206,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -2225,7 +2225,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -2244,7 +2244,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -2263,7 +2263,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -2282,7 +2282,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -2301,7 +2301,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -2320,7 +2320,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -2339,7 +2339,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -2358,7 +2358,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -2377,7 +2377,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -2396,7 +2396,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -2415,7 +2415,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -2434,7 +2434,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -2453,7 +2453,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -2472,7 +2472,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -2491,7 +2491,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -2510,7 +2510,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -2529,7 +2529,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -2548,7 +2548,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -2567,7 +2567,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -2586,7 +2586,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -2605,7 +2605,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -2624,7 +2624,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -2643,7 +2643,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -2662,7 +2662,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -2681,7 +2681,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -2700,7 +2700,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -2719,7 +2719,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -2738,7 +2738,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -2757,7 +2757,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -2776,7 +2776,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -2795,7 +2795,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -2814,7 +2814,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -2833,7 +2833,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -2852,7 +2852,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -2871,7 +2871,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -2890,7 +2890,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -2909,7 +2909,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -2928,7 +2928,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -2947,7 +2947,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -2966,7 +2966,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -2985,7 +2985,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -3004,7 +3004,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -3023,7 +3023,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -3042,7 +3042,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -3061,7 +3061,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -3080,7 +3080,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -3099,7 +3099,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -3118,7 +3118,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -3137,7 +3137,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -3156,7 +3156,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -3175,7 +3175,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -3194,7 +3194,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -3213,7 +3213,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -3232,7 +3232,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -3251,7 +3251,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -3270,7 +3270,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"InProgress\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '30',
@@ -3289,7 +3289,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"Succeeded\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '29',
@@ -3307,7 +3307,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/westeurope/operations/30c8ee68-4d99-4d18-b53b-559af3be1418?api-version=2017-03-01')
   .reply(200, "{\r\n  \"status\": \"Succeeded\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '29',
@@ -3325,7 +3325,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-vpn-gateway/providers/Microsoft.Network/virtualNetworkGateways/test-vpn-gateway?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-vpn-gateway/providers\/Microsoft.Network/virtualNetworkGateways/test-vpn-gateway?api-version=2017-03-01')
   .reply(200, "{\r\n  \"name\": \"test-vpn-gateway\",\r\n  \"id\": \"/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-vpn-gateway/providers/Microsoft.Network/virtualNetworkGateways/test-vpn-gateway\",\r\n  \"etag\": \"W/\\\"4d3120ea-b001-4cad-8662-8e46973f4bf1\\\"\",\r\n  \"type\": \"Microsoft.Network/virtualNetworkGateways\",\r\n  \"location\": \"westeurope\",\r\n  \"tags\": {\r\n    \"tag1\": \"aaa\",\r\n    \"tag2\": \"bbb\"\r\n  },\r\n  \"properties\": {\r\n    \"provisioningState\": \"Succeeded\",\r\n    \"resourceGuid\": \"972068d3-5d66-4d1e-9fa7-e8b03d42c58a\",\r\n    \"ipConfigurations\": [\r\n      {\r\n        \"name\": \"ip-config\",\r\n        \"id\": \"/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-vpn-gateway/providers/Microsoft.Network/virtualNetworkGateways/test-vpn-gateway/ipConfigurations/ip-config\",\r\n        \"etag\": \"W/\\\"4d3120ea-b001-4cad-8662-8e46973f4bf1\\\"\",\r\n        \"properties\": {\r\n          \"provisioningState\": \"Succeeded\",\r\n          \"privateIPAllocationMethod\": \"Dynamic\",\r\n          \"publicIPAddress\": {\r\n            \"id\": \"/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-vpn-gateway/providers/Microsoft.Network/publicIPAddresses/test-ip\"\r\n          },\r\n          \"subnet\": {\r\n            \"id\": \"/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-vpn-gateway/providers/Microsoft.Network/virtualNetworks/test-vnet/subnets/GatewaySubnet\"\r\n          }\r\n        }\r\n      }\r\n    ],\r\n    \"sku\": {\r\n      \"name\": \"Standard\",\r\n      \"tier\": \"Standard\",\r\n      \"capacity\": 2\r\n    },\r\n    \"gatewayType\": \"Vpn\",\r\n    \"vpnType\": \"RouteBased\",\r\n    \"enableBgp\": false,\r\n    \"activeActive\": false,\r\n    \"bgpSettings\": {\r\n      \"asn\": 65010,\r\n      \"bgpPeeringAddress\": \"10.12.255.30\",\r\n      \"peerWeight\": 0\r\n    }\r\n  }\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '1767',
@@ -3343,7 +3343,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-vpn-gateway/providers/Microsoft.Network/virtualNetworkGateways/test-vpn-gateway?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-vpn-gateway/providers\/Microsoft.Network/virtualNetworkGateways/test-vpn-gateway?api-version=2017-03-01')
   .reply(200, "{\r\n  \"name\": \"test-vpn-gateway\",\r\n  \"id\": \"/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-vpn-gateway/providers/Microsoft.Network/virtualNetworkGateways/test-vpn-gateway\",\r\n  \"etag\": \"W/\\\"4d3120ea-b001-4cad-8662-8e46973f4bf1\\\"\",\r\n  \"type\": \"Microsoft.Network/virtualNetworkGateways\",\r\n  \"location\": \"westeurope\",\r\n  \"tags\": {\r\n    \"tag1\": \"aaa\",\r\n    \"tag2\": \"bbb\"\r\n  },\r\n  \"properties\": {\r\n    \"provisioningState\": \"Succeeded\",\r\n    \"resourceGuid\": \"972068d3-5d66-4d1e-9fa7-e8b03d42c58a\",\r\n    \"ipConfigurations\": [\r\n      {\r\n        \"name\": \"ip-config\",\r\n        \"id\": \"/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-vpn-gateway/providers/Microsoft.Network/virtualNetworkGateways/test-vpn-gateway/ipConfigurations/ip-config\",\r\n        \"etag\": \"W/\\\"4d3120ea-b001-4cad-8662-8e46973f4bf1\\\"\",\r\n        \"properties\": {\r\n          \"provisioningState\": \"Succeeded\",\r\n          \"privateIPAllocationMethod\": \"Dynamic\",\r\n          \"publicIPAddress\": {\r\n            \"id\": \"/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-vpn-gateway/providers/Microsoft.Network/publicIPAddresses/test-ip\"\r\n          },\r\n          \"subnet\": {\r\n            \"id\": \"/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-vpn-gateway/providers/Microsoft.Network/virtualNetworks/test-vnet/subnets/GatewaySubnet\"\r\n          }\r\n        }\r\n      }\r\n    ],\r\n    \"sku\": {\r\n      \"name\": \"Standard\",\r\n      \"tier\": \"Standard\",\r\n      \"capacity\": 2\r\n    },\r\n    \"gatewayType\": \"Vpn\",\r\n    \"vpnType\": \"RouteBased\",\r\n    \"enableBgp\": false,\r\n    \"activeActive\": false,\r\n    \"bgpSettings\": {\r\n      \"asn\": 65010,\r\n      \"bgpPeeringAddress\": \"10.12.255.30\",\r\n      \"peerWeight\": 0\r\n    }\r\n  }\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '1767',

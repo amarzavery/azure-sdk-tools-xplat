@@ -28,7 +28,7 @@ exports.setEnvironment = function() {
 exports.scopes = [[function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .delete('/subscriptions/bfb5e0bf-124b-4d0c-9352-7c0a9f4d9948/resourceGroups/xplatTestGCreateDns/providers/Microsoft.Network/dnszones/xplattestgcreatedns.xplattestdns?api-version=2015-05-04-preview')
+  .delete('/subscriptions/bfb5e0bf-124b-4d0c-9352-7c0a9f4d9948/resourceGroups/xplatTestGCreateDns/providers/Microsoft.Network/dnsZones/xplattestgcreatedns.xplattestdns?api-version=2016-04-01')
   .reply(200, "", { 'cache-control': 'private',
   'content-length': '0',
   'x-content-type-options': 'nosniff',
@@ -46,7 +46,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .delete('/subscriptions/bfb5e0bf-124b-4d0c-9352-7c0a9f4d9948/resourceGroups/xplatTestGCreateDns/providers/Microsoft.Network/dnszones/xplattestgcreatedns.xplattestdns?api-version=2015-05-04-preview')
+  .delete('/subscriptions/bfb5e0bf-124b-4d0c-9352-7c0a9f4d9948/resourceGroups/xplatTestGCreateDns/providers/Microsoft.Network/dnsZones/xplattestgcreatedns.xplattestdns?api-version=2016-04-01')
   .reply(200, "", { 'cache-control': 'private',
   'content-length': '0',
   'x-content-type-options': 'nosniff',

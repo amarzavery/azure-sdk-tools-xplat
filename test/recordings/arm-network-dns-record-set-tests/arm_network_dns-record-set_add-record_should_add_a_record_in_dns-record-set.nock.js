@@ -27,7 +27,7 @@ exports.setEnvironment = function() {
 exports.scopes = [[function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/bfb5e0bf-124b-4d0c-9352-7c0a9f4d9948/resourceGroups/xplatTestGCreateDR/providers/Microsoft.Network/dnszones/xplattestgcreatedr.xplattestdrs?api-version=2015-05-04-preview')
+  .get('/subscriptions/bfb5e0bf-124b-4d0c-9352-7c0a9f4d9948/resourceGroups/xplatTestGCreateDR/providers/Microsoft.Network/dnsZones/xplattestgcreatedr.xplattestdrs?api-version=2016-04-01')
   .reply(200, "{\"id\":\"\\/subscriptions\\/bfb5e0bf-124b-4d0c-9352-7c0a9f4d9948\\/resourceGroups\\/xplatTestGCreateDR\\/providers\\/Microsoft.Network\\/dnszones\\/xplattestgcreatedr.xplattestdrs\",\"name\":\"xplattestgcreatedr.xplattestdrs\",\"type\":\"Microsoft.Network\\/dnszones\",\"etag\":\"618e4bb4-d573-48f5-a9d5-83190ecdba51\",\"location\":\"global\",\"properties\":{\"maxNumberOfRecordSets\":1000,\"numberOfRecordSets\":3}}", { 'cache-control': 'private',
   'content-length': '382',
   'content-type': 'application/json; charset=utf-8',
@@ -47,7 +47,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/bfb5e0bf-124b-4d0c-9352-7c0a9f4d9948/resourceGroups/xplatTestGCreateDR/providers/Microsoft.Network/dnszones/xplattestgcreatedr.xplattestdrs?api-version=2015-05-04-preview')
+  .get('/subscriptions/bfb5e0bf-124b-4d0c-9352-7c0a9f4d9948/resourceGroups/xplatTestGCreateDR/providers/Microsoft.Network/dnsZones/xplattestgcreatedr.xplattestdrs?api-version=2016-04-01')
   .reply(200, "{\"id\":\"\\/subscriptions\\/bfb5e0bf-124b-4d0c-9352-7c0a9f4d9948\\/resourceGroups\\/xplatTestGCreateDR\\/providers\\/Microsoft.Network\\/dnszones\\/xplattestgcreatedr.xplattestdrs\",\"name\":\"xplattestgcreatedr.xplattestdrs\",\"type\":\"Microsoft.Network\\/dnszones\",\"etag\":\"618e4bb4-d573-48f5-a9d5-83190ecdba51\",\"location\":\"global\",\"properties\":{\"maxNumberOfRecordSets\":1000,\"numberOfRecordSets\":3}}", { 'cache-control': 'private',
   'content-length': '382',
   'content-type': 'application/json; charset=utf-8',
@@ -67,7 +67,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/bfb5e0bf-124b-4d0c-9352-7c0a9f4d9948/resourceGroups/xplatTestGCreateDR/providers/Microsoft.Network/dnszones/xplattestgcreatedr.xplattestdrs/A/xplattestdnsrecord?api-version=2015-05-04-preview')
+  .get('/subscriptions/bfb5e0bf-124b-4d0c-9352-7c0a9f4d9948/resourceGroups/xplatTestGCreateDR/providers/Microsoft.Network/dnsZones/xplattestgcreatedr.xplattestdrs/A/xplattestdnsrecord?api-version=2016-04-01')
   .reply(200, "{\"id\":\"\\/subscriptions\\/bfb5e0bf-124b-4d0c-9352-7c0a9f4d9948\\/resourceGroups\\/xplatTestGCreateDR\\/providers\\/Microsoft.Network\\/dnszones\\/xplattestgcreatedr.xplattestdrs\\/A\\/xplattestdnsrecord\",\"name\":\"xplattestdnsrecord\",\"type\":\"Microsoft.Network\\/dnszones\\/A\",\"etag\":\"0816c477-d775-4f67-9e66-646f73216519\",\"location\":\"global\",\"tags\":{},\"properties\":{\"fqdn\":\"xplattestdnsrecord.xplattestgcreatedr.xplattestdrs\",\"TTL\":255}}", { 'cache-control': 'private',
   'content-length': '423',
   'content-type': 'application/json; charset=utf-8',
@@ -87,7 +87,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/bfb5e0bf-124b-4d0c-9352-7c0a9f4d9948/resourceGroups/xplatTestGCreateDR/providers/Microsoft.Network/dnszones/xplattestgcreatedr.xplattestdrs/A/xplattestdnsrecord?api-version=2015-05-04-preview')
+  .get('/subscriptions/bfb5e0bf-124b-4d0c-9352-7c0a9f4d9948/resourceGroups/xplatTestGCreateDR/providers/Microsoft.Network/dnsZones/xplattestgcreatedr.xplattestdrs/A/xplattestdnsrecord?api-version=2016-04-01')
   .reply(200, "{\"id\":\"\\/subscriptions\\/bfb5e0bf-124b-4d0c-9352-7c0a9f4d9948\\/resourceGroups\\/xplatTestGCreateDR\\/providers\\/Microsoft.Network\\/dnszones\\/xplattestgcreatedr.xplattestdrs\\/A\\/xplattestdnsrecord\",\"name\":\"xplattestdnsrecord\",\"type\":\"Microsoft.Network\\/dnszones\\/A\",\"etag\":\"0816c477-d775-4f67-9e66-646f73216519\",\"location\":\"global\",\"tags\":{},\"properties\":{\"fqdn\":\"xplattestdnsrecord.xplattestgcreatedr.xplattestdrs\",\"TTL\":255}}", { 'cache-control': 'private',
   'content-length': '423',
   'content-type': 'application/json; charset=utf-8',
@@ -108,7 +108,7 @@ function (nock) {
 var result = 
 nock('http://management.azure.com:443')
   .filteringRequestBody(function (path) { return '*';})
-.put('/subscriptions/bfb5e0bf-124b-4d0c-9352-7c0a9f4d9948/resourceGroups/xplatTestGCreateDR/providers/Microsoft.Network/dnszones/xplattestgcreatedr.xplattestdrs/A/xplattestdnsrecord?api-version=2015-05-04-preview', '*')
+.put('/subscriptions/bfb5e0bf-124b-4d0c-9352-7c0a9f4d9948/resourceGroups/xplatTestGCreateDR/providers/Microsoft.Network/dnsZones/xplattestgcreatedr.xplattestdrs/A/xplattestdnsrecord?api-version=2016-04-01', '*')
   .reply(200, "{\"id\":\"\\/subscriptions\\/bfb5e0bf-124b-4d0c-9352-7c0a9f4d9948\\/resourceGroups\\/xplatTestGCreateDR\\/providers\\/Microsoft.Network\\/dnszones\\/xplattestgcreatedr.xplattestdrs\\/A\\/xplattestdnsrecord\",\"name\":\"xplattestdnsrecord\",\"type\":\"Microsoft.Network\\/dnszones\\/A\",\"etag\":\"a215626b-00b7-453a-9f59-67f805e829f0\",\"location\":\"global\",\"tags\":{},\"properties\":{\"TTL\":255,\"ARecords\":[{\"ipv4Address\":\"10.0.0.0\"}]}}", { 'cache-control': 'private',
   'content-length': '403',
   'content-type': 'application/json; charset=utf-8',
@@ -129,7 +129,7 @@ function (nock) {
 var result = 
 nock('https://management.azure.com:443')
   .filteringRequestBody(function (path) { return '*';})
-.put('/subscriptions/bfb5e0bf-124b-4d0c-9352-7c0a9f4d9948/resourceGroups/xplatTestGCreateDR/providers/Microsoft.Network/dnszones/xplattestgcreatedr.xplattestdrs/A/xplattestdnsrecord?api-version=2015-05-04-preview', '*')
+.put('/subscriptions/bfb5e0bf-124b-4d0c-9352-7c0a9f4d9948/resourceGroups/xplatTestGCreateDR/providers/Microsoft.Network/dnsZones/xplattestgcreatedr.xplattestdrs/A/xplattestdnsrecord?api-version=2016-04-01', '*')
   .reply(200, "{\"id\":\"\\/subscriptions\\/bfb5e0bf-124b-4d0c-9352-7c0a9f4d9948\\/resourceGroups\\/xplatTestGCreateDR\\/providers\\/Microsoft.Network\\/dnszones\\/xplattestgcreatedr.xplattestdrs\\/A\\/xplattestdnsrecord\",\"name\":\"xplattestdnsrecord\",\"type\":\"Microsoft.Network\\/dnszones\\/A\",\"etag\":\"a215626b-00b7-453a-9f59-67f805e829f0\",\"location\":\"global\",\"tags\":{},\"properties\":{\"TTL\":255,\"ARecords\":[{\"ipv4Address\":\"10.0.0.0\"}]}}", { 'cache-control': 'private',
   'content-length': '403',
   'content-type': 'application/json; charset=utf-8',

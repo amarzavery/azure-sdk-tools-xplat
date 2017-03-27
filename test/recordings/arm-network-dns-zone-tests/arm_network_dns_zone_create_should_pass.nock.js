@@ -151,7 +151,7 @@ function (nock) {
 var result = 
 nock('http://management.azure.com:443')
   .filteringRequestBody(function (path) { return '*';})
-.put('/subscriptions/bfb5e0bf-124b-4d0c-9352-7c0a9f4d9948/resourceGroups/xplatTestGCreateDns/providers/Microsoft.Network/dnszones/xplattestgcreatedns.xplattestdns?api-version=2015-05-04-preview', '*')
+.put('/subscriptions/bfb5e0bf-124b-4d0c-9352-7c0a9f4d9948/resourceGroups/xplatTestGCreateDns/providers/Microsoft.Network/dnsZones/xplattestgcreatedns.xplattestdns?api-version=2016-04-01', '*')
   .reply(201, "{\"id\":\"\\/subscriptions\\/bfb5e0bf-124b-4d0c-9352-7c0a9f4d9948\\/resourceGroups\\/xplatTestGCreateDns\\/providers\\/Microsoft.Network\\/dnszones\\/xplattestgcreatedns.xplattestdns\",\"name\":\"xplattestgcreatedns.xplattestdns\",\"type\":\"Microsoft.Network\\/dnszones\",\"etag\":\"5c9ef0cf-18a1-46f3-93fc-51d22cf4fadb\",\"location\":\"global\",\"properties\":{}}", { 'cache-control': 'private',
   'content-length': '334',
   'content-type': 'application/json; charset=utf-8',
@@ -172,7 +172,7 @@ function (nock) {
 var result = 
 nock('https://management.azure.com:443')
   .filteringRequestBody(function (path) { return '*';})
-.put('/subscriptions/bfb5e0bf-124b-4d0c-9352-7c0a9f4d9948/resourceGroups/xplatTestGCreateDns/providers/Microsoft.Network/dnszones/xplattestgcreatedns.xplattestdns?api-version=2015-05-04-preview', '*')
+.put('/subscriptions/bfb5e0bf-124b-4d0c-9352-7c0a9f4d9948/resourceGroups/xplatTestGCreateDns/providers/Microsoft.Network/dnsZones/xplattestgcreatedns.xplattestdns?api-version=2016-04-01', '*')
   .reply(201, "{\"id\":\"\\/subscriptions\\/bfb5e0bf-124b-4d0c-9352-7c0a9f4d9948\\/resourceGroups\\/xplatTestGCreateDns\\/providers\\/Microsoft.Network\\/dnszones\\/xplattestgcreatedns.xplattestdns\",\"name\":\"xplattestgcreatedns.xplattestdns\",\"type\":\"Microsoft.Network\\/dnszones\",\"etag\":\"5c9ef0cf-18a1-46f3-93fc-51d22cf4fadb\",\"location\":\"global\",\"properties\":{}}", { 'cache-control': 'private',
   'content-length': '334',
   'content-type': 'application/json; charset=utf-8',
@@ -192,7 +192,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/bfb5e0bf-124b-4d0c-9352-7c0a9f4d9948/resourceGroups/xplatTestGCreateDns/providers/Microsoft.Network/dnszones/xplattestgcreatedns.xplattestdns?api-version=2015-05-04-preview')
+  .get('/subscriptions/bfb5e0bf-124b-4d0c-9352-7c0a9f4d9948/resourceGroups/xplatTestGCreateDns/providers/Microsoft.Network/dnsZones/xplattestgcreatedns.xplattestdns?api-version=2016-04-01')
   .reply(200, "{\"id\":\"\\/subscriptions\\/bfb5e0bf-124b-4d0c-9352-7c0a9f4d9948\\/resourceGroups\\/xplatTestGCreateDns\\/providers\\/Microsoft.Network\\/dnszones\\/xplattestgcreatedns.xplattestdns\",\"name\":\"xplattestgcreatedns.xplattestdns\",\"type\":\"Microsoft.Network\\/dnszones\",\"etag\":\"5c9ef0cf-18a1-46f3-93fc-51d22cf4fadb\",\"location\":\"global\",\"properties\":{\"maxNumberOfRecordSets\":1000,\"numberOfRecordSets\":2}}", { 'cache-control': 'private',
   'content-length': '385',
   'content-type': 'application/json; charset=utf-8',
@@ -212,7 +212,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/bfb5e0bf-124b-4d0c-9352-7c0a9f4d9948/resourceGroups/xplatTestGCreateDns/providers/Microsoft.Network/dnszones/xplattestgcreatedns.xplattestdns?api-version=2015-05-04-preview')
+  .get('/subscriptions/bfb5e0bf-124b-4d0c-9352-7c0a9f4d9948/resourceGroups/xplatTestGCreateDns/providers/Microsoft.Network/dnsZones/xplattestgcreatedns.xplattestdns?api-version=2016-04-01')
   .reply(200, "{\"id\":\"\\/subscriptions\\/bfb5e0bf-124b-4d0c-9352-7c0a9f4d9948\\/resourceGroups\\/xplatTestGCreateDns\\/providers\\/Microsoft.Network\\/dnszones\\/xplattestgcreatedns.xplattestdns\",\"name\":\"xplattestgcreatedns.xplattestdns\",\"type\":\"Microsoft.Network\\/dnszones\",\"etag\":\"5c9ef0cf-18a1-46f3-93fc-51d22cf4fadb\",\"location\":\"global\",\"properties\":{\"maxNumberOfRecordSets\":1000,\"numberOfRecordSets\":2}}", { 'cache-control': 'private',
   'content-length': '385',
   'content-type': 'application/json; charset=utf-8',

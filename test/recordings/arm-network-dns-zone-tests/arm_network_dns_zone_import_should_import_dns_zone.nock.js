@@ -29,7 +29,7 @@ exports.setEnvironment = function() {
 exports.scopes = [[function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-dns-zone/providers/Microsoft.Network/dnszones/example1.com?api-version=2015-05-04-preview')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-dns-zone/providers/Microsoft.Network/dnsZones/example1.com?api-version=2016-04-01')
   .reply(200, "{\"id\":\"\\/subscriptions\\/2c224e7e-3ef5-431d-a57b-e71f4662e3a6\\/resourceGroups\\/xplat-test-dns-zone\\/providers\\/Microsoft.Network\\/dnszones\\/example1.com\",\"name\":\"example1.com\",\"type\":\"Microsoft.Network\\/dnszones\",\"etag\":\"205c5070-01ca-40a6-8b6a-4956ffd6ce7a\",\"location\":\"global\",\"tags\":{\"tag1\":\"aaa\",\"tag2\":\"bbb\"},\"properties\":{\"maxNumberOfRecordSets\":1000,\"numberOfRecordSets\":2}}", { 'cache-control': 'private',
   'content-length': '380',
   'content-type': 'application/json; charset=utf-8',
@@ -49,7 +49,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-dns-zone/providers/Microsoft.Network/dnszones/example1.com?api-version=2015-05-04-preview')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-dns-zone/providers/Microsoft.Network/dnsZones/example1.com?api-version=2016-04-01')
   .reply(200, "{\"id\":\"\\/subscriptions\\/2c224e7e-3ef5-431d-a57b-e71f4662e3a6\\/resourceGroups\\/xplat-test-dns-zone\\/providers\\/Microsoft.Network\\/dnszones\\/example1.com\",\"name\":\"example1.com\",\"type\":\"Microsoft.Network\\/dnszones\",\"etag\":\"205c5070-01ca-40a6-8b6a-4956ffd6ce7a\",\"location\":\"global\",\"tags\":{\"tag1\":\"aaa\",\"tag2\":\"bbb\"},\"properties\":{\"maxNumberOfRecordSets\":1000,\"numberOfRecordSets\":2}}", { 'cache-control': 'private',
   'content-length': '380',
   'content-type': 'application/json; charset=utf-8',
@@ -70,7 +70,7 @@ function (nock) {
 var result = 
 nock('http://management.azure.com:443')
   .filteringRequestBody(function (path) { return '*';})
-.put('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-dns-zone/providers/Microsoft.Network/dnszones/example1.com/SOA/@?api-version=2015-05-04-preview', '*')
+.put('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-dns-zone/providers/Microsoft.Network/dnsZones/example1.com/SOA/@?api-version=2016-04-01', '*')
   .reply(412, "{\"code\":\"PreconditionFailed\",\"message\":\"The condition '*' in the If-None-Match header was not satisfied.\"}", { 'cache-control': 'private',
   'content-length': '106',
   'content-type': 'application/json; charset=utf-8',
@@ -90,7 +90,7 @@ function (nock) {
 var result = 
 nock('https://management.azure.com:443')
   .filteringRequestBody(function (path) { return '*';})
-.put('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-dns-zone/providers/Microsoft.Network/dnszones/example1.com/SOA/@?api-version=2015-05-04-preview', '*')
+.put('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-dns-zone/providers/Microsoft.Network/dnsZones/example1.com/SOA/@?api-version=2016-04-01', '*')
   .reply(412, "{\"code\":\"PreconditionFailed\",\"message\":\"The condition '*' in the If-None-Match header was not satisfied.\"}", { 'cache-control': 'private',
   'content-length': '106',
   'content-type': 'application/json; charset=utf-8',
@@ -109,7 +109,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-dns-zone/providers/Microsoft.Network/dnszones/example1.com/SOA/@?api-version=2015-05-04-preview')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-dns-zone/providers/Microsoft.Network/dnsZones/example1.com/SOA/@?api-version=2016-04-01')
   .reply(200, "{\"id\":\"\\/subscriptions\\/2c224e7e-3ef5-431d-a57b-e71f4662e3a6\\/resourceGroups\\/xplat-test-dns-zone\\/providers\\/Microsoft.Network\\/dnszones\\/example1.com\\/SOA\\/@\",\"name\":\"@\",\"type\":\"Microsoft.Network\\/dnszones\",\"etag\":\"c7b949b5-ddd6-46ed-b0eb-9f3796313da7\",\"location\":\"global\",\"properties\":{\"fqdn\":\"@.example1.com\",\"TTL\":3600,\"SOARecord\":{\"email\":\"msnhst.microsoft.com\",\"expireTime\":2419200,\"host\":\"ns1-07.azure-dns.com.\",\"minimumTTL\":300,\"refreshTime\":3600,\"retryTime\":300}}}", { 'cache-control': 'private',
   'content-length': '474',
   'content-type': 'application/json; charset=utf-8',
@@ -129,7 +129,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-dns-zone/providers/Microsoft.Network/dnszones/example1.com/SOA/@?api-version=2015-05-04-preview')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-dns-zone/providers/Microsoft.Network/dnsZones/example1.com/SOA/@?api-version=2016-04-01')
   .reply(200, "{\"id\":\"\\/subscriptions\\/2c224e7e-3ef5-431d-a57b-e71f4662e3a6\\/resourceGroups\\/xplat-test-dns-zone\\/providers\\/Microsoft.Network\\/dnszones\\/example1.com\\/SOA\\/@\",\"name\":\"@\",\"type\":\"Microsoft.Network\\/dnszones\",\"etag\":\"c7b949b5-ddd6-46ed-b0eb-9f3796313da7\",\"location\":\"global\",\"properties\":{\"fqdn\":\"@.example1.com\",\"TTL\":3600,\"SOARecord\":{\"email\":\"msnhst.microsoft.com\",\"expireTime\":2419200,\"host\":\"ns1-07.azure-dns.com.\",\"minimumTTL\":300,\"refreshTime\":3600,\"retryTime\":300}}}", { 'cache-control': 'private',
   'content-length': '474',
   'content-type': 'application/json; charset=utf-8',
@@ -150,7 +150,7 @@ function (nock) {
 var result = 
 nock('http://management.azure.com:443')
   .filteringRequestBody(function (path) { return '*';})
-.put('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-dns-zone/providers/Microsoft.Network/dnszones/example1.com/SOA/@?api-version=2015-05-04-preview', '*')
+.put('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-dns-zone/providers/Microsoft.Network/dnsZones/example1.com/SOA/@?api-version=2016-04-01', '*')
   .reply(200, "{\"id\":\"\\/subscriptions\\/2c224e7e-3ef5-431d-a57b-e71f4662e3a6\\/resourceGroups\\/xplat-test-dns-zone\\/providers\\/Microsoft.Network\\/dnszones\\/example1.com\\/SOA\\/@\",\"name\":\"@\",\"type\":\"Microsoft.Network\\/dnszones\",\"etag\":\"212263b7-26e0-4342-8a74-aacf917ff2f2\",\"location\":\"global\",\"tags\":{},\"properties\":{\"TTL\":3600,\"SOARecord\":{\"email\":\"hostmaster.example1.com.\",\"serialNumber\":2003080800,\"expireTime\":1814400,\"host\":\"ns1-07.azure-dns.com.\",\"minimumTTL\":10800,\"refreshTime\":43200,\"retryTime\":900}}}", { 'cache-control': 'private',
   'content-length': '493',
   'content-type': 'application/json; charset=utf-8',
@@ -171,7 +171,7 @@ function (nock) {
 var result = 
 nock('https://management.azure.com:443')
   .filteringRequestBody(function (path) { return '*';})
-.put('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-dns-zone/providers/Microsoft.Network/dnszones/example1.com/SOA/@?api-version=2015-05-04-preview', '*')
+.put('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-dns-zone/providers/Microsoft.Network/dnsZones/example1.com/SOA/@?api-version=2016-04-01', '*')
   .reply(200, "{\"id\":\"\\/subscriptions\\/2c224e7e-3ef5-431d-a57b-e71f4662e3a6\\/resourceGroups\\/xplat-test-dns-zone\\/providers\\/Microsoft.Network\\/dnszones\\/example1.com\\/SOA\\/@\",\"name\":\"@\",\"type\":\"Microsoft.Network\\/dnszones\",\"etag\":\"212263b7-26e0-4342-8a74-aacf917ff2f2\",\"location\":\"global\",\"tags\":{},\"properties\":{\"TTL\":3600,\"SOARecord\":{\"email\":\"hostmaster.example1.com.\",\"serialNumber\":2003080800,\"expireTime\":1814400,\"host\":\"ns1-07.azure-dns.com.\",\"minimumTTL\":10800,\"refreshTime\":43200,\"retryTime\":900}}}", { 'cache-control': 'private',
   'content-length': '493',
   'content-type': 'application/json; charset=utf-8',
@@ -192,7 +192,7 @@ function (nock) {
 var result = 
 nock('http://management.azure.com:443')
   .filteringRequestBody(function (path) { return '*';})
-.put('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-dns-zone/providers/Microsoft.Network/dnszones/example1.com/A/default?api-version=2015-05-04-preview', '*')
+.put('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-dns-zone/providers/Microsoft.Network/dnsZones/example1.com/A/default?api-version=2016-04-01', '*')
   .reply(201, "{\"id\":\"\\/subscriptions\\/2c224e7e-3ef5-431d-a57b-e71f4662e3a6\\/resourceGroups\\/xplat-test-dns-zone\\/providers\\/Microsoft.Network\\/dnszones\\/example1.com\\/A\\/default\",\"name\":\"default\",\"type\":\"Microsoft.Network\\/dnszones\\/A\",\"etag\":\"f6952eb3-2e4d-44d4-ac2b-990ea0915af0\",\"location\":\"global\",\"properties\":{\"TTL\":3600,\"ARecords\":[{\"ipv4Address\":\"0.1.2.3\"}]}}", { 'cache-control': 'private',
   'content-length': '353',
   'content-type': 'application/json; charset=utf-8',
@@ -213,7 +213,7 @@ function (nock) {
 var result = 
 nock('https://management.azure.com:443')
   .filteringRequestBody(function (path) { return '*';})
-.put('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-dns-zone/providers/Microsoft.Network/dnszones/example1.com/A/default?api-version=2015-05-04-preview', '*')
+.put('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-dns-zone/providers/Microsoft.Network/dnsZones/example1.com/A/default?api-version=2016-04-01', '*')
   .reply(201, "{\"id\":\"\\/subscriptions\\/2c224e7e-3ef5-431d-a57b-e71f4662e3a6\\/resourceGroups\\/xplat-test-dns-zone\\/providers\\/Microsoft.Network\\/dnszones\\/example1.com\\/A\\/default\",\"name\":\"default\",\"type\":\"Microsoft.Network\\/dnszones\\/A\",\"etag\":\"f6952eb3-2e4d-44d4-ac2b-990ea0915af0\",\"location\":\"global\",\"properties\":{\"TTL\":3600,\"ARecords\":[{\"ipv4Address\":\"0.1.2.3\"}]}}", { 'cache-control': 'private',
   'content-length': '353',
   'content-type': 'application/json; charset=utf-8',
@@ -234,7 +234,7 @@ function (nock) {
 var result = 
 nock('http://management.azure.com:443')
   .filteringRequestBody(function (path) { return '*';})
-.put('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-dns-zone/providers/Microsoft.Network/dnszones/example1.com/CNAME/tc?api-version=2015-05-04-preview', '*')
+.put('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-dns-zone/providers/Microsoft.Network/dnsZones/example1.com/CNAME/tc?api-version=2016-04-01', '*')
   .reply(201, "{\"id\":\"\\/subscriptions\\/2c224e7e-3ef5-431d-a57b-e71f4662e3a6\\/resourceGroups\\/xplat-test-dns-zone\\/providers\\/Microsoft.Network\\/dnszones\\/example1.com\\/CNAME\\/tc\",\"name\":\"tc\",\"type\":\"Microsoft.Network\\/dnszones\\/CNAME\",\"etag\":\"cc80fc1e-e9ca-450c-85a5-8e7be23f2a98\",\"location\":\"global\",\"properties\":{\"TTL\":3600,\"CNAMERecord\":{\"cname\":\"test.example1.com.\"}}}", { 'cache-control': 'private',
   'content-length': '357',
   'content-type': 'application/json; charset=utf-8',
@@ -255,7 +255,7 @@ function (nock) {
 var result = 
 nock('https://management.azure.com:443')
   .filteringRequestBody(function (path) { return '*';})
-.put('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-dns-zone/providers/Microsoft.Network/dnszones/example1.com/CNAME/tc?api-version=2015-05-04-preview', '*')
+.put('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-dns-zone/providers/Microsoft.Network/dnsZones/example1.com/CNAME/tc?api-version=2016-04-01', '*')
   .reply(201, "{\"id\":\"\\/subscriptions\\/2c224e7e-3ef5-431d-a57b-e71f4662e3a6\\/resourceGroups\\/xplat-test-dns-zone\\/providers\\/Microsoft.Network\\/dnszones\\/example1.com\\/CNAME\\/tc\",\"name\":\"tc\",\"type\":\"Microsoft.Network\\/dnszones\\/CNAME\",\"etag\":\"cc80fc1e-e9ca-450c-85a5-8e7be23f2a98\",\"location\":\"global\",\"properties\":{\"TTL\":3600,\"CNAMERecord\":{\"cname\":\"test.example1.com.\"}}}", { 'cache-control': 'private',
   'content-length': '357',
   'content-type': 'application/json; charset=utf-8',
@@ -276,7 +276,7 @@ function (nock) {
 var result = 
 nock('http://management.azure.com:443')
   .filteringRequestBody(function (path) { return '*';})
-.put('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-dns-zone/providers/Microsoft.Network/dnszones/example1.com/A/@?api-version=2015-05-04-preview', '*')
+.put('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-dns-zone/providers/Microsoft.Network/dnsZones/example1.com/A/@?api-version=2016-04-01', '*')
   .reply(201, "{\"id\":\"\\/subscriptions\\/2c224e7e-3ef5-431d-a57b-e71f4662e3a6\\/resourceGroups\\/xplat-test-dns-zone\\/providers\\/Microsoft.Network\\/dnszones\\/example1.com\\/A\\/@\",\"name\":\"@\",\"type\":\"Microsoft.Network\\/dnszones\\/A\",\"etag\":\"96cda973-3c42-4188-a047-15841b6590f2\",\"location\":\"global\",\"properties\":{\"TTL\":5,\"ARecords\":[{\"ipv4Address\":\"1.2.3.4\"}]}}", { 'cache-control': 'private',
   'content-length': '338',
   'content-type': 'application/json; charset=utf-8',
@@ -297,7 +297,7 @@ function (nock) {
 var result = 
 nock('https://management.azure.com:443')
   .filteringRequestBody(function (path) { return '*';})
-.put('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-dns-zone/providers/Microsoft.Network/dnszones/example1.com/A/@?api-version=2015-05-04-preview', '*')
+.put('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-dns-zone/providers/Microsoft.Network/dnsZones/example1.com/A/@?api-version=2016-04-01', '*')
   .reply(201, "{\"id\":\"\\/subscriptions\\/2c224e7e-3ef5-431d-a57b-e71f4662e3a6\\/resourceGroups\\/xplat-test-dns-zone\\/providers\\/Microsoft.Network\\/dnszones\\/example1.com\\/A\\/@\",\"name\":\"@\",\"type\":\"Microsoft.Network\\/dnszones\\/A\",\"etag\":\"96cda973-3c42-4188-a047-15841b6590f2\",\"location\":\"global\",\"properties\":{\"TTL\":5,\"ARecords\":[{\"ipv4Address\":\"1.2.3.4\"}]}}", { 'cache-control': 'private',
   'content-length': '338',
   'content-type': 'application/json; charset=utf-8',
@@ -318,7 +318,7 @@ function (nock) {
 var result = 
 nock('http://management.azure.com:443')
   .filteringRequestBody(function (path) { return '*';})
-.put('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-dns-zone/providers/Microsoft.Network/dnszones/example1.com/A/www?api-version=2015-05-04-preview', '*')
+.put('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-dns-zone/providers/Microsoft.Network/dnsZones/example1.com/A/www?api-version=2016-04-01', '*')
   .reply(201, "{\"id\":\"\\/subscriptions\\/2c224e7e-3ef5-431d-a57b-e71f4662e3a6\\/resourceGroups\\/xplat-test-dns-zone\\/providers\\/Microsoft.Network\\/dnszones\\/example1.com\\/A\\/www\",\"name\":\"www\",\"type\":\"Microsoft.Network\\/dnszones\\/A\",\"etag\":\"1bae7bb4-bcda-4fcd-9433-e3d113642e35\",\"location\":\"global\",\"properties\":{\"TTL\":5,\"ARecords\":[{\"ipv4Address\":\"2.3.4.5\"}]}}", { 'cache-control': 'private',
   'content-length': '342',
   'content-type': 'application/json; charset=utf-8',
@@ -339,7 +339,7 @@ function (nock) {
 var result = 
 nock('https://management.azure.com:443')
   .filteringRequestBody(function (path) { return '*';})
-.put('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-dns-zone/providers/Microsoft.Network/dnszones/example1.com/A/www?api-version=2015-05-04-preview', '*')
+.put('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-dns-zone/providers/Microsoft.Network/dnsZones/example1.com/A/www?api-version=2016-04-01', '*')
   .reply(201, "{\"id\":\"\\/subscriptions\\/2c224e7e-3ef5-431d-a57b-e71f4662e3a6\\/resourceGroups\\/xplat-test-dns-zone\\/providers\\/Microsoft.Network\\/dnszones\\/example1.com\\/A\\/www\",\"name\":\"www\",\"type\":\"Microsoft.Network\\/dnszones\\/A\",\"etag\":\"1bae7bb4-bcda-4fcd-9433-e3d113642e35\",\"location\":\"global\",\"properties\":{\"TTL\":5,\"ARecords\":[{\"ipv4Address\":\"2.3.4.5\"}]}}", { 'cache-control': 'private',
   'content-length': '342',
   'content-type': 'application/json; charset=utf-8',
@@ -360,7 +360,7 @@ function (nock) {
 var result = 
 nock('http://management.azure.com:443')
   .filteringRequestBody(function (path) { return '*';})
-.put('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-dns-zone/providers/Microsoft.Network/dnszones/example1.com/CNAME/test-cname?api-version=2015-05-04-preview', '*')
+.put('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-dns-zone/providers/Microsoft.Network/dnsZones/example1.com/CNAME/test-cname?api-version=2016-04-01', '*')
   .reply(201, "{\"id\":\"\\/subscriptions\\/2c224e7e-3ef5-431d-a57b-e71f4662e3a6\\/resourceGroups\\/xplat-test-dns-zone\\/providers\\/Microsoft.Network\\/dnszones\\/example1.com\\/CNAME\\/test-cname\",\"name\":\"test-cname\",\"type\":\"Microsoft.Network\\/dnszones\\/CNAME\",\"etag\":\"fba86530-6664-4710-9a61-70c5a118eff0\",\"location\":\"global\",\"properties\":{\"TTL\":5,\"CNAMERecord\":{\"cname\":\"r1.example1.com.\"}}}", { 'cache-control': 'private',
   'content-length': '368',
   'content-type': 'application/json; charset=utf-8',
@@ -381,7 +381,7 @@ function (nock) {
 var result = 
 nock('https://management.azure.com:443')
   .filteringRequestBody(function (path) { return '*';})
-.put('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-dns-zone/providers/Microsoft.Network/dnszones/example1.com/CNAME/test-cname?api-version=2015-05-04-preview', '*')
+.put('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-dns-zone/providers/Microsoft.Network/dnsZones/example1.com/CNAME/test-cname?api-version=2016-04-01', '*')
   .reply(201, "{\"id\":\"\\/subscriptions\\/2c224e7e-3ef5-431d-a57b-e71f4662e3a6\\/resourceGroups\\/xplat-test-dns-zone\\/providers\\/Microsoft.Network\\/dnszones\\/example1.com\\/CNAME\\/test-cname\",\"name\":\"test-cname\",\"type\":\"Microsoft.Network\\/dnszones\\/CNAME\",\"etag\":\"fba86530-6664-4710-9a61-70c5a118eff0\",\"location\":\"global\",\"properties\":{\"TTL\":5,\"CNAMERecord\":{\"cname\":\"r1.example1.com.\"}}}", { 'cache-control': 'private',
   'content-length': '368',
   'content-type': 'application/json; charset=utf-8',
@@ -402,7 +402,7 @@ function (nock) {
 var result = 
 nock('http://management.azure.com:443')
   .filteringRequestBody(function (path) { return '*';})
-.put('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-dns-zone/providers/Microsoft.Network/dnszones/example1.com/MX/test-mx?api-version=2015-05-04-preview', '*')
+.put('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-dns-zone/providers/Microsoft.Network/dnsZones/example1.com/MX/test-mx?api-version=2016-04-01', '*')
   .reply(201, "{\"id\":\"\\/subscriptions\\/2c224e7e-3ef5-431d-a57b-e71f4662e3a6\\/resourceGroups\\/xplat-test-dns-zone\\/providers\\/Microsoft.Network\\/dnszones\\/example1.com\\/MX\\/test-mx\",\"name\":\"test-mx\",\"type\":\"Microsoft.Network\\/dnszones\\/MX\",\"etag\":\"ff792aad-2753-48e9-a8de-f86ab449eb29\",\"location\":\"global\",\"properties\":{\"TTL\":5,\"MXRecords\":[{\"exchange\":\"m1.example1.com.\",\"preference\":10}]}}", { 'cache-control': 'private',
   'content-length': '375',
   'content-type': 'application/json; charset=utf-8',
@@ -423,7 +423,7 @@ function (nock) {
 var result = 
 nock('https://management.azure.com:443')
   .filteringRequestBody(function (path) { return '*';})
-.put('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-dns-zone/providers/Microsoft.Network/dnszones/example1.com/MX/test-mx?api-version=2015-05-04-preview', '*')
+.put('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-dns-zone/providers/Microsoft.Network/dnsZones/example1.com/MX/test-mx?api-version=2016-04-01', '*')
   .reply(201, "{\"id\":\"\\/subscriptions\\/2c224e7e-3ef5-431d-a57b-e71f4662e3a6\\/resourceGroups\\/xplat-test-dns-zone\\/providers\\/Microsoft.Network\\/dnszones\\/example1.com\\/MX\\/test-mx\",\"name\":\"test-mx\",\"type\":\"Microsoft.Network\\/dnszones\\/MX\",\"etag\":\"ff792aad-2753-48e9-a8de-f86ab449eb29\",\"location\":\"global\",\"properties\":{\"TTL\":5,\"MXRecords\":[{\"exchange\":\"m1.example1.com.\",\"preference\":10}]}}", { 'cache-control': 'private',
   'content-length': '375',
   'content-type': 'application/json; charset=utf-8',
@@ -444,7 +444,7 @@ function (nock) {
 var result = 
 nock('http://management.azure.com:443')
   .filteringRequestBody(function (path) { return '*';})
-.put('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-dns-zone/providers/Microsoft.Network/dnszones/example1.com/SRV/test-srv?api-version=2015-05-04-preview', '*')
+.put('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-dns-zone/providers/Microsoft.Network/dnsZones/example1.com/SRV/test-srv?api-version=2016-04-01', '*')
   .reply(201, "{\"id\":\"\\/subscriptions\\/2c224e7e-3ef5-431d-a57b-e71f4662e3a6\\/resourceGroups\\/xplat-test-dns-zone\\/providers\\/Microsoft.Network\\/dnszones\\/example1.com\\/SRV\\/test-srv\",\"name\":\"test-srv\",\"type\":\"Microsoft.Network\\/dnszones\\/SRV\",\"etag\":\"4553f545-0e1f-40bc-99c8-71340d45062b\",\"location\":\"global\",\"properties\":{\"TTL\":5,\"SRVRecords\":[{\"port\":3,\"priority\":1,\"target\":\"srv1.example1.com.\",\"weight\":2}]}}", { 'cache-control': 'private',
   'content-length': '397',
   'content-type': 'application/json; charset=utf-8',
@@ -465,7 +465,7 @@ function (nock) {
 var result = 
 nock('https://management.azure.com:443')
   .filteringRequestBody(function (path) { return '*';})
-.put('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-dns-zone/providers/Microsoft.Network/dnszones/example1.com/SRV/test-srv?api-version=2015-05-04-preview', '*')
+.put('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-dns-zone/providers/Microsoft.Network/dnsZones/example1.com/SRV/test-srv?api-version=2016-04-01', '*')
   .reply(201, "{\"id\":\"\\/subscriptions\\/2c224e7e-3ef5-431d-a57b-e71f4662e3a6\\/resourceGroups\\/xplat-test-dns-zone\\/providers\\/Microsoft.Network\\/dnszones\\/example1.com\\/SRV\\/test-srv\",\"name\":\"test-srv\",\"type\":\"Microsoft.Network\\/dnszones\\/SRV\",\"etag\":\"4553f545-0e1f-40bc-99c8-71340d45062b\",\"location\":\"global\",\"properties\":{\"TTL\":5,\"SRVRecords\":[{\"port\":3,\"priority\":1,\"target\":\"srv1.example1.com.\",\"weight\":2}]}}", { 'cache-control': 'private',
   'content-length': '397',
   'content-type': 'application/json; charset=utf-8',
@@ -486,7 +486,7 @@ function (nock) {
 var result = 
 nock('http://management.azure.com:443')
   .filteringRequestBody(function (path) { return '*';})
-.put('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-dns-zone/providers/Microsoft.Network/dnszones/example1.com/CNAME/test-cname2?api-version=2015-05-04-preview', '*')
+.put('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-dns-zone/providers/Microsoft.Network/dnsZones/example1.com/CNAME/test-cname2?api-version=2016-04-01', '*')
   .reply(201, "{\"id\":\"\\/subscriptions\\/2c224e7e-3ef5-431d-a57b-e71f4662e3a6\\/resourceGroups\\/xplat-test-dns-zone\\/providers\\/Microsoft.Network\\/dnszones\\/example1.com\\/CNAME\\/test-cname2\",\"name\":\"test-cname2\",\"type\":\"Microsoft.Network\\/dnszones\\/CNAME\",\"etag\":\"830f7145-6379-4685-912a-78656d1037f0\",\"location\":\"global\",\"properties\":{\"TTL\":5,\"CNAMERecord\":{\"cname\":\"r1.\"}}}", { 'cache-control': 'private',
   'content-length': '357',
   'content-type': 'application/json; charset=utf-8',
@@ -507,7 +507,7 @@ function (nock) {
 var result = 
 nock('https://management.azure.com:443')
   .filteringRequestBody(function (path) { return '*';})
-.put('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-dns-zone/providers/Microsoft.Network/dnszones/example1.com/CNAME/test-cname2?api-version=2015-05-04-preview', '*')
+.put('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-dns-zone/providers/Microsoft.Network/dnsZones/example1.com/CNAME/test-cname2?api-version=2016-04-01', '*')
   .reply(201, "{\"id\":\"\\/subscriptions\\/2c224e7e-3ef5-431d-a57b-e71f4662e3a6\\/resourceGroups\\/xplat-test-dns-zone\\/providers\\/Microsoft.Network\\/dnszones\\/example1.com\\/CNAME\\/test-cname2\",\"name\":\"test-cname2\",\"type\":\"Microsoft.Network\\/dnszones\\/CNAME\",\"etag\":\"830f7145-6379-4685-912a-78656d1037f0\",\"location\":\"global\",\"properties\":{\"TTL\":5,\"CNAMERecord\":{\"cname\":\"r1.\"}}}", { 'cache-control': 'private',
   'content-length': '357',
   'content-type': 'application/json; charset=utf-8',
@@ -528,7 +528,7 @@ function (nock) {
 var result = 
 nock('http://management.azure.com:443')
   .filteringRequestBody(function (path) { return '*';})
-.put('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-dns-zone/providers/Microsoft.Network/dnszones/example1.com/MX/test-mx2?api-version=2015-05-04-preview', '*')
+.put('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-dns-zone/providers/Microsoft.Network/dnsZones/example1.com/MX/test-mx2?api-version=2016-04-01', '*')
   .reply(201, "{\"id\":\"\\/subscriptions\\/2c224e7e-3ef5-431d-a57b-e71f4662e3a6\\/resourceGroups\\/xplat-test-dns-zone\\/providers\\/Microsoft.Network\\/dnszones\\/example1.com\\/MX\\/test-mx2\",\"name\":\"test-mx2\",\"type\":\"Microsoft.Network\\/dnszones\\/MX\",\"etag\":\"0271fa46-9fcf-42f8-bae7-08171dfdd859\",\"location\":\"global\",\"properties\":{\"TTL\":5,\"MXRecords\":[{\"exchange\":\"m1.\",\"preference\":10}]}}", { 'cache-control': 'private',
   'content-length': '364',
   'content-type': 'application/json; charset=utf-8',
@@ -549,7 +549,7 @@ function (nock) {
 var result = 
 nock('https://management.azure.com:443')
   .filteringRequestBody(function (path) { return '*';})
-.put('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-dns-zone/providers/Microsoft.Network/dnszones/example1.com/MX/test-mx2?api-version=2015-05-04-preview', '*')
+.put('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-dns-zone/providers/Microsoft.Network/dnsZones/example1.com/MX/test-mx2?api-version=2016-04-01', '*')
   .reply(201, "{\"id\":\"\\/subscriptions\\/2c224e7e-3ef5-431d-a57b-e71f4662e3a6\\/resourceGroups\\/xplat-test-dns-zone\\/providers\\/Microsoft.Network\\/dnszones\\/example1.com\\/MX\\/test-mx2\",\"name\":\"test-mx2\",\"type\":\"Microsoft.Network\\/dnszones\\/MX\",\"etag\":\"0271fa46-9fcf-42f8-bae7-08171dfdd859\",\"location\":\"global\",\"properties\":{\"TTL\":5,\"MXRecords\":[{\"exchange\":\"m1.\",\"preference\":10}]}}", { 'cache-control': 'private',
   'content-length': '364',
   'content-type': 'application/json; charset=utf-8',
@@ -570,7 +570,7 @@ function (nock) {
 var result = 
 nock('http://management.azure.com:443')
   .filteringRequestBody(function (path) { return '*';})
-.put('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-dns-zone/providers/Microsoft.Network/dnszones/example1.com/SRV/test-srv2?api-version=2015-05-04-preview', '*')
+.put('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-dns-zone/providers/Microsoft.Network/dnsZones/example1.com/SRV/test-srv2?api-version=2016-04-01', '*')
   .reply(201, "{\"id\":\"\\/subscriptions\\/2c224e7e-3ef5-431d-a57b-e71f4662e3a6\\/resourceGroups\\/xplat-test-dns-zone\\/providers\\/Microsoft.Network\\/dnszones\\/example1.com\\/SRV\\/test-srv2\",\"name\":\"test-srv2\",\"type\":\"Microsoft.Network\\/dnszones\\/SRV\",\"etag\":\"39972dc9-625d-4876-8b32-c812ad5bf19a\",\"location\":\"global\",\"properties\":{\"TTL\":5,\"SRVRecords\":[{\"port\":3,\"priority\":1,\"target\":\"srv1.\",\"weight\":2}]}}", { 'cache-control': 'private',
   'content-length': '386',
   'content-type': 'application/json; charset=utf-8',
@@ -591,7 +591,7 @@ function (nock) {
 var result = 
 nock('https://management.azure.com:443')
   .filteringRequestBody(function (path) { return '*';})
-.put('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-dns-zone/providers/Microsoft.Network/dnszones/example1.com/SRV/test-srv2?api-version=2015-05-04-preview', '*')
+.put('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-dns-zone/providers/Microsoft.Network/dnsZones/example1.com/SRV/test-srv2?api-version=2016-04-01', '*')
   .reply(201, "{\"id\":\"\\/subscriptions\\/2c224e7e-3ef5-431d-a57b-e71f4662e3a6\\/resourceGroups\\/xplat-test-dns-zone\\/providers\\/Microsoft.Network\\/dnszones\\/example1.com\\/SRV\\/test-srv2\",\"name\":\"test-srv2\",\"type\":\"Microsoft.Network\\/dnszones\\/SRV\",\"etag\":\"39972dc9-625d-4876-8b32-c812ad5bf19a\",\"location\":\"global\",\"properties\":{\"TTL\":5,\"SRVRecords\":[{\"port\":3,\"priority\":1,\"target\":\"srv1.\",\"weight\":2}]}}", { 'cache-control': 'private',
   'content-length': '386',
   'content-type': 'application/json; charset=utf-8',
@@ -612,7 +612,7 @@ function (nock) {
 var result = 
 nock('http://management.azure.com:443')
   .filteringRequestBody(function (path) { return '*';})
-.put('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-dns-zone/providers/Microsoft.Network/dnszones/example1.com/A/subzone?api-version=2015-05-04-preview', '*')
+.put('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-dns-zone/providers/Microsoft.Network/dnsZones/example1.com/A/subzone?api-version=2016-04-01', '*')
   .reply(201, "{\"id\":\"\\/subscriptions\\/2c224e7e-3ef5-431d-a57b-e71f4662e3a6\\/resourceGroups\\/xplat-test-dns-zone\\/providers\\/Microsoft.Network\\/dnszones\\/example1.com\\/A\\/subzone\",\"name\":\"subzone\",\"type\":\"Microsoft.Network\\/dnszones\\/A\",\"etag\":\"844fbd83-0a53-4ec3-ade7-fda0d34ae790\",\"location\":\"global\",\"properties\":{\"TTL\":5,\"ARecords\":[{\"ipv4Address\":\"3.4.5.6\"}]}}", { 'cache-control': 'private',
   'content-length': '350',
   'content-type': 'application/json; charset=utf-8',
@@ -633,7 +633,7 @@ function (nock) {
 var result = 
 nock('https://management.azure.com:443')
   .filteringRequestBody(function (path) { return '*';})
-.put('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-dns-zone/providers/Microsoft.Network/dnszones/example1.com/A/subzone?api-version=2015-05-04-preview', '*')
+.put('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-dns-zone/providers/Microsoft.Network/dnsZones/example1.com/A/subzone?api-version=2016-04-01', '*')
   .reply(201, "{\"id\":\"\\/subscriptions\\/2c224e7e-3ef5-431d-a57b-e71f4662e3a6\\/resourceGroups\\/xplat-test-dns-zone\\/providers\\/Microsoft.Network\\/dnszones\\/example1.com\\/A\\/subzone\",\"name\":\"subzone\",\"type\":\"Microsoft.Network\\/dnszones\\/A\",\"etag\":\"844fbd83-0a53-4ec3-ade7-fda0d34ae790\",\"location\":\"global\",\"properties\":{\"TTL\":5,\"ARecords\":[{\"ipv4Address\":\"3.4.5.6\"}]}}", { 'cache-control': 'private',
   'content-length': '350',
   'content-type': 'application/json; charset=utf-8',
@@ -654,7 +654,7 @@ function (nock) {
 var result = 
 nock('http://management.azure.com:443')
   .filteringRequestBody(function (path) { return '*';})
-.put('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-dns-zone/providers/Microsoft.Network/dnszones/example1.com/A/www.subzone?api-version=2015-05-04-preview', '*')
+.put('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-dns-zone/providers/Microsoft.Network/dnsZones/example1.com/A/www.subzone?api-version=2016-04-01', '*')
   .reply(201, "{\"id\":\"\\/subscriptions\\/2c224e7e-3ef5-431d-a57b-e71f4662e3a6\\/resourceGroups\\/xplat-test-dns-zone\\/providers\\/Microsoft.Network\\/dnszones\\/example1.com\\/A\\/www.subzone\",\"name\":\"www.subzone\",\"type\":\"Microsoft.Network\\/dnszones\\/A\",\"etag\":\"47aeaaf0-90b7-447c-af29-10fac9b06c3a\",\"location\":\"global\",\"properties\":{\"TTL\":5,\"ARecords\":[{\"ipv4Address\":\"4.5.6.7\"}]}}", { 'cache-control': 'private',
   'content-length': '358',
   'content-type': 'application/json; charset=utf-8',
@@ -675,7 +675,7 @@ function (nock) {
 var result = 
 nock('https://management.azure.com:443')
   .filteringRequestBody(function (path) { return '*';})
-.put('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-dns-zone/providers/Microsoft.Network/dnszones/example1.com/A/www.subzone?api-version=2015-05-04-preview', '*')
+.put('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-dns-zone/providers/Microsoft.Network/dnsZones/example1.com/A/www.subzone?api-version=2016-04-01', '*')
   .reply(201, "{\"id\":\"\\/subscriptions\\/2c224e7e-3ef5-431d-a57b-e71f4662e3a6\\/resourceGroups\\/xplat-test-dns-zone\\/providers\\/Microsoft.Network\\/dnszones\\/example1.com\\/A\\/www.subzone\",\"name\":\"www.subzone\",\"type\":\"Microsoft.Network\\/dnszones\\/A\",\"etag\":\"47aeaaf0-90b7-447c-af29-10fac9b06c3a\",\"location\":\"global\",\"properties\":{\"TTL\":5,\"ARecords\":[{\"ipv4Address\":\"4.5.6.7\"}]}}", { 'cache-control': 'private',
   'content-length': '358',
   'content-type': 'application/json; charset=utf-8',
@@ -696,7 +696,7 @@ function (nock) {
 var result = 
 nock('http://management.azure.com:443')
   .filteringRequestBody(function (path) { return '*';})
-.put('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-dns-zone/providers/Microsoft.Network/dnszones/example1.com/CNAME/test-cname.subzone?api-version=2015-05-04-preview', '*')
+.put('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-dns-zone/providers/Microsoft.Network/dnsZones/example1.com/CNAME/test-cname.subzone?api-version=2016-04-01', '*')
   .reply(201, "{\"id\":\"\\/subscriptions\\/2c224e7e-3ef5-431d-a57b-e71f4662e3a6\\/resourceGroups\\/xplat-test-dns-zone\\/providers\\/Microsoft.Network\\/dnszones\\/example1.com\\/CNAME\\/test-cname.subzone\",\"name\":\"test-cname.subzone\",\"type\":\"Microsoft.Network\\/dnszones\\/CNAME\",\"etag\":\"00d48aaa-986c-4932-853a-fb95cac19e66\",\"location\":\"global\",\"properties\":{\"TTL\":5,\"CNAMERecord\":{\"cname\":\"r1.subzone.example1.com.\"}}}", { 'cache-control': 'private',
   'content-length': '392',
   'content-type': 'application/json; charset=utf-8',
@@ -717,7 +717,7 @@ function (nock) {
 var result = 
 nock('https://management.azure.com:443')
   .filteringRequestBody(function (path) { return '*';})
-.put('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-dns-zone/providers/Microsoft.Network/dnszones/example1.com/CNAME/test-cname.subzone?api-version=2015-05-04-preview', '*')
+.put('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-dns-zone/providers/Microsoft.Network/dnsZones/example1.com/CNAME/test-cname.subzone?api-version=2016-04-01', '*')
   .reply(201, "{\"id\":\"\\/subscriptions\\/2c224e7e-3ef5-431d-a57b-e71f4662e3a6\\/resourceGroups\\/xplat-test-dns-zone\\/providers\\/Microsoft.Network\\/dnszones\\/example1.com\\/CNAME\\/test-cname.subzone\",\"name\":\"test-cname.subzone\",\"type\":\"Microsoft.Network\\/dnszones\\/CNAME\",\"etag\":\"00d48aaa-986c-4932-853a-fb95cac19e66\",\"location\":\"global\",\"properties\":{\"TTL\":5,\"CNAMERecord\":{\"cname\":\"r1.subzone.example1.com.\"}}}", { 'cache-control': 'private',
   'content-length': '392',
   'content-type': 'application/json; charset=utf-8',
@@ -738,7 +738,7 @@ function (nock) {
 var result = 
 nock('http://management.azure.com:443')
   .filteringRequestBody(function (path) { return '*';})
-.put('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-dns-zone/providers/Microsoft.Network/dnszones/example1.com/CNAME/record?api-version=2015-05-04-preview', '*')
+.put('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-dns-zone/providers/Microsoft.Network/dnsZones/example1.com/CNAME/record?api-version=2016-04-01', '*')
   .reply(201, "{\"id\":\"\\/subscriptions\\/2c224e7e-3ef5-431d-a57b-e71f4662e3a6\\/resourceGroups\\/xplat-test-dns-zone\\/providers\\/Microsoft.Network\\/dnszones\\/example1.com\\/CNAME\\/record\",\"name\":\"record\",\"type\":\"Microsoft.Network\\/dnszones\\/CNAME\",\"etag\":\"1fc12363-2bee-4efb-b21c-9d4e919ed359\",\"location\":\"global\",\"properties\":{\"TTL\":5,\"CNAMERecord\":{\"cname\":\"bar.foo.com.\"}}}", { 'cache-control': 'private',
   'content-length': '356',
   'content-type': 'application/json; charset=utf-8',
@@ -759,7 +759,7 @@ function (nock) {
 var result = 
 nock('https://management.azure.com:443')
   .filteringRequestBody(function (path) { return '*';})
-.put('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-dns-zone/providers/Microsoft.Network/dnszones/example1.com/CNAME/record?api-version=2015-05-04-preview', '*')
+.put('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-dns-zone/providers/Microsoft.Network/dnsZones/example1.com/CNAME/record?api-version=2016-04-01', '*')
   .reply(201, "{\"id\":\"\\/subscriptions\\/2c224e7e-3ef5-431d-a57b-e71f4662e3a6\\/resourceGroups\\/xplat-test-dns-zone\\/providers\\/Microsoft.Network\\/dnszones\\/example1.com\\/CNAME\\/record\",\"name\":\"record\",\"type\":\"Microsoft.Network\\/dnszones\\/CNAME\",\"etag\":\"1fc12363-2bee-4efb-b21c-9d4e919ed359\",\"location\":\"global\",\"properties\":{\"TTL\":5,\"CNAMERecord\":{\"cname\":\"bar.foo.com.\"}}}", { 'cache-control': 'private',
   'content-length': '356',
   'content-type': 'application/json; charset=utf-8',
@@ -780,7 +780,7 @@ function (nock) {
 var result = 
 nock('http://management.azure.com:443')
   .filteringRequestBody(function (path) { return '*';})
-.put('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-dns-zone/providers/Microsoft.Network/dnszones/example1.com/A/test?api-version=2015-05-04-preview', '*')
+.put('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-dns-zone/providers/Microsoft.Network/dnsZones/example1.com/A/test?api-version=2016-04-01', '*')
   .reply(201, "{\"id\":\"\\/subscriptions\\/2c224e7e-3ef5-431d-a57b-e71f4662e3a6\\/resourceGroups\\/xplat-test-dns-zone\\/providers\\/Microsoft.Network\\/dnszones\\/example1.com\\/A\\/test\",\"name\":\"test\",\"type\":\"Microsoft.Network\\/dnszones\\/A\",\"etag\":\"c25064e8-a7dc-49f5-ae32-16df2d77e4aa\",\"location\":\"global\",\"properties\":{\"TTL\":5,\"ARecords\":[{\"ipv4Address\":\"7.8.9.0\"}]}}", { 'cache-control': 'private',
   'content-length': '344',
   'content-type': 'application/json; charset=utf-8',
@@ -801,7 +801,7 @@ function (nock) {
 var result = 
 nock('https://management.azure.com:443')
   .filteringRequestBody(function (path) { return '*';})
-.put('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-dns-zone/providers/Microsoft.Network/dnszones/example1.com/A/test?api-version=2015-05-04-preview', '*')
+.put('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-dns-zone/providers/Microsoft.Network/dnsZones/example1.com/A/test?api-version=2016-04-01', '*')
   .reply(201, "{\"id\":\"\\/subscriptions\\/2c224e7e-3ef5-431d-a57b-e71f4662e3a6\\/resourceGroups\\/xplat-test-dns-zone\\/providers\\/Microsoft.Network\\/dnszones\\/example1.com\\/A\\/test\",\"name\":\"test\",\"type\":\"Microsoft.Network\\/dnszones\\/A\",\"etag\":\"c25064e8-a7dc-49f5-ae32-16df2d77e4aa\",\"location\":\"global\",\"properties\":{\"TTL\":5,\"ARecords\":[{\"ipv4Address\":\"7.8.9.0\"}]}}", { 'cache-control': 'private',
   'content-length': '344',
   'content-type': 'application/json; charset=utf-8',
@@ -821,7 +821,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-dns-zone/providers/Microsoft.Network/dnszones/example1.com/recordsets?api-version=2015-05-04-preview')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-dns-zone/providers/Microsoft.Network/dnsZones/example1.com/recordsets?api-version=2016-04-01')
   .reply(200, "{\"value\":[{\"id\":\"\\/subscriptions\\/2c224e7e-3ef5-431d-a57b-e71f4662e3a6\\/resourceGroups\\/xplat-test-dns-zone\\/providers\\/Microsoft.Network\\/dnszones\\/example1.com\\/SOA\\/@\",\"name\":\"@\",\"type\":\"Microsoft.Network\\/dnszones\",\"etag\":\"212263b7-26e0-4342-8a74-aacf917ff2f2\",\"location\":\"global\",\"tags\":{},\"properties\":{\"fqdn\":\"@.example1.com\",\"TTL\":3600,\"SOARecord\":{\"email\":\"hostmaster.example1.com.\",\"expireTime\":1814400,\"host\":\"ns1-07.azure-dns.com.\",\"minimumTTL\":10800,\"refreshTime\":43200,\"retryTime\":900}}},{\"id\":\"\\/subscriptions\\/2c224e7e-3ef5-431d-a57b-e71f4662e3a6\\/resourceGroups\\/xplat-test-dns-zone\\/providers\\/Microsoft.Network\\/dnszones\\/example1.com\\/A\\/@\",\"name\":\"@\",\"type\":\"Microsoft.Network\\/dnszones\\/A\",\"etag\":\"96cda973-3c42-4188-a047-15841b6590f2\",\"location\":\"global\",\"properties\":{\"fqdn\":\"@.example1.com\",\"TTL\":5,\"ARecords\":[{\"ipv4Address\":\"1.2.3.4\"}]}},{\"id\":\"\\/subscriptions\\/2c224e7e-3ef5-431d-a57b-e71f4662e3a6\\/resourceGroups\\/xplat-test-dns-zone\\/providers\\/Microsoft.Network\\/dnszones\\/example1.com\\/NS\\/@\",\"name\":\"@\",\"type\":\"Microsoft.Network\\/dnszones\",\"etag\":\"252a10c5-6d75-473f-b5ea-d85eb26258ec\",\"location\":\"global\",\"properties\":{\"fqdn\":\"@.example1.com\",\"TTL\":3600,\"NSRecords\":[{\"nsdname\":\"ns1-07.azure-dns.com.\"},{\"nsdname\":\"ns2-07.azure-dns.net.\"},{\"nsdname\":\"ns3-07.azure-dns.org.\"},{\"nsdname\":\"ns4-07.azure-dns.info.\"}]}},{\"id\":\"\\/subscriptions\\/2c224e7e-3ef5-431d-a57b-e71f4662e3a6\\/resourceGroups\\/xplat-test-dns-zone\\/providers\\/Microsoft.Network\\/dnszones\\/example1.com\\/A\\/default\",\"name\":\"default\",\"type\":\"Microsoft.Network\\/dnszones\\/A\",\"etag\":\"f6952eb3-2e4d-44d4-ac2b-990ea0915af0\",\"location\":\"global\",\"properties\":{\"fqdn\":\"default.example1.com\",\"TTL\":3600,\"ARecords\":[{\"ipv4Address\":\"0.1.2.3\"}]}},{\"id\":\"\\/subscriptions\\/2c224e7e-3ef5-431d-a57b-e71f4662e3a6\\/resourceGroups\\/xplat-test-dns-zone\\/providers\\/Microsoft.Network\\/dnszones\\/example1.com\\/CNAME\\/record\",\"name\":\"record\",\"type\":\"Microsoft.Network\\/dnszones\\/CNAME\",\"etag\":\"1fc12363-2bee-4efb-b21c-9d4e919ed359\",\"location\":\"global\",\"properties\":{\"fqdn\":\"record.example1.com\",\"TTL\":5,\"CNAMERecord\":{\"cname\":\"bar.foo.com.\"}}},{\"id\":\"\\/subscriptions\\/2c224e7e-3ef5-431d-a57b-e71f4662e3a6\\/resourceGroups\\/xplat-test-dns-zone\\/providers\\/Microsoft.Network\\/dnszones\\/example1.com\\/A\\/subzone\",\"name\":\"subzone\",\"type\":\"Microsoft.Network\\/dnszones\\/A\",\"etag\":\"844fbd83-0a53-4ec3-ade7-fda0d34ae790\",\"location\":\"global\",\"properties\":{\"fqdn\":\"subzone.example1.com\",\"TTL\":5,\"ARecords\":[{\"ipv4Address\":\"3.4.5.6\"}]}},{\"id\":\"\\/subscriptions\\/2c224e7e-3ef5-431d-a57b-e71f4662e3a6\\/resourceGroups\\/xplat-test-dns-zone\\/providers\\/Microsoft.Network\\/dnszones\\/example1.com\\/CNAME\\/test-cname.subzone\",\"name\":\"test-cname.subzone\",\"type\":\"Microsoft.Network\\/dnszones\\/CNAME\",\"etag\":\"00d48aaa-986c-4932-853a-fb95cac19e66\",\"location\":\"global\",\"properties\":{\"fqdn\":\"test-cname.subzone.example1.com\",\"TTL\":5,\"CNAMERecord\":{\"cname\":\"r1.subzone.example1.com.\"}}},{\"id\":\"\\/subscriptions\\/2c224e7e-3ef5-431d-a57b-e71f4662e3a6\\/resourceGroups\\/xplat-test-dns-zone\\/providers\\/Microsoft.Network\\/dnszones\\/example1.com\\/A\\/www.subzone\",\"name\":\"www.subzone\",\"type\":\"Microsoft.Network\\/dnszones\\/A\",\"etag\":\"47aeaaf0-90b7-447c-af29-10fac9b06c3a\",\"location\":\"global\",\"properties\":{\"fqdn\":\"www.subzone.example1.com\",\"TTL\":5,\"ARecords\":[{\"ipv4Address\":\"4.5.6.7\"}]}},{\"id\":\"\\/subscriptions\\/2c224e7e-3ef5-431d-a57b-e71f4662e3a6\\/resourceGroups\\/xplat-test-dns-zone\\/providers\\/Microsoft.Network\\/dnszones\\/example1.com\\/CNAME\\/tc\",\"name\":\"tc\",\"type\":\"Microsoft.Network\\/dnszones\\/CNAME\",\"etag\":\"cc80fc1e-e9ca-450c-85a5-8e7be23f2a98\",\"location\":\"global\",\"properties\":{\"fqdn\":\"tc.example1.com\",\"TTL\":3600,\"CNAMERecord\":{\"cname\":\"test.example1.com.\"}}},{\"id\":\"\\/subscriptions\\/2c224e7e-3ef5-431d-a57b-e71f4662e3a6\\/resourceGroups\\/xplat-test-dns-zone\\/providers\\/Microsoft.Network\\/dnszones\\/example1.com\\/A\\/test\",\"name\":\"test\",\"type\":\"Microsoft.Network\\/dnszones\\/A\",\"etag\":\"c25064e8-a7dc-49f5-ae32-16df2d77e4aa\",\"location\":\"global\",\"properties\":{\"fqdn\":\"test.example1.com\",\"TTL\":5,\"ARecords\":[{\"ipv4Address\":\"7.8.9.0\"}]}},{\"id\":\"\\/subscriptions\\/2c224e7e-3ef5-431d-a57b-e71f4662e3a6\\/resourceGroups\\/xplat-test-dns-zone\\/providers\\/Microsoft.Network\\/dnszones\\/example1.com\\/CNAME\\/test-cname\",\"name\":\"test-cname\",\"type\":\"Microsoft.Network\\/dnszones\\/CNAME\",\"etag\":\"fba86530-6664-4710-9a61-70c5a118eff0\",\"location\":\"global\",\"properties\":{\"fqdn\":\"test-cname.example1.com\",\"TTL\":5,\"CNAMERecord\":{\"cname\":\"r1.example1.com.\"}}},{\"id\":\"\\/subscriptions\\/2c224e7e-3ef5-431d-a57b-e71f4662e3a6\\/resourceGroups\\/xplat-test-dns-zone\\/providers\\/Microsoft.Network\\/dnszones\\/example1.com\\/CNAME\\/test-cname2\",\"name\":\"test-cname2\",\"type\":\"Microsoft.Network\\/dnszones\\/CNAME\",\"etag\":\"830f7145-6379-4685-912a-78656d1037f0\",\"location\":\"global\",\"properties\":{\"fqdn\":\"test-cname2.example1.com\",\"TTL\":5,\"CNAMERecord\":{\"cname\":\"r1.\"}}},{\"id\":\"\\/subscriptions\\/2c224e7e-3ef5-431d-a57b-e71f4662e3a6\\/resourceGroups\\/xplat-test-dns-zone\\/providers\\/Microsoft.Network\\/dnszones\\/example1.com\\/MX\\/test-mx\",\"name\":\"test-mx\",\"type\":\"Microsoft.Network\\/dnszones\\/MX\",\"etag\":\"ff792aad-2753-48e9-a8de-f86ab449eb29\",\"location\":\"global\",\"properties\":{\"fqdn\":\"test-mx.example1.com\",\"TTL\":5,\"MXRecords\":[{\"exchange\":\"m1.example1.com.\",\"preference\":10}]}},{\"id\":\"\\/subscriptions\\/2c224e7e-3ef5-431d-a57b-e71f4662e3a6\\/resourceGroups\\/xplat-test-dns-zone\\/providers\\/Microsoft.Network\\/dnszones\\/example1.com\\/MX\\/test-mx2\",\"name\":\"test-mx2\",\"type\":\"Microsoft.Network\\/dnszones\\/MX\",\"etag\":\"0271fa46-9fcf-42f8-bae7-08171dfdd859\",\"location\":\"global\",\"properties\":{\"fqdn\":\"test-mx2.example1.com\",\"TTL\":5,\"MXRecords\":[{\"exchange\":\"m1.\",\"preference\":10}]}},{\"id\":\"\\/subscriptions\\/2c224e7e-3ef5-431d-a57b-e71f4662e3a6\\/resourceGroups\\/xplat-test-dns-zone\\/providers\\/Microsoft.Network\\/dnszones\\/example1.com\\/SRV\\/test-srv\",\"name\":\"test-srv\",\"type\":\"Microsoft.Network\\/dnszones\\/SRV\",\"etag\":\"4553f545-0e1f-40bc-99c8-71340d45062b\",\"location\":\"global\",\"properties\":{\"fqdn\":\"test-srv.example1.com\",\"TTL\":5,\"SRVRecords\":[{\"port\":3,\"priority\":1,\"target\":\"srv1.example1.com.\",\"weight\":2}]}},{\"id\":\"\\/subscriptions\\/2c224e7e-3ef5-431d-a57b-e71f4662e3a6\\/resourceGroups\\/xplat-test-dns-zone\\/providers\\/Microsoft.Network\\/dnszones\\/example1.com\\/SRV\\/test-srv2\",\"name\":\"test-srv2\",\"type\":\"Microsoft.Network\\/dnszones\\/SRV\",\"etag\":\"39972dc9-625d-4876-8b32-c812ad5bf19a\",\"location\":\"global\",\"properties\":{\"fqdn\":\"test-srv2.example1.com\",\"TTL\":5,\"SRVRecords\":[{\"port\":3,\"priority\":1,\"target\":\"srv1.\",\"weight\":2}]}},{\"id\":\"\\/subscriptions\\/2c224e7e-3ef5-431d-a57b-e71f4662e3a6\\/resourceGroups\\/xplat-test-dns-zone\\/providers\\/Microsoft.Network\\/dnszones\\/example1.com\\/A\\/www\",\"name\":\"www\",\"type\":\"Microsoft.Network\\/dnszones\\/A\",\"etag\":\"1bae7bb4-bcda-4fcd-9433-e3d113642e35\",\"location\":\"global\",\"properties\":{\"fqdn\":\"www.example1.com\",\"TTL\":5,\"ARecords\":[{\"ipv4Address\":\"2.3.4.5\"}]}}]}", { 'cache-control': 'private',
   'content-length': '6896',
   'content-type': 'application/json; charset=utf-8',
@@ -840,7 +840,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-dns-zone/providers/Microsoft.Network/dnszones/example1.com/recordsets?api-version=2015-05-04-preview')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplat-test-dns-zone/providers/Microsoft.Network/dnsZones/example1.com/recordsets?api-version=2016-04-01')
   .reply(200, "{\"value\":[{\"id\":\"\\/subscriptions\\/2c224e7e-3ef5-431d-a57b-e71f4662e3a6\\/resourceGroups\\/xplat-test-dns-zone\\/providers\\/Microsoft.Network\\/dnszones\\/example1.com\\/SOA\\/@\",\"name\":\"@\",\"type\":\"Microsoft.Network\\/dnszones\",\"etag\":\"212263b7-26e0-4342-8a74-aacf917ff2f2\",\"location\":\"global\",\"tags\":{},\"properties\":{\"fqdn\":\"@.example1.com\",\"TTL\":3600,\"SOARecord\":{\"email\":\"hostmaster.example1.com.\",\"expireTime\":1814400,\"host\":\"ns1-07.azure-dns.com.\",\"minimumTTL\":10800,\"refreshTime\":43200,\"retryTime\":900}}},{\"id\":\"\\/subscriptions\\/2c224e7e-3ef5-431d-a57b-e71f4662e3a6\\/resourceGroups\\/xplat-test-dns-zone\\/providers\\/Microsoft.Network\\/dnszones\\/example1.com\\/A\\/@\",\"name\":\"@\",\"type\":\"Microsoft.Network\\/dnszones\\/A\",\"etag\":\"96cda973-3c42-4188-a047-15841b6590f2\",\"location\":\"global\",\"properties\":{\"fqdn\":\"@.example1.com\",\"TTL\":5,\"ARecords\":[{\"ipv4Address\":\"1.2.3.4\"}]}},{\"id\":\"\\/subscriptions\\/2c224e7e-3ef5-431d-a57b-e71f4662e3a6\\/resourceGroups\\/xplat-test-dns-zone\\/providers\\/Microsoft.Network\\/dnszones\\/example1.com\\/NS\\/@\",\"name\":\"@\",\"type\":\"Microsoft.Network\\/dnszones\",\"etag\":\"252a10c5-6d75-473f-b5ea-d85eb26258ec\",\"location\":\"global\",\"properties\":{\"fqdn\":\"@.example1.com\",\"TTL\":3600,\"NSRecords\":[{\"nsdname\":\"ns1-07.azure-dns.com.\"},{\"nsdname\":\"ns2-07.azure-dns.net.\"},{\"nsdname\":\"ns3-07.azure-dns.org.\"},{\"nsdname\":\"ns4-07.azure-dns.info.\"}]}},{\"id\":\"\\/subscriptions\\/2c224e7e-3ef5-431d-a57b-e71f4662e3a6\\/resourceGroups\\/xplat-test-dns-zone\\/providers\\/Microsoft.Network\\/dnszones\\/example1.com\\/A\\/default\",\"name\":\"default\",\"type\":\"Microsoft.Network\\/dnszones\\/A\",\"etag\":\"f6952eb3-2e4d-44d4-ac2b-990ea0915af0\",\"location\":\"global\",\"properties\":{\"fqdn\":\"default.example1.com\",\"TTL\":3600,\"ARecords\":[{\"ipv4Address\":\"0.1.2.3\"}]}},{\"id\":\"\\/subscriptions\\/2c224e7e-3ef5-431d-a57b-e71f4662e3a6\\/resourceGroups\\/xplat-test-dns-zone\\/providers\\/Microsoft.Network\\/dnszones\\/example1.com\\/CNAME\\/record\",\"name\":\"record\",\"type\":\"Microsoft.Network\\/dnszones\\/CNAME\",\"etag\":\"1fc12363-2bee-4efb-b21c-9d4e919ed359\",\"location\":\"global\",\"properties\":{\"fqdn\":\"record.example1.com\",\"TTL\":5,\"CNAMERecord\":{\"cname\":\"bar.foo.com.\"}}},{\"id\":\"\\/subscriptions\\/2c224e7e-3ef5-431d-a57b-e71f4662e3a6\\/resourceGroups\\/xplat-test-dns-zone\\/providers\\/Microsoft.Network\\/dnszones\\/example1.com\\/A\\/subzone\",\"name\":\"subzone\",\"type\":\"Microsoft.Network\\/dnszones\\/A\",\"etag\":\"844fbd83-0a53-4ec3-ade7-fda0d34ae790\",\"location\":\"global\",\"properties\":{\"fqdn\":\"subzone.example1.com\",\"TTL\":5,\"ARecords\":[{\"ipv4Address\":\"3.4.5.6\"}]}},{\"id\":\"\\/subscriptions\\/2c224e7e-3ef5-431d-a57b-e71f4662e3a6\\/resourceGroups\\/xplat-test-dns-zone\\/providers\\/Microsoft.Network\\/dnszones\\/example1.com\\/CNAME\\/test-cname.subzone\",\"name\":\"test-cname.subzone\",\"type\":\"Microsoft.Network\\/dnszones\\/CNAME\",\"etag\":\"00d48aaa-986c-4932-853a-fb95cac19e66\",\"location\":\"global\",\"properties\":{\"fqdn\":\"test-cname.subzone.example1.com\",\"TTL\":5,\"CNAMERecord\":{\"cname\":\"r1.subzone.example1.com.\"}}},{\"id\":\"\\/subscriptions\\/2c224e7e-3ef5-431d-a57b-e71f4662e3a6\\/resourceGroups\\/xplat-test-dns-zone\\/providers\\/Microsoft.Network\\/dnszones\\/example1.com\\/A\\/www.subzone\",\"name\":\"www.subzone\",\"type\":\"Microsoft.Network\\/dnszones\\/A\",\"etag\":\"47aeaaf0-90b7-447c-af29-10fac9b06c3a\",\"location\":\"global\",\"properties\":{\"fqdn\":\"www.subzone.example1.com\",\"TTL\":5,\"ARecords\":[{\"ipv4Address\":\"4.5.6.7\"}]}},{\"id\":\"\\/subscriptions\\/2c224e7e-3ef5-431d-a57b-e71f4662e3a6\\/resourceGroups\\/xplat-test-dns-zone\\/providers\\/Microsoft.Network\\/dnszones\\/example1.com\\/CNAME\\/tc\",\"name\":\"tc\",\"type\":\"Microsoft.Network\\/dnszones\\/CNAME\",\"etag\":\"cc80fc1e-e9ca-450c-85a5-8e7be23f2a98\",\"location\":\"global\",\"properties\":{\"fqdn\":\"tc.example1.com\",\"TTL\":3600,\"CNAMERecord\":{\"cname\":\"test.example1.com.\"}}},{\"id\":\"\\/subscriptions\\/2c224e7e-3ef5-431d-a57b-e71f4662e3a6\\/resourceGroups\\/xplat-test-dns-zone\\/providers\\/Microsoft.Network\\/dnszones\\/example1.com\\/A\\/test\",\"name\":\"test\",\"type\":\"Microsoft.Network\\/dnszones\\/A\",\"etag\":\"c25064e8-a7dc-49f5-ae32-16df2d77e4aa\",\"location\":\"global\",\"properties\":{\"fqdn\":\"test.example1.com\",\"TTL\":5,\"ARecords\":[{\"ipv4Address\":\"7.8.9.0\"}]}},{\"id\":\"\\/subscriptions\\/2c224e7e-3ef5-431d-a57b-e71f4662e3a6\\/resourceGroups\\/xplat-test-dns-zone\\/providers\\/Microsoft.Network\\/dnszones\\/example1.com\\/CNAME\\/test-cname\",\"name\":\"test-cname\",\"type\":\"Microsoft.Network\\/dnszones\\/CNAME\",\"etag\":\"fba86530-6664-4710-9a61-70c5a118eff0\",\"location\":\"global\",\"properties\":{\"fqdn\":\"test-cname.example1.com\",\"TTL\":5,\"CNAMERecord\":{\"cname\":\"r1.example1.com.\"}}},{\"id\":\"\\/subscriptions\\/2c224e7e-3ef5-431d-a57b-e71f4662e3a6\\/resourceGroups\\/xplat-test-dns-zone\\/providers\\/Microsoft.Network\\/dnszones\\/example1.com\\/CNAME\\/test-cname2\",\"name\":\"test-cname2\",\"type\":\"Microsoft.Network\\/dnszones\\/CNAME\",\"etag\":\"830f7145-6379-4685-912a-78656d1037f0\",\"location\":\"global\",\"properties\":{\"fqdn\":\"test-cname2.example1.com\",\"TTL\":5,\"CNAMERecord\":{\"cname\":\"r1.\"}}},{\"id\":\"\\/subscriptions\\/2c224e7e-3ef5-431d-a57b-e71f4662e3a6\\/resourceGroups\\/xplat-test-dns-zone\\/providers\\/Microsoft.Network\\/dnszones\\/example1.com\\/MX\\/test-mx\",\"name\":\"test-mx\",\"type\":\"Microsoft.Network\\/dnszones\\/MX\",\"etag\":\"ff792aad-2753-48e9-a8de-f86ab449eb29\",\"location\":\"global\",\"properties\":{\"fqdn\":\"test-mx.example1.com\",\"TTL\":5,\"MXRecords\":[{\"exchange\":\"m1.example1.com.\",\"preference\":10}]}},{\"id\":\"\\/subscriptions\\/2c224e7e-3ef5-431d-a57b-e71f4662e3a6\\/resourceGroups\\/xplat-test-dns-zone\\/providers\\/Microsoft.Network\\/dnszones\\/example1.com\\/MX\\/test-mx2\",\"name\":\"test-mx2\",\"type\":\"Microsoft.Network\\/dnszones\\/MX\",\"etag\":\"0271fa46-9fcf-42f8-bae7-08171dfdd859\",\"location\":\"global\",\"properties\":{\"fqdn\":\"test-mx2.example1.com\",\"TTL\":5,\"MXRecords\":[{\"exchange\":\"m1.\",\"preference\":10}]}},{\"id\":\"\\/subscriptions\\/2c224e7e-3ef5-431d-a57b-e71f4662e3a6\\/resourceGroups\\/xplat-test-dns-zone\\/providers\\/Microsoft.Network\\/dnszones\\/example1.com\\/SRV\\/test-srv\",\"name\":\"test-srv\",\"type\":\"Microsoft.Network\\/dnszones\\/SRV\",\"etag\":\"4553f545-0e1f-40bc-99c8-71340d45062b\",\"location\":\"global\",\"properties\":{\"fqdn\":\"test-srv.example1.com\",\"TTL\":5,\"SRVRecords\":[{\"port\":3,\"priority\":1,\"target\":\"srv1.example1.com.\",\"weight\":2}]}},{\"id\":\"\\/subscriptions\\/2c224e7e-3ef5-431d-a57b-e71f4662e3a6\\/resourceGroups\\/xplat-test-dns-zone\\/providers\\/Microsoft.Network\\/dnszones\\/example1.com\\/SRV\\/test-srv2\",\"name\":\"test-srv2\",\"type\":\"Microsoft.Network\\/dnszones\\/SRV\",\"etag\":\"39972dc9-625d-4876-8b32-c812ad5bf19a\",\"location\":\"global\",\"properties\":{\"fqdn\":\"test-srv2.example1.com\",\"TTL\":5,\"SRVRecords\":[{\"port\":3,\"priority\":1,\"target\":\"srv1.\",\"weight\":2}]}},{\"id\":\"\\/subscriptions\\/2c224e7e-3ef5-431d-a57b-e71f4662e3a6\\/resourceGroups\\/xplat-test-dns-zone\\/providers\\/Microsoft.Network\\/dnszones\\/example1.com\\/A\\/www\",\"name\":\"www\",\"type\":\"Microsoft.Network\\/dnszones\\/A\",\"etag\":\"1bae7bb4-bcda-4fcd-9433-e3d113642e35\",\"location\":\"global\",\"properties\":{\"fqdn\":\"www.example1.com\",\"TTL\":5,\"ARecords\":[{\"ipv4Address\":\"2.3.4.5\"}]}}]}", { 'cache-control': 'private',
   'content-length': '6896',
   'content-type': 'application/json; charset=utf-8',

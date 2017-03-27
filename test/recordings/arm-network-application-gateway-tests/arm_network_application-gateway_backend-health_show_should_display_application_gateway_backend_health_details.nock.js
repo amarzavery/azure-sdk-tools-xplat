@@ -28,13 +28,13 @@ exports.setEnvironment = function() {
 exports.scopes = [[function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .post('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplatTestGroupCreateAppGw3/providers/Microsoft.Network/applicationGateways/xplatTestAppGw/backendhealth?api-version=2016-09-01')
+  .post('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplatTestGroupCreateAppGw3/providers\/Microsoft.Network/applicationGateways/xplatTestAppGw/backendhealth?api-version=2017-03-01')
   .reply(202, "null", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '4',
   'content-type': 'application/json; charset=utf-8',
   expires: '-1',
-  location: 'https://management.azure.com/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/eastus/operationResults/ff4e53eb-b2fa-46b9-9a61-18fbc7eeb603?api-version=2016-09-01',
+  location: 'https://management.azure.com/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/eastus/operationResults/ff4e53eb-b2fa-46b9-9a61-18fbc7eeb603?api-version=2017-03-01',
   'retry-after': '10',
   'x-ms-request-id': 'ff4e53eb-b2fa-46b9-9a61-18fbc7eeb603',
   'strict-transport-security': 'max-age=31536000; includeSubDomains',
@@ -47,13 +47,13 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/eastus/operationResults/ff4e53eb-b2fa-46b9-9a61-18fbc7eeb603?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/eastus/operationResults/ff4e53eb-b2fa-46b9-9a61-18fbc7eeb603?api-version=2017-03-01')
   .reply(202, "null", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '4',
   'content-type': 'application/json; charset=utf-8',
   expires: '-1',
-  location: 'https://management.azure.com/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/eastus/operationResults/ff4e53eb-b2fa-46b9-9a61-18fbc7eeb603?api-version=2016-09-01',
+  location: 'https://management.azure.com/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/eastus/operationResults/ff4e53eb-b2fa-46b9-9a61-18fbc7eeb603?api-version=2017-03-01',
   'retry-after': '10',
   'x-ms-request-id': 'ff4e53eb-b2fa-46b9-9a61-18fbc7eeb603',
   'strict-transport-security': 'max-age=31536000; includeSubDomains',
@@ -66,13 +66,13 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/eastus/operationResults/ff4e53eb-b2fa-46b9-9a61-18fbc7eeb603?api-version=2016-09-01')
+  .get('/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/eastus/operationResults/ff4e53eb-b2fa-46b9-9a61-18fbc7eeb603?api-version=2017-03-01')
   .reply(200, "{\r\n  \"backendAddressPools\": [\r\n    {\r\n      \"backendAddressPool\": {\r\n        \"id\": \"/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplatTestGroupCreateAppGw3/providers/Microsoft.Network/applicationGateways/xplatTestAppGw/backendAddressPools/pool01\"\r\n      },\r\n      \"backendHttpSettingsCollection\": [\r\n        {\r\n          \"backendHttpSettings\": {\r\n            \"id\": \"/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/resourceGroups/xplatTestGroupCreateAppGw3/providers/Microsoft.Network/applicationGateways/xplatTestAppGw/backendHttpSettingsCollection/httpSettings01\"\r\n          },\r\n          \"servers\": [\r\n            {\r\n              \"address\": \"1.1.1.1\",\r\n              \"health\": \"Unknown\"\r\n            }\r\n          ]\r\n        }\r\n      ]\r\n    }\r\n  ]\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '778',
   'content-type': 'application/json; charset=utf-8',
   expires: '-1',
-  location: 'https://management.azure.com/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers/Microsoft.Network/locations/eastus/operationResults/ff4e53eb-b2fa-46b9-9a61-18fbc7eeb603?api-version=2016-09-01',
+  location: 'https://management.azure.com/subscriptions/2c224e7e-3ef5-431d-a57b-e71f4662e3a6/providers\/Microsoft.Network/locations/eastus/operationResults/ff4e53eb-b2fa-46b9-9a61-18fbc7eeb603?api-version=2017-03-01',
   'x-ms-request-id': 'ff4e53eb-b2fa-46b9-9a61-18fbc7eeb603',
   'strict-transport-security': 'max-age=31536000; includeSubDomains',
   server: 'Microsoft-HTTPAPI/2.0',

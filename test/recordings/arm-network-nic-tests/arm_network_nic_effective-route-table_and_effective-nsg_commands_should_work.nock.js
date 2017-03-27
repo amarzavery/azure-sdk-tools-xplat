@@ -29,7 +29,7 @@ exports.setEnvironment = function() {
 exports.scopes = [[function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/ce4a7590-4722-4bcf-a2c6-e473e9f11778/resourceGroups/xplat-test-nic/providers/Microsoft.Network/networkInterfaces/test-nic?api-version=2016-09-01')
+  .get('/subscriptions/ce4a7590-4722-4bcf-a2c6-e473e9f11778/resourceGroups/xplat-test-nic/providers\/Microsoft.Network/networkInterfaces/test-nic?api-version=2017-03-01')
   .reply(200, "{\r\n  \"name\": \"test-nic\",\r\n  \"id\": \"/subscriptions/ce4a7590-4722-4bcf-a2c6-e473e9f11778/resourceGroups/xplat-test-nic/providers/Microsoft.Network/networkInterfaces/test-nic\",\r\n  \"etag\": \"W/\\\"ddd0241e-7c20-4fd2-a450-6648c6624b7f\\\"\",\r\n  \"location\": \"westeurope\",\r\n  \"tags\": {\r\n    \"tag1\": \"aaa\",\r\n    \"tag2\": \"bbb\",\r\n    \"tag3\": \"ccc\"\r\n  },\r\n  \"properties\": {\r\n    \"provisioningState\": \"Succeeded\",\r\n    \"resourceGuid\": \"71fe8880-66c0-4381-b39f-0f56dca11cf4\",\r\n    \"ipConfigurations\": [\r\n      {\r\n        \"name\": \"default-ip-config\",\r\n        \"id\": \"/subscriptions/ce4a7590-4722-4bcf-a2c6-e473e9f11778/resourceGroups/xplat-test-nic/providers/Microsoft.Network/networkInterfaces/test-nic/ipConfigurations/default-ip-config\",\r\n        \"etag\": \"W/\\\"ddd0241e-7c20-4fd2-a450-6648c6624b7f\\\"\",\r\n        \"properties\": {\r\n          \"provisioningState\": \"Succeeded\",\r\n          \"privateIPAddress\": \"10.0.0.22\",\r\n          \"privateIPAllocationMethod\": \"Static\",\r\n          \"publicIPAddress\": {\r\n            \"id\": \"/subscriptions/ce4a7590-4722-4bcf-a2c6-e473e9f11778/resourceGroups/xplat-test-nic/providers/Microsoft.Network/publicIPAddresses/test-ip\"\r\n          },\r\n          \"subnet\": {\r\n            \"id\": \"/subscriptions/ce4a7590-4722-4bcf-a2c6-e473e9f11778/resourceGroups/xplat-test-nic/providers/Microsoft.Network/virtualNetworks/test-vnet/subnets/test-subnet\"\r\n          },\r\n          \"primary\": true,\r\n          \"privateIPAddressVersion\": \"IPv4\"\r\n        }\r\n      }\r\n    ],\r\n    \"dnsSettings\": {\r\n      \"dnsServers\": [],\r\n      \"appliedDnsServers\": [],\r\n      \"internalDnsNameLabel\": \"internal-dns-bar\",\r\n      \"internalFqdn\": \"internal-dns-bar.pssuluztofaunmvnorkwfbassb.ax.internal.cloudapp.net\",\r\n      \"internalDomainNameSuffix\": \"pssuluztofaunmvnorkwfbassb.ax.internal.cloudapp.net\"\r\n    },\r\n    \"enableAcceleratedNetworking\": false,\r\n    \"enableIPForwarding\": true\r\n  },\r\n  \"type\": \"Microsoft.Network/networkInterfaces\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '1920',
@@ -48,7 +48,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/ce4a7590-4722-4bcf-a2c6-e473e9f11778/resourceGroups/xplat-test-nic/providers/Microsoft.Network/networkInterfaces/test-nic?api-version=2016-09-01')
+  .get('/subscriptions/ce4a7590-4722-4bcf-a2c6-e473e9f11778/resourceGroups/xplat-test-nic/providers\/Microsoft.Network/networkInterfaces/test-nic?api-version=2017-03-01')
   .reply(200, "{\r\n  \"name\": \"test-nic\",\r\n  \"id\": \"/subscriptions/ce4a7590-4722-4bcf-a2c6-e473e9f11778/resourceGroups/xplat-test-nic/providers/Microsoft.Network/networkInterfaces/test-nic\",\r\n  \"etag\": \"W/\\\"ddd0241e-7c20-4fd2-a450-6648c6624b7f\\\"\",\r\n  \"location\": \"westeurope\",\r\n  \"tags\": {\r\n    \"tag1\": \"aaa\",\r\n    \"tag2\": \"bbb\",\r\n    \"tag3\": \"ccc\"\r\n  },\r\n  \"properties\": {\r\n    \"provisioningState\": \"Succeeded\",\r\n    \"resourceGuid\": \"71fe8880-66c0-4381-b39f-0f56dca11cf4\",\r\n    \"ipConfigurations\": [\r\n      {\r\n        \"name\": \"default-ip-config\",\r\n        \"id\": \"/subscriptions/ce4a7590-4722-4bcf-a2c6-e473e9f11778/resourceGroups/xplat-test-nic/providers/Microsoft.Network/networkInterfaces/test-nic/ipConfigurations/default-ip-config\",\r\n        \"etag\": \"W/\\\"ddd0241e-7c20-4fd2-a450-6648c6624b7f\\\"\",\r\n        \"properties\": {\r\n          \"provisioningState\": \"Succeeded\",\r\n          \"privateIPAddress\": \"10.0.0.22\",\r\n          \"privateIPAllocationMethod\": \"Static\",\r\n          \"publicIPAddress\": {\r\n            \"id\": \"/subscriptions/ce4a7590-4722-4bcf-a2c6-e473e9f11778/resourceGroups/xplat-test-nic/providers/Microsoft.Network/publicIPAddresses/test-ip\"\r\n          },\r\n          \"subnet\": {\r\n            \"id\": \"/subscriptions/ce4a7590-4722-4bcf-a2c6-e473e9f11778/resourceGroups/xplat-test-nic/providers/Microsoft.Network/virtualNetworks/test-vnet/subnets/test-subnet\"\r\n          },\r\n          \"primary\": true,\r\n          \"privateIPAddressVersion\": \"IPv4\"\r\n        }\r\n      }\r\n    ],\r\n    \"dnsSettings\": {\r\n      \"dnsServers\": [],\r\n      \"appliedDnsServers\": [],\r\n      \"internalDnsNameLabel\": \"internal-dns-bar\",\r\n      \"internalFqdn\": \"internal-dns-bar.pssuluztofaunmvnorkwfbassb.ax.internal.cloudapp.net\",\r\n      \"internalDomainNameSuffix\": \"pssuluztofaunmvnorkwfbassb.ax.internal.cloudapp.net\"\r\n    },\r\n    \"enableAcceleratedNetworking\": false,\r\n    \"enableIPForwarding\": true\r\n  },\r\n  \"type\": \"Microsoft.Network/networkInterfaces\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '1920',
@@ -67,7 +67,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .post('/subscriptions/ce4a7590-4722-4bcf-a2c6-e473e9f11778/resourceGroups/xplat-test-nic/providers/Microsoft.Network/networkInterfaces/test-nic/effectiveNetworkSecurityGroups?api-version=2016-09-01')
+  .post('/subscriptions/ce4a7590-4722-4bcf-a2c6-e473e9f11778/resourceGroups/xplat-test-nic/providers\/Microsoft.Network/networkInterfaces/test-nic/effectiveNetworkSecurityGroups?api-version=2017-03-01')
   .reply(400, "{\r\n  \"error\": {\r\n    \"code\": \"NicMustBeAttachedToRunningVmToGetEffectiveSecurityGroups\",\r\n    \"message\": \"A network interface must be attached to a running virtual machine to get effective security groups. The network interface test-nic is not attached to a running virtual machine.\",\r\n    \"details\": []\r\n  }\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '311',
@@ -85,7 +85,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .post('/subscriptions/ce4a7590-4722-4bcf-a2c6-e473e9f11778/resourceGroups/xplat-test-nic/providers/Microsoft.Network/networkInterfaces/test-nic/effectiveNetworkSecurityGroups?api-version=2016-09-01')
+  .post('/subscriptions/ce4a7590-4722-4bcf-a2c6-e473e9f11778/resourceGroups/xplat-test-nic/providers\/Microsoft.Network/networkInterfaces/test-nic/effectiveNetworkSecurityGroups?api-version=2017-03-01')
   .reply(400, "{\r\n  \"error\": {\r\n    \"code\": \"NicMustBeAttachedToRunningVmToGetEffectiveSecurityGroups\",\r\n    \"message\": \"A network interface must be attached to a running virtual machine to get effective security groups. The network interface test-nic is not attached to a running virtual machine.\",\r\n    \"details\": []\r\n  }\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '311',
@@ -103,7 +103,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .post('/subscriptions/ce4a7590-4722-4bcf-a2c6-e473e9f11778/resourceGroups/xplat-test-nic/providers/Microsoft.Network/networkInterfaces/test-nic/effectiveRouteTable?api-version=2016-09-01')
+  .post('/subscriptions/ce4a7590-4722-4bcf-a2c6-e473e9f11778/resourceGroups/xplat-test-nic/providers\/Microsoft.Network/networkInterfaces/test-nic/effectiveRouteTable?api-version=2017-03-01')
   .reply(400, "{\r\n  \"error\": {\r\n    \"code\": \"NicMustBeAttachedToRunningVmToGetEffectiveRoutes\",\r\n    \"message\": \"A network interface must be attached to a running virtual machine to get effective routes. The network interface test-nic is not attached to a running virtual machine.\",\r\n    \"details\": []\r\n  }\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '294',
@@ -121,7 +121,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .post('/subscriptions/ce4a7590-4722-4bcf-a2c6-e473e9f11778/resourceGroups/xplat-test-nic/providers/Microsoft.Network/networkInterfaces/test-nic/effectiveRouteTable?api-version=2016-09-01')
+  .post('/subscriptions/ce4a7590-4722-4bcf-a2c6-e473e9f11778/resourceGroups/xplat-test-nic/providers\/Microsoft.Network/networkInterfaces/test-nic/effectiveRouteTable?api-version=2017-03-01')
   .reply(400, "{\r\n  \"error\": {\r\n    \"code\": \"NicMustBeAttachedToRunningVmToGetEffectiveRoutes\",\r\n    \"message\": \"A network interface must be attached to a running virtual machine to get effective routes. The network interface test-nic is not attached to a running virtual machine.\",\r\n    \"details\": []\r\n  }\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '294',
@@ -361,7 +361,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/ce4a7590-4722-4bcf-a2c6-e473e9f11778/resourceGroups/xplat-test-nic/providers/Microsoft.Network/networkInterfaces/test-nic?api-version=2016-09-01')
+  .get('/subscriptions/ce4a7590-4722-4bcf-a2c6-e473e9f11778/resourceGroups/xplat-test-nic/providers\/Microsoft.Network/networkInterfaces/test-nic?api-version=2017-03-01')
   .reply(200, "{\r\n  \"name\": \"test-nic\",\r\n  \"id\": \"/subscriptions/ce4a7590-4722-4bcf-a2c6-e473e9f11778/resourceGroups/xplat-test-nic/providers/Microsoft.Network/networkInterfaces/test-nic\",\r\n  \"etag\": \"W/\\\"ddd0241e-7c20-4fd2-a450-6648c6624b7f\\\"\",\r\n  \"location\": \"westeurope\",\r\n  \"tags\": {\r\n    \"tag1\": \"aaa\",\r\n    \"tag2\": \"bbb\",\r\n    \"tag3\": \"ccc\"\r\n  },\r\n  \"properties\": {\r\n    \"provisioningState\": \"Succeeded\",\r\n    \"resourceGuid\": \"71fe8880-66c0-4381-b39f-0f56dca11cf4\",\r\n    \"ipConfigurations\": [\r\n      {\r\n        \"name\": \"default-ip-config\",\r\n        \"id\": \"/subscriptions/ce4a7590-4722-4bcf-a2c6-e473e9f11778/resourceGroups/xplat-test-nic/providers/Microsoft.Network/networkInterfaces/test-nic/ipConfigurations/default-ip-config\",\r\n        \"etag\": \"W/\\\"ddd0241e-7c20-4fd2-a450-6648c6624b7f\\\"\",\r\n        \"properties\": {\r\n          \"provisioningState\": \"Succeeded\",\r\n          \"privateIPAddress\": \"10.0.0.22\",\r\n          \"privateIPAllocationMethod\": \"Static\",\r\n          \"publicIPAddress\": {\r\n            \"id\": \"/subscriptions/ce4a7590-4722-4bcf-a2c6-e473e9f11778/resourceGroups/xplat-test-nic/providers/Microsoft.Network/publicIPAddresses/test-ip\"\r\n          },\r\n          \"subnet\": {\r\n            \"id\": \"/subscriptions/ce4a7590-4722-4bcf-a2c6-e473e9f11778/resourceGroups/xplat-test-nic/providers/Microsoft.Network/virtualNetworks/test-vnet/subnets/test-subnet\"\r\n          },\r\n          \"primary\": true,\r\n          \"privateIPAddressVersion\": \"IPv4\"\r\n        }\r\n      }\r\n    ],\r\n    \"dnsSettings\": {\r\n      \"dnsServers\": [],\r\n      \"appliedDnsServers\": [],\r\n      \"internalDnsNameLabel\": \"internal-dns-bar\",\r\n      \"internalFqdn\": \"internal-dns-bar.pssuluztofaunmvnorkwfbassb.ax.internal.cloudapp.net\",\r\n      \"internalDomainNameSuffix\": \"pssuluztofaunmvnorkwfbassb.ax.internal.cloudapp.net\"\r\n    },\r\n    \"enableAcceleratedNetworking\": false,\r\n    \"enableIPForwarding\": true\r\n  },\r\n  \"type\": \"Microsoft.Network/networkInterfaces\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '1920',
@@ -380,7 +380,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/ce4a7590-4722-4bcf-a2c6-e473e9f11778/resourceGroups/xplat-test-nic/providers/Microsoft.Network/networkInterfaces/test-nic?api-version=2016-09-01')
+  .get('/subscriptions/ce4a7590-4722-4bcf-a2c6-e473e9f11778/resourceGroups/xplat-test-nic/providers\/Microsoft.Network/networkInterfaces/test-nic?api-version=2017-03-01')
   .reply(200, "{\r\n  \"name\": \"test-nic\",\r\n  \"id\": \"/subscriptions/ce4a7590-4722-4bcf-a2c6-e473e9f11778/resourceGroups/xplat-test-nic/providers/Microsoft.Network/networkInterfaces/test-nic\",\r\n  \"etag\": \"W/\\\"ddd0241e-7c20-4fd2-a450-6648c6624b7f\\\"\",\r\n  \"location\": \"westeurope\",\r\n  \"tags\": {\r\n    \"tag1\": \"aaa\",\r\n    \"tag2\": \"bbb\",\r\n    \"tag3\": \"ccc\"\r\n  },\r\n  \"properties\": {\r\n    \"provisioningState\": \"Succeeded\",\r\n    \"resourceGuid\": \"71fe8880-66c0-4381-b39f-0f56dca11cf4\",\r\n    \"ipConfigurations\": [\r\n      {\r\n        \"name\": \"default-ip-config\",\r\n        \"id\": \"/subscriptions/ce4a7590-4722-4bcf-a2c6-e473e9f11778/resourceGroups/xplat-test-nic/providers/Microsoft.Network/networkInterfaces/test-nic/ipConfigurations/default-ip-config\",\r\n        \"etag\": \"W/\\\"ddd0241e-7c20-4fd2-a450-6648c6624b7f\\\"\",\r\n        \"properties\": {\r\n          \"provisioningState\": \"Succeeded\",\r\n          \"privateIPAddress\": \"10.0.0.22\",\r\n          \"privateIPAllocationMethod\": \"Static\",\r\n          \"publicIPAddress\": {\r\n            \"id\": \"/subscriptions/ce4a7590-4722-4bcf-a2c6-e473e9f11778/resourceGroups/xplat-test-nic/providers/Microsoft.Network/publicIPAddresses/test-ip\"\r\n          },\r\n          \"subnet\": {\r\n            \"id\": \"/subscriptions/ce4a7590-4722-4bcf-a2c6-e473e9f11778/resourceGroups/xplat-test-nic/providers/Microsoft.Network/virtualNetworks/test-vnet/subnets/test-subnet\"\r\n          },\r\n          \"primary\": true,\r\n          \"privateIPAddressVersion\": \"IPv4\"\r\n        }\r\n      }\r\n    ],\r\n    \"dnsSettings\": {\r\n      \"dnsServers\": [],\r\n      \"appliedDnsServers\": [],\r\n      \"internalDnsNameLabel\": \"internal-dns-bar\",\r\n      \"internalFqdn\": \"internal-dns-bar.pssuluztofaunmvnorkwfbassb.ax.internal.cloudapp.net\",\r\n      \"internalDomainNameSuffix\": \"pssuluztofaunmvnorkwfbassb.ax.internal.cloudapp.net\"\r\n    },\r\n    \"enableAcceleratedNetworking\": false,\r\n    \"enableIPForwarding\": true\r\n  },\r\n  \"type\": \"Microsoft.Network/networkInterfaces\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '1920',
@@ -593,13 +593,13 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .post('/subscriptions/ce4a7590-4722-4bcf-a2c6-e473e9f11778/resourceGroups/xplat-test-nic/providers/Microsoft.Network/networkInterfaces/test-nic/effectiveNetworkSecurityGroups?api-version=2016-09-01')
+  .post('/subscriptions/ce4a7590-4722-4bcf-a2c6-e473e9f11778/resourceGroups/xplat-test-nic/providers\/Microsoft.Network/networkInterfaces/test-nic/effectiveNetworkSecurityGroups?api-version=2017-03-01')
   .reply(200, "{\r\n  \"value\": []\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '19',
   'content-type': 'application/json; charset=utf-8',
   expires: '-1',
-  location: 'https://management.azure.com/subscriptions/ce4a7590-4722-4bcf-a2c6-e473e9f11778/providers/Microsoft.Network/locations/westeurope/operationResults/64e6028f-9b1e-4f14-a4ab-6aeec158b01b?api-version=2016-09-01',
+  location: 'https://management.azure.com/subscriptions/ce4a7590-4722-4bcf-a2c6-e473e9f11778/providers\/Microsoft.Network/locations/westeurope/operationResults/64e6028f-9b1e-4f14-a4ab-6aeec158b01b?api-version=2017-03-01',
   'x-ms-request-id': '64e6028f-9b1e-4f14-a4ab-6aeec158b01b',
   'strict-transport-security': 'max-age=31536000; includeSubDomains',
   server: 'Microsoft-HTTPAPI/2.0, Microsoft-HTTPAPI/2.0',
@@ -612,13 +612,13 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .post('/subscriptions/ce4a7590-4722-4bcf-a2c6-e473e9f11778/resourceGroups/xplat-test-nic/providers/Microsoft.Network/networkInterfaces/test-nic/effectiveNetworkSecurityGroups?api-version=2016-09-01')
+  .post('/subscriptions/ce4a7590-4722-4bcf-a2c6-e473e9f11778/resourceGroups/xplat-test-nic/providers\/Microsoft.Network/networkInterfaces/test-nic/effectiveNetworkSecurityGroups?api-version=2017-03-01')
   .reply(200, "{\r\n  \"value\": []\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '19',
   'content-type': 'application/json; charset=utf-8',
   expires: '-1',
-  location: 'https://management.azure.com/subscriptions/ce4a7590-4722-4bcf-a2c6-e473e9f11778/providers/Microsoft.Network/locations/westeurope/operationResults/64e6028f-9b1e-4f14-a4ab-6aeec158b01b?api-version=2016-09-01',
+  location: 'https://management.azure.com/subscriptions/ce4a7590-4722-4bcf-a2c6-e473e9f11778/providers\/Microsoft.Network/locations/westeurope/operationResults/64e6028f-9b1e-4f14-a4ab-6aeec158b01b?api-version=2017-03-01',
   'x-ms-request-id': '64e6028f-9b1e-4f14-a4ab-6aeec158b01b',
   'strict-transport-security': 'max-age=31536000; includeSubDomains',
   server: 'Microsoft-HTTPAPI/2.0, Microsoft-HTTPAPI/2.0',
@@ -631,13 +631,13 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .post('/subscriptions/ce4a7590-4722-4bcf-a2c6-e473e9f11778/resourceGroups/xplat-test-nic/providers/Microsoft.Network/networkInterfaces/test-nic/effectiveRouteTable?api-version=2016-09-01')
+  .post('/subscriptions/ce4a7590-4722-4bcf-a2c6-e473e9f11778/resourceGroups/xplat-test-nic/providers\/Microsoft.Network/networkInterfaces/test-nic/effectiveRouteTable?api-version=2017-03-01')
   .reply(200, "{\r\n  \"value\": [\r\n    {\r\n      \"source\": \"Default\",\r\n      \"state\": \"Active\",\r\n      \"addressPrefix\": [\r\n        \"10.0.0.0/8\"\r\n      ],\r\n      \"nextHopType\": \"VnetLocal\",\r\n      \"nextHopIpAddress\": []\r\n    },\r\n    {\r\n      \"source\": \"Default\",\r\n      \"state\": \"Active\",\r\n      \"addressPrefix\": [\r\n        \"0.0.0.0/0\"\r\n      ],\r\n      \"nextHopType\": \"Internet\",\r\n      \"nextHopIpAddress\": []\r\n    },\r\n    {\r\n      \"source\": \"Default\",\r\n      \"state\": \"Active\",\r\n      \"addressPrefix\": [\r\n        \"25.0.0.0/8\"\r\n      ],\r\n      \"nextHopType\": \"None\",\r\n      \"nextHopIpAddress\": []\r\n    },\r\n    {\r\n      \"source\": \"Default\",\r\n      \"state\": \"Active\",\r\n      \"addressPrefix\": [\r\n        \"100.64.0.0/10\"\r\n      ],\r\n      \"nextHopType\": \"None\",\r\n      \"nextHopIpAddress\": []\r\n    },\r\n    {\r\n      \"source\": \"Default\",\r\n      \"state\": \"Active\",\r\n      \"addressPrefix\": [\r\n        \"172.16.0.0/12\"\r\n      ],\r\n      \"nextHopType\": \"None\",\r\n      \"nextHopIpAddress\": []\r\n    },\r\n    {\r\n      \"source\": \"Default\",\r\n      \"state\": \"Active\",\r\n      \"addressPrefix\": [\r\n        \"192.168.0.0/16\"\r\n      ],\r\n      \"nextHopType\": \"None\",\r\n      \"nextHopIpAddress\": []\r\n    }\r\n  ]\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '1162',
   'content-type': 'application/json; charset=utf-8',
   expires: '-1',
-  location: 'https://management.azure.com/subscriptions/ce4a7590-4722-4bcf-a2c6-e473e9f11778/providers/Microsoft.Network/locations/westeurope/operationResults/d34e0568-9d12-4f30-935c-fc8412f69837?api-version=2016-09-01',
+  location: 'https://management.azure.com/subscriptions/ce4a7590-4722-4bcf-a2c6-e473e9f11778/providers\/Microsoft.Network/locations/westeurope/operationResults/d34e0568-9d12-4f30-935c-fc8412f69837?api-version=2017-03-01',
   'x-ms-request-id': 'd34e0568-9d12-4f30-935c-fc8412f69837',
   'strict-transport-security': 'max-age=31536000; includeSubDomains',
   server: 'Microsoft-HTTPAPI/2.0, Microsoft-HTTPAPI/2.0',
@@ -650,13 +650,13 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .post('/subscriptions/ce4a7590-4722-4bcf-a2c6-e473e9f11778/resourceGroups/xplat-test-nic/providers/Microsoft.Network/networkInterfaces/test-nic/effectiveRouteTable?api-version=2016-09-01')
+  .post('/subscriptions/ce4a7590-4722-4bcf-a2c6-e473e9f11778/resourceGroups/xplat-test-nic/providers\/Microsoft.Network/networkInterfaces/test-nic/effectiveRouteTable?api-version=2017-03-01')
   .reply(200, "{\r\n  \"value\": [\r\n    {\r\n      \"source\": \"Default\",\r\n      \"state\": \"Active\",\r\n      \"addressPrefix\": [\r\n        \"10.0.0.0/8\"\r\n      ],\r\n      \"nextHopType\": \"VnetLocal\",\r\n      \"nextHopIpAddress\": []\r\n    },\r\n    {\r\n      \"source\": \"Default\",\r\n      \"state\": \"Active\",\r\n      \"addressPrefix\": [\r\n        \"0.0.0.0/0\"\r\n      ],\r\n      \"nextHopType\": \"Internet\",\r\n      \"nextHopIpAddress\": []\r\n    },\r\n    {\r\n      \"source\": \"Default\",\r\n      \"state\": \"Active\",\r\n      \"addressPrefix\": [\r\n        \"25.0.0.0/8\"\r\n      ],\r\n      \"nextHopType\": \"None\",\r\n      \"nextHopIpAddress\": []\r\n    },\r\n    {\r\n      \"source\": \"Default\",\r\n      \"state\": \"Active\",\r\n      \"addressPrefix\": [\r\n        \"100.64.0.0/10\"\r\n      ],\r\n      \"nextHopType\": \"None\",\r\n      \"nextHopIpAddress\": []\r\n    },\r\n    {\r\n      \"source\": \"Default\",\r\n      \"state\": \"Active\",\r\n      \"addressPrefix\": [\r\n        \"172.16.0.0/12\"\r\n      ],\r\n      \"nextHopType\": \"None\",\r\n      \"nextHopIpAddress\": []\r\n    },\r\n    {\r\n      \"source\": \"Default\",\r\n      \"state\": \"Active\",\r\n      \"addressPrefix\": [\r\n        \"192.168.0.0/16\"\r\n      ],\r\n      \"nextHopType\": \"None\",\r\n      \"nextHopIpAddress\": []\r\n    }\r\n  ]\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '1162',
   'content-type': 'application/json; charset=utf-8',
   expires: '-1',
-  location: 'https://management.azure.com/subscriptions/ce4a7590-4722-4bcf-a2c6-e473e9f11778/providers/Microsoft.Network/locations/westeurope/operationResults/d34e0568-9d12-4f30-935c-fc8412f69837?api-version=2016-09-01',
+  location: 'https://management.azure.com/subscriptions/ce4a7590-4722-4bcf-a2c6-e473e9f11778/providers\/Microsoft.Network/locations/westeurope/operationResults/d34e0568-9d12-4f30-935c-fc8412f69837?api-version=2017-03-01',
   'x-ms-request-id': 'd34e0568-9d12-4f30-935c-fc8412f69837',
   'strict-transport-security': 'max-age=31536000; includeSubDomains',
   server: 'Microsoft-HTTPAPI/2.0, Microsoft-HTTPAPI/2.0',

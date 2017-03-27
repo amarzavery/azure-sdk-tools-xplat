@@ -29,7 +29,7 @@ exports.setEnvironment = function() {
 exports.scopes = [[function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/resourceGroups/xplatTstCntnGCreate4756/providers/Microsoft.ContainerService/containerServices/xplatContainer9457?api-version=2016-09-30')
+  .get('/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/resourceGroups/xplatTstCntnGCreate4756/providers/Microsoft.ContainerService/containerServices/xplatContainer9457?api-version=2017-01-31')
   .reply(200, "{\r\n  \"id\": \"/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/resourceGroups/xplatTstCntnGCreate4756/providers/Microsoft.ContainerService/containerServices/xplatContainer9457\",\r\n  \"name\": \"xplatContainer9457\",\r\n  \"type\": \"Microsoft.ContainerService/ContainerServices\",\r\n  \"location\": \"eastus\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"provisioningState\": \"Succeeded\",\r\n    \"orchestratorProfile\": {\r\n      \"orchestratorType\": \"DCOS\"\r\n    },\r\n    \"masterProfile\": {\r\n      \"count\": 1,\r\n      \"dnsPrefix\": \"xplatContainer9457master\",\r\n      \"fqdn\": \"xplatcontainer9457master.eastus.cloudapp.azure.com\"\r\n    },\r\n    \"agentPoolProfiles\": [\r\n      {\r\n        \"name\": \"xplatContainer9457a1\",\r\n        \"count\": 2,\r\n        \"vmSize\": \"Standard_A1\",\r\n        \"dnsPrefix\": \"xplatContainer9457a2\",\r\n        \"fqdn\": \"xplatcontainer9457a2.eastus.cloudapp.azure.com\",\r\n        \"osType\": \"Linux\"\r\n      }\r\n    ],\r\n    \"linuxProfile\": {\r\n      \"ssh\": {\r\n        \"publicKeys\": [\r\n          {\r\n            \"keyData\": \"ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEA1J/ZLar7bMxCr0eN1yAkMM8B7Z6eQP2P0LG5W/ATM/c7r5voER2N/xJ2JMyKRM73zX83nyTroGRynFsLTaizSQ2hNCAs15oxwspnFrlBZVsNhNs6DvPUDosJ81/ud5Emle8VYAWCwtAl0BVx+fWCygqKTXcYznuHTwnxYyk5hgPno3YD7/mk2j53EN6iY+ua0FNnxPQAHIXxwREOWSTr4zp40vEpfbww2GuabdACh5gg7rxtjCb2NAIKBmn8Bm0fpKzwtaPA6ihFfUwpBvhihdn7OIpss7G50VplX+h3xdyx31TFJ7rcqlsSrwXI1SNic0WWjnU1j/6Ely4Z1HnCYQ==\"\r\n          }\r\n        ]\r\n      },\r\n      \"adminUsername\": \"azureuser\"\r\n    },\r\n    \"diagnosticsProfile\": {\r\n      \"vmDiagnostics\": {\r\n        \"enabled\": true,\r\n        \"storageUri\": \"https://eabkurw4fju5sdiag0.blob.core.windows.net/\"\r\n      }\r\n    }\r\n  }\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '1639',
@@ -48,7 +48,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/resourceGroups/xplatTstCntnGCreate4756/providers/Microsoft.ContainerService/containerServices/xplatContainer9457?api-version=2016-09-30')
+  .get('/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/resourceGroups/xplatTstCntnGCreate4756/providers/Microsoft.ContainerService/containerServices/xplatContainer9457?api-version=2017-01-31')
   .reply(200, "{\r\n  \"id\": \"/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/resourceGroups/xplatTstCntnGCreate4756/providers/Microsoft.ContainerService/containerServices/xplatContainer9457\",\r\n  \"name\": \"xplatContainer9457\",\r\n  \"type\": \"Microsoft.ContainerService/ContainerServices\",\r\n  \"location\": \"eastus\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"provisioningState\": \"Succeeded\",\r\n    \"orchestratorProfile\": {\r\n      \"orchestratorType\": \"DCOS\"\r\n    },\r\n    \"masterProfile\": {\r\n      \"count\": 1,\r\n      \"dnsPrefix\": \"xplatContainer9457master\",\r\n      \"fqdn\": \"xplatcontainer9457master.eastus.cloudapp.azure.com\"\r\n    },\r\n    \"agentPoolProfiles\": [\r\n      {\r\n        \"name\": \"xplatContainer9457a1\",\r\n        \"count\": 2,\r\n        \"vmSize\": \"Standard_A1\",\r\n        \"dnsPrefix\": \"xplatContainer9457a2\",\r\n        \"fqdn\": \"xplatcontainer9457a2.eastus.cloudapp.azure.com\",\r\n        \"osType\": \"Linux\"\r\n      }\r\n    ],\r\n    \"linuxProfile\": {\r\n      \"ssh\": {\r\n        \"publicKeys\": [\r\n          {\r\n            \"keyData\": \"ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEA1J/ZLar7bMxCr0eN1yAkMM8B7Z6eQP2P0LG5W/ATM/c7r5voER2N/xJ2JMyKRM73zX83nyTroGRynFsLTaizSQ2hNCAs15oxwspnFrlBZVsNhNs6DvPUDosJ81/ud5Emle8VYAWCwtAl0BVx+fWCygqKTXcYznuHTwnxYyk5hgPno3YD7/mk2j53EN6iY+ua0FNnxPQAHIXxwREOWSTr4zp40vEpfbww2GuabdACh5gg7rxtjCb2NAIKBmn8Bm0fpKzwtaPA6ihFfUwpBvhihdn7OIpss7G50VplX+h3xdyx31TFJ7rcqlsSrwXI1SNic0WWjnU1j/6Ely4Z1HnCYQ==\"\r\n          }\r\n        ]\r\n      },\r\n      \"adminUsername\": \"azureuser\"\r\n    },\r\n    \"diagnosticsProfile\": {\r\n      \"vmDiagnostics\": {\r\n        \"enabled\": true,\r\n        \"storageUri\": \"https://eabkurw4fju5sdiag0.blob.core.windows.net/\"\r\n      }\r\n    }\r\n  }\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '1639',
@@ -68,13 +68,13 @@ function (nock) {
 var result = 
 nock('http://management.azure.com:443')
   .filteringRequestBody(function (path) { return '*';})
-.put('/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/resourceGroups/xplatTstCntnGCreate4756/providers/Microsoft.ContainerService/containerServices/xplatContainer9457?api-version=2016-09-30', '*')
+.put('/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/resourceGroups/xplatTstCntnGCreate4756/providers/Microsoft.ContainerService/containerServices/xplatContainer9457?api-version=2017-01-31', '*')
   .reply(200, "{\r\n  \"id\": \"/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/resourceGroups/xplatTstCntnGCreate4756/providers/Microsoft.ContainerService/containerServices/xplatContainer9457\",\r\n  \"name\": \"xplatContainer9457\",\r\n  \"type\": \"Microsoft.ContainerService/ContainerServices\",\r\n  \"location\": \"eastus\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"provisioningState\": \"Updating\",\r\n    \"orchestratorProfile\": {\r\n      \"orchestratorType\": \"DCOS\"\r\n    },\r\n    \"masterProfile\": {\r\n      \"count\": 1,\r\n      \"dnsPrefix\": \"xplatContainer9457master\"\r\n    },\r\n    \"agentPoolProfiles\": [\r\n      {\r\n        \"name\": \"xplatContainer9457a1\",\r\n        \"count\": 4,\r\n        \"vmSize\": \"Standard_A1\",\r\n        \"dnsPrefix\": \"xplatContainer9457a2\",\r\n        \"osType\": \"Linux\"\r\n      }\r\n    ],\r\n    \"linuxProfile\": {\r\n      \"ssh\": {\r\n        \"publicKeys\": [\r\n          {\r\n            \"keyData\": \"ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEA1J/ZLar7bMxCr0eN1yAkMM8B7Z6eQP2P0LG5W/ATM/c7r5voER2N/xJ2JMyKRM73zX83nyTroGRynFsLTaizSQ2hNCAs15oxwspnFrlBZVsNhNs6DvPUDosJ81/ud5Emle8VYAWCwtAl0BVx+fWCygqKTXcYznuHTwnxYyk5hgPno3YD7/mk2j53EN6iY+ua0FNnxPQAHIXxwREOWSTr4zp40vEpfbww2GuabdACh5gg7rxtjCb2NAIKBmn8Bm0fpKzwtaPA6ihFfUwpBvhihdn7OIpss7G50VplX+h3xdyx31TFJ7rcqlsSrwXI1SNic0WWjnU1j/6Ely4Z1HnCYQ==\"\r\n          }\r\n        ]\r\n      },\r\n      \"adminUsername\": \"azureuser\"\r\n    },\r\n    \"diagnosticsProfile\": {\r\n      \"vmDiagnostics\": {\r\n        \"enabled\": true,\r\n        \"storageUri\": \"https://eabkurw4fju5sdiag0.blob.core.windows.net/\"\r\n      }\r\n    }\r\n  }\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '1502',
   'content-type': 'application/json; charset=utf-8',
   expires: '-1',
-  'azure-asyncoperation': 'https://management.azure.com/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/providers/Microsoft.ContainerService/locations/eastus/operations/63eec381-9494-49ed-9647-e9ec4353576c?api-version=2016-09-30',
+  'azure-asyncoperation': 'https://management.azure.com/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/providers/Microsoft.ContainerService/locations/eastus/operations/63eec381-9494-49ed-9647-e9ec4353576c?api-version=2017-01-31',
   'strict-transport-security': 'max-age=31536000; includeSubDomains',
   'x-ms-served-by': 'ef6d7439-e988-468f-a569-fd46bcc95faa_131260614325152837',
   'x-ms-request-id': '63eec381-9494-49ed-9647-e9ec4353576c',
@@ -89,13 +89,13 @@ function (nock) {
 var result = 
 nock('https://management.azure.com:443')
   .filteringRequestBody(function (path) { return '*';})
-.put('/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/resourceGroups/xplatTstCntnGCreate4756/providers/Microsoft.ContainerService/containerServices/xplatContainer9457?api-version=2016-09-30', '*')
+.put('/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/resourceGroups/xplatTstCntnGCreate4756/providers/Microsoft.ContainerService/containerServices/xplatContainer9457?api-version=2017-01-31', '*')
   .reply(200, "{\r\n  \"id\": \"/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/resourceGroups/xplatTstCntnGCreate4756/providers/Microsoft.ContainerService/containerServices/xplatContainer9457\",\r\n  \"name\": \"xplatContainer9457\",\r\n  \"type\": \"Microsoft.ContainerService/ContainerServices\",\r\n  \"location\": \"eastus\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"provisioningState\": \"Updating\",\r\n    \"orchestratorProfile\": {\r\n      \"orchestratorType\": \"DCOS\"\r\n    },\r\n    \"masterProfile\": {\r\n      \"count\": 1,\r\n      \"dnsPrefix\": \"xplatContainer9457master\"\r\n    },\r\n    \"agentPoolProfiles\": [\r\n      {\r\n        \"name\": \"xplatContainer9457a1\",\r\n        \"count\": 4,\r\n        \"vmSize\": \"Standard_A1\",\r\n        \"dnsPrefix\": \"xplatContainer9457a2\",\r\n        \"osType\": \"Linux\"\r\n      }\r\n    ],\r\n    \"linuxProfile\": {\r\n      \"ssh\": {\r\n        \"publicKeys\": [\r\n          {\r\n            \"keyData\": \"ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEA1J/ZLar7bMxCr0eN1yAkMM8B7Z6eQP2P0LG5W/ATM/c7r5voER2N/xJ2JMyKRM73zX83nyTroGRynFsLTaizSQ2hNCAs15oxwspnFrlBZVsNhNs6DvPUDosJ81/ud5Emle8VYAWCwtAl0BVx+fWCygqKTXcYznuHTwnxYyk5hgPno3YD7/mk2j53EN6iY+ua0FNnxPQAHIXxwREOWSTr4zp40vEpfbww2GuabdACh5gg7rxtjCb2NAIKBmn8Bm0fpKzwtaPA6ihFfUwpBvhihdn7OIpss7G50VplX+h3xdyx31TFJ7rcqlsSrwXI1SNic0WWjnU1j/6Ely4Z1HnCYQ==\"\r\n          }\r\n        ]\r\n      },\r\n      \"adminUsername\": \"azureuser\"\r\n    },\r\n    \"diagnosticsProfile\": {\r\n      \"vmDiagnostics\": {\r\n        \"enabled\": true,\r\n        \"storageUri\": \"https://eabkurw4fju5sdiag0.blob.core.windows.net/\"\r\n      }\r\n    }\r\n  }\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '1502',
   'content-type': 'application/json; charset=utf-8',
   expires: '-1',
-  'azure-asyncoperation': 'https://management.azure.com/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/providers/Microsoft.ContainerService/locations/eastus/operations/63eec381-9494-49ed-9647-e9ec4353576c?api-version=2016-09-30',
+  'azure-asyncoperation': 'https://management.azure.com/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/providers/Microsoft.ContainerService/locations/eastus/operations/63eec381-9494-49ed-9647-e9ec4353576c?api-version=2017-01-31',
   'strict-transport-security': 'max-age=31536000; includeSubDomains',
   'x-ms-served-by': 'ef6d7439-e988-468f-a569-fd46bcc95faa_131260614325152837',
   'x-ms-request-id': '63eec381-9494-49ed-9647-e9ec4353576c',
@@ -109,7 +109,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/providers/Microsoft.ContainerService/locations/eastus/operations/63eec381-9494-49ed-9647-e9ec4353576c?api-version=2016-09-30')
+  .get('/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/providers/Microsoft.ContainerService/locations/eastus/operations/63eec381-9494-49ed-9647-e9ec4353576c?api-version=2017-01-31')
   .reply(200, "{\r\n  \"startTime\": \"2017-01-29T09:42:19.8868253+00:00\",\r\n  \"status\": \"InProgress\",\r\n  \"name\": \"63eec381-9494-49ed-9647-e9ec4353576c\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '134',
@@ -128,7 +128,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/providers/Microsoft.ContainerService/locations/eastus/operations/63eec381-9494-49ed-9647-e9ec4353576c?api-version=2016-09-30')
+  .get('/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/providers/Microsoft.ContainerService/locations/eastus/operations/63eec381-9494-49ed-9647-e9ec4353576c?api-version=2017-01-31')
   .reply(200, "{\r\n  \"startTime\": \"2017-01-29T09:42:19.8868253+00:00\",\r\n  \"status\": \"InProgress\",\r\n  \"name\": \"63eec381-9494-49ed-9647-e9ec4353576c\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '134',
@@ -147,7 +147,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/providers/Microsoft.ContainerService/locations/eastus/operations/63eec381-9494-49ed-9647-e9ec4353576c?api-version=2016-09-30')
+  .get('/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/providers/Microsoft.ContainerService/locations/eastus/operations/63eec381-9494-49ed-9647-e9ec4353576c?api-version=2017-01-31')
   .reply(200, "{\r\n  \"startTime\": \"2017-01-29T09:42:19.8868253+00:00\",\r\n  \"status\": \"InProgress\",\r\n  \"name\": \"63eec381-9494-49ed-9647-e9ec4353576c\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '134',
@@ -166,7 +166,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/providers/Microsoft.ContainerService/locations/eastus/operations/63eec381-9494-49ed-9647-e9ec4353576c?api-version=2016-09-30')
+  .get('/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/providers/Microsoft.ContainerService/locations/eastus/operations/63eec381-9494-49ed-9647-e9ec4353576c?api-version=2017-01-31')
   .reply(200, "{\r\n  \"startTime\": \"2017-01-29T09:42:19.8868253+00:00\",\r\n  \"status\": \"InProgress\",\r\n  \"name\": \"63eec381-9494-49ed-9647-e9ec4353576c\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '134',
@@ -185,7 +185,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/providers/Microsoft.ContainerService/locations/eastus/operations/63eec381-9494-49ed-9647-e9ec4353576c?api-version=2016-09-30')
+  .get('/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/providers/Microsoft.ContainerService/locations/eastus/operations/63eec381-9494-49ed-9647-e9ec4353576c?api-version=2017-01-31')
   .reply(200, "{\r\n  \"startTime\": \"2017-01-29T09:42:19.8868253+00:00\",\r\n  \"status\": \"InProgress\",\r\n  \"name\": \"63eec381-9494-49ed-9647-e9ec4353576c\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '134',
@@ -204,7 +204,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/providers/Microsoft.ContainerService/locations/eastus/operations/63eec381-9494-49ed-9647-e9ec4353576c?api-version=2016-09-30')
+  .get('/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/providers/Microsoft.ContainerService/locations/eastus/operations/63eec381-9494-49ed-9647-e9ec4353576c?api-version=2017-01-31')
   .reply(200, "{\r\n  \"startTime\": \"2017-01-29T09:42:19.8868253+00:00\",\r\n  \"status\": \"InProgress\",\r\n  \"name\": \"63eec381-9494-49ed-9647-e9ec4353576c\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '134',
@@ -223,7 +223,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/providers/Microsoft.ContainerService/locations/eastus/operations/63eec381-9494-49ed-9647-e9ec4353576c?api-version=2016-09-30')
+  .get('/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/providers/Microsoft.ContainerService/locations/eastus/operations/63eec381-9494-49ed-9647-e9ec4353576c?api-version=2017-01-31')
   .reply(200, "{\r\n  \"startTime\": \"2017-01-29T09:42:19.8868253+00:00\",\r\n  \"status\": \"InProgress\",\r\n  \"name\": \"63eec381-9494-49ed-9647-e9ec4353576c\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '134',
@@ -242,7 +242,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/providers/Microsoft.ContainerService/locations/eastus/operations/63eec381-9494-49ed-9647-e9ec4353576c?api-version=2016-09-30')
+  .get('/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/providers/Microsoft.ContainerService/locations/eastus/operations/63eec381-9494-49ed-9647-e9ec4353576c?api-version=2017-01-31')
   .reply(200, "{\r\n  \"startTime\": \"2017-01-29T09:42:19.8868253+00:00\",\r\n  \"status\": \"InProgress\",\r\n  \"name\": \"63eec381-9494-49ed-9647-e9ec4353576c\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '134',
@@ -261,7 +261,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/providers/Microsoft.ContainerService/locations/eastus/operations/63eec381-9494-49ed-9647-e9ec4353576c?api-version=2016-09-30')
+  .get('/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/providers/Microsoft.ContainerService/locations/eastus/operations/63eec381-9494-49ed-9647-e9ec4353576c?api-version=2017-01-31')
   .reply(200, "{\r\n  \"startTime\": \"2017-01-29T09:42:19.8868253+00:00\",\r\n  \"status\": \"InProgress\",\r\n  \"name\": \"63eec381-9494-49ed-9647-e9ec4353576c\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '134',
@@ -280,7 +280,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/providers/Microsoft.ContainerService/locations/eastus/operations/63eec381-9494-49ed-9647-e9ec4353576c?api-version=2016-09-30')
+  .get('/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/providers/Microsoft.ContainerService/locations/eastus/operations/63eec381-9494-49ed-9647-e9ec4353576c?api-version=2017-01-31')
   .reply(200, "{\r\n  \"startTime\": \"2017-01-29T09:42:19.8868253+00:00\",\r\n  \"status\": \"InProgress\",\r\n  \"name\": \"63eec381-9494-49ed-9647-e9ec4353576c\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '134',
@@ -299,7 +299,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/providers/Microsoft.ContainerService/locations/eastus/operations/63eec381-9494-49ed-9647-e9ec4353576c?api-version=2016-09-30')
+  .get('/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/providers/Microsoft.ContainerService/locations/eastus/operations/63eec381-9494-49ed-9647-e9ec4353576c?api-version=2017-01-31')
   .reply(200, "{\r\n  \"startTime\": \"2017-01-29T09:42:19.8868253+00:00\",\r\n  \"endTime\": \"2017-01-29T09:44:53.015562+00:00\",\r\n  \"status\": \"Succeeded\",\r\n  \"name\": \"63eec381-9494-49ed-9647-e9ec4353576c\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '183',
@@ -318,7 +318,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/providers/Microsoft.ContainerService/locations/eastus/operations/63eec381-9494-49ed-9647-e9ec4353576c?api-version=2016-09-30')
+  .get('/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/providers/Microsoft.ContainerService/locations/eastus/operations/63eec381-9494-49ed-9647-e9ec4353576c?api-version=2017-01-31')
   .reply(200, "{\r\n  \"startTime\": \"2017-01-29T09:42:19.8868253+00:00\",\r\n  \"endTime\": \"2017-01-29T09:44:53.015562+00:00\",\r\n  \"status\": \"Succeeded\",\r\n  \"name\": \"63eec381-9494-49ed-9647-e9ec4353576c\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '183',
@@ -337,7 +337,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/resourceGroups/xplatTstCntnGCreate4756/providers/Microsoft.ContainerService/containerServices/xplatContainer9457?api-version=2016-09-30')
+  .get('/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/resourceGroups/xplatTstCntnGCreate4756/providers/Microsoft.ContainerService/containerServices/xplatContainer9457?api-version=2017-01-31')
   .reply(200, "{\r\n  \"id\": \"/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/resourceGroups/xplatTstCntnGCreate4756/providers/Microsoft.ContainerService/containerServices/xplatContainer9457\",\r\n  \"name\": \"xplatContainer9457\",\r\n  \"type\": \"Microsoft.ContainerService/ContainerServices\",\r\n  \"location\": \"eastus\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"provisioningState\": \"Succeeded\",\r\n    \"orchestratorProfile\": {\r\n      \"orchestratorType\": \"DCOS\"\r\n    },\r\n    \"masterProfile\": {\r\n      \"count\": 1,\r\n      \"dnsPrefix\": \"xplatContainer9457master\",\r\n      \"fqdn\": \"xplatcontainer9457master.eastus.cloudapp.azure.com\"\r\n    },\r\n    \"agentPoolProfiles\": [\r\n      {\r\n        \"name\": \"xplatContainer9457a1\",\r\n        \"count\": 4,\r\n        \"vmSize\": \"Standard_A1\",\r\n        \"dnsPrefix\": \"xplatContainer9457a2\",\r\n        \"fqdn\": \"xplatcontainer9457a2.eastus.cloudapp.azure.com\",\r\n        \"osType\": \"Linux\"\r\n      }\r\n    ],\r\n    \"linuxProfile\": {\r\n      \"ssh\": {\r\n        \"publicKeys\": [\r\n          {\r\n            \"keyData\": \"ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEA1J/ZLar7bMxCr0eN1yAkMM8B7Z6eQP2P0LG5W/ATM/c7r5voER2N/xJ2JMyKRM73zX83nyTroGRynFsLTaizSQ2hNCAs15oxwspnFrlBZVsNhNs6DvPUDosJ81/ud5Emle8VYAWCwtAl0BVx+fWCygqKTXcYznuHTwnxYyk5hgPno3YD7/mk2j53EN6iY+ua0FNnxPQAHIXxwREOWSTr4zp40vEpfbww2GuabdACh5gg7rxtjCb2NAIKBmn8Bm0fpKzwtaPA6ihFfUwpBvhihdn7OIpss7G50VplX+h3xdyx31TFJ7rcqlsSrwXI1SNic0WWjnU1j/6Ely4Z1HnCYQ==\"\r\n          }\r\n        ]\r\n      },\r\n      \"adminUsername\": \"azureuser\"\r\n    },\r\n    \"diagnosticsProfile\": {\r\n      \"vmDiagnostics\": {\r\n        \"enabled\": true,\r\n        \"storageUri\": \"https://eabkurw4fju5sdiag0.blob.core.windows.net/\"\r\n      }\r\n    }\r\n  }\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '1639',
@@ -356,7 +356,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/resourceGroups/xplatTstCntnGCreate4756/providers/Microsoft.ContainerService/containerServices/xplatContainer9457?api-version=2016-09-30')
+  .get('/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/resourceGroups/xplatTstCntnGCreate4756/providers/Microsoft.ContainerService/containerServices/xplatContainer9457?api-version=2017-01-31')
   .reply(200, "{\r\n  \"id\": \"/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/resourceGroups/xplatTstCntnGCreate4756/providers/Microsoft.ContainerService/containerServices/xplatContainer9457\",\r\n  \"name\": \"xplatContainer9457\",\r\n  \"type\": \"Microsoft.ContainerService/ContainerServices\",\r\n  \"location\": \"eastus\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"provisioningState\": \"Succeeded\",\r\n    \"orchestratorProfile\": {\r\n      \"orchestratorType\": \"DCOS\"\r\n    },\r\n    \"masterProfile\": {\r\n      \"count\": 1,\r\n      \"dnsPrefix\": \"xplatContainer9457master\",\r\n      \"fqdn\": \"xplatcontainer9457master.eastus.cloudapp.azure.com\"\r\n    },\r\n    \"agentPoolProfiles\": [\r\n      {\r\n        \"name\": \"xplatContainer9457a1\",\r\n        \"count\": 4,\r\n        \"vmSize\": \"Standard_A1\",\r\n        \"dnsPrefix\": \"xplatContainer9457a2\",\r\n        \"fqdn\": \"xplatcontainer9457a2.eastus.cloudapp.azure.com\",\r\n        \"osType\": \"Linux\"\r\n      }\r\n    ],\r\n    \"linuxProfile\": {\r\n      \"ssh\": {\r\n        \"publicKeys\": [\r\n          {\r\n            \"keyData\": \"ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEA1J/ZLar7bMxCr0eN1yAkMM8B7Z6eQP2P0LG5W/ATM/c7r5voER2N/xJ2JMyKRM73zX83nyTroGRynFsLTaizSQ2hNCAs15oxwspnFrlBZVsNhNs6DvPUDosJ81/ud5Emle8VYAWCwtAl0BVx+fWCygqKTXcYznuHTwnxYyk5hgPno3YD7/mk2j53EN6iY+ua0FNnxPQAHIXxwREOWSTr4zp40vEpfbww2GuabdACh5gg7rxtjCb2NAIKBmn8Bm0fpKzwtaPA6ihFfUwpBvhihdn7OIpss7G50VplX+h3xdyx31TFJ7rcqlsSrwXI1SNic0WWjnU1j/6Ely4Z1HnCYQ==\"\r\n          }\r\n        ]\r\n      },\r\n      \"adminUsername\": \"azureuser\"\r\n    },\r\n    \"diagnosticsProfile\": {\r\n      \"vmDiagnostics\": {\r\n        \"enabled\": true,\r\n        \"storageUri\": \"https://eabkurw4fju5sdiag0.blob.core.windows.net/\"\r\n      }\r\n    }\r\n  }\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '1639',
@@ -375,7 +375,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/resourceGroups/xplatTstCntnGCreate4756/providers/Microsoft.ContainerService/containerServices/xplatContainer29931?api-version=2016-09-30')
+  .get('/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/resourceGroups/xplatTstCntnGCreate4756/providers/Microsoft.ContainerService/containerServices/xplatContainer29931?api-version=2017-01-31')
   .reply(200, "{\r\n  \"id\": \"/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/resourceGroups/xplatTstCntnGCreate4756/providers/Microsoft.ContainerService/containerServices/xplatContainer29931\",\r\n  \"name\": \"xplatContainer29931\",\r\n  \"type\": \"Microsoft.ContainerService/ContainerServices\",\r\n  \"location\": \"eastus\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"provisioningState\": \"Succeeded\",\r\n    \"orchestratorProfile\": {\r\n      \"orchestratorType\": \"Swarm\"\r\n    },\r\n    \"masterProfile\": {\r\n      \"count\": 1,\r\n      \"dnsPrefix\": \"xplatContainer29931master\",\r\n      \"fqdn\": \"xplatcontainer29931master.eastus.cloudapp.azure.com\"\r\n    },\r\n    \"agentPoolProfiles\": [\r\n      {\r\n        \"name\": \"xplatContainer29931a1\",\r\n        \"count\": 1,\r\n        \"vmSize\": \"Standard_A1\",\r\n        \"dnsPrefix\": \"xplatContainer29931a2\",\r\n        \"fqdn\": \"xplatcontainer29931a2.eastus.cloudapp.azure.com\",\r\n        \"osType\": \"Linux\"\r\n      }\r\n    ],\r\n    \"linuxProfile\": {\r\n      \"ssh\": {\r\n        \"publicKeys\": [\r\n          {\r\n            \"keyData\": \"ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEA1J/ZLar7bMxCr0eN1yAkMM8B7Z6eQP2P0LG5W/ATM/c7r5voER2N/xJ2JMyKRM73zX83nyTroGRynFsLTaizSQ2hNCAs15oxwspnFrlBZVsNhNs6DvPUDosJ81/ud5Emle8VYAWCwtAl0BVx+fWCygqKTXcYznuHTwnxYyk5hgPno3YD7/mk2j53EN6iY+ua0FNnxPQAHIXxwREOWSTr4zp40vEpfbww2GuabdACh5gg7rxtjCb2NAIKBmn8Bm0fpKzwtaPA6ihFfUwpBvhihdn7OIpss7G50VplX+h3xdyx31TFJ7rcqlsSrwXI1SNic0WWjnU1j/6Ely4Z1HnCYQ==\"\r\n          }\r\n        ]\r\n      },\r\n      \"adminUsername\": \"azureuser\"\r\n    },\r\n    \"diagnosticsProfile\": {\r\n      \"vmDiagnostics\": {\r\n        \"enabled\": true,\r\n        \"storageUri\": \"https://jofgz5tzjw2y4swarmdiag0.blob.core.windows.net/\"\r\n      }\r\n    }\r\n  }\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '1652',
@@ -394,7 +394,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/resourceGroups/xplatTstCntnGCreate4756/providers/Microsoft.ContainerService/containerServices/xplatContainer29931?api-version=2016-09-30')
+  .get('/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/resourceGroups/xplatTstCntnGCreate4756/providers/Microsoft.ContainerService/containerServices/xplatContainer29931?api-version=2017-01-31')
   .reply(200, "{\r\n  \"id\": \"/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/resourceGroups/xplatTstCntnGCreate4756/providers/Microsoft.ContainerService/containerServices/xplatContainer29931\",\r\n  \"name\": \"xplatContainer29931\",\r\n  \"type\": \"Microsoft.ContainerService/ContainerServices\",\r\n  \"location\": \"eastus\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"provisioningState\": \"Succeeded\",\r\n    \"orchestratorProfile\": {\r\n      \"orchestratorType\": \"Swarm\"\r\n    },\r\n    \"masterProfile\": {\r\n      \"count\": 1,\r\n      \"dnsPrefix\": \"xplatContainer29931master\",\r\n      \"fqdn\": \"xplatcontainer29931master.eastus.cloudapp.azure.com\"\r\n    },\r\n    \"agentPoolProfiles\": [\r\n      {\r\n        \"name\": \"xplatContainer29931a1\",\r\n        \"count\": 1,\r\n        \"vmSize\": \"Standard_A1\",\r\n        \"dnsPrefix\": \"xplatContainer29931a2\",\r\n        \"fqdn\": \"xplatcontainer29931a2.eastus.cloudapp.azure.com\",\r\n        \"osType\": \"Linux\"\r\n      }\r\n    ],\r\n    \"linuxProfile\": {\r\n      \"ssh\": {\r\n        \"publicKeys\": [\r\n          {\r\n            \"keyData\": \"ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEA1J/ZLar7bMxCr0eN1yAkMM8B7Z6eQP2P0LG5W/ATM/c7r5voER2N/xJ2JMyKRM73zX83nyTroGRynFsLTaizSQ2hNCAs15oxwspnFrlBZVsNhNs6DvPUDosJ81/ud5Emle8VYAWCwtAl0BVx+fWCygqKTXcYznuHTwnxYyk5hgPno3YD7/mk2j53EN6iY+ua0FNnxPQAHIXxwREOWSTr4zp40vEpfbww2GuabdACh5gg7rxtjCb2NAIKBmn8Bm0fpKzwtaPA6ihFfUwpBvhihdn7OIpss7G50VplX+h3xdyx31TFJ7rcqlsSrwXI1SNic0WWjnU1j/6Ely4Z1HnCYQ==\"\r\n          }\r\n        ]\r\n      },\r\n      \"adminUsername\": \"azureuser\"\r\n    },\r\n    \"diagnosticsProfile\": {\r\n      \"vmDiagnostics\": {\r\n        \"enabled\": true,\r\n        \"storageUri\": \"https://jofgz5tzjw2y4swarmdiag0.blob.core.windows.net/\"\r\n      }\r\n    }\r\n  }\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '1652',
@@ -414,13 +414,13 @@ function (nock) {
 var result = 
 nock('http://management.azure.com:443')
   .filteringRequestBody(function (path) { return '*';})
-.put('/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/resourceGroups/xplatTstCntnGCreate4756/providers/Microsoft.ContainerService/containerServices/xplatContainer29931?api-version=2016-09-30', '*')
+.put('/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/resourceGroups/xplatTstCntnGCreate4756/providers/Microsoft.ContainerService/containerServices/xplatContainer29931?api-version=2017-01-31', '*')
   .reply(200, "{\r\n  \"id\": \"/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/resourceGroups/xplatTstCntnGCreate4756/providers/Microsoft.ContainerService/containerServices/xplatContainer29931\",\r\n  \"name\": \"xplatContainer29931\",\r\n  \"type\": \"Microsoft.ContainerService/ContainerServices\",\r\n  \"location\": \"eastus\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"provisioningState\": \"Updating\",\r\n    \"orchestratorProfile\": {\r\n      \"orchestratorType\": \"Swarm\"\r\n    },\r\n    \"masterProfile\": {\r\n      \"count\": 1,\r\n      \"dnsPrefix\": \"xplatContainer29931master\"\r\n    },\r\n    \"agentPoolProfiles\": [\r\n      {\r\n        \"name\": \"xplatContainer29931a1\",\r\n        \"count\": 4,\r\n        \"vmSize\": \"Standard_A1\",\r\n        \"dnsPrefix\": \"xplatContainer29931a2\",\r\n        \"osType\": \"Linux\"\r\n      }\r\n    ],\r\n    \"linuxProfile\": {\r\n      \"ssh\": {\r\n        \"publicKeys\": [\r\n          {\r\n            \"keyData\": \"ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEA1J/ZLar7bMxCr0eN1yAkMM8B7Z6eQP2P0LG5W/ATM/c7r5voER2N/xJ2JMyKRM73zX83nyTroGRynFsLTaizSQ2hNCAs15oxwspnFrlBZVsNhNs6DvPUDosJ81/ud5Emle8VYAWCwtAl0BVx+fWCygqKTXcYznuHTwnxYyk5hgPno3YD7/mk2j53EN6iY+ua0FNnxPQAHIXxwREOWSTr4zp40vEpfbww2GuabdACh5gg7rxtjCb2NAIKBmn8Bm0fpKzwtaPA6ihFfUwpBvhihdn7OIpss7G50VplX+h3xdyx31TFJ7rcqlsSrwXI1SNic0WWjnU1j/6Ely4Z1HnCYQ==\"\r\n          }\r\n        ]\r\n      },\r\n      \"adminUsername\": \"azureuser\"\r\n    },\r\n    \"diagnosticsProfile\": {\r\n      \"vmDiagnostics\": {\r\n        \"enabled\": true,\r\n        \"storageUri\": \"https://jofgz5tzjw2y4swarmdiag0.blob.core.windows.net/\"\r\n      }\r\n    }\r\n  }\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '1513',
   'content-type': 'application/json; charset=utf-8',
   expires: '-1',
-  'azure-asyncoperation': 'https://management.azure.com/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/providers/Microsoft.ContainerService/locations/eastus/operations/13298416-36c7-4db4-b220-94bc4ab2efce?api-version=2016-09-30',
+  'azure-asyncoperation': 'https://management.azure.com/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/providers/Microsoft.ContainerService/locations/eastus/operations/13298416-36c7-4db4-b220-94bc4ab2efce?api-version=2017-01-31',
   'strict-transport-security': 'max-age=31536000; includeSubDomains',
   'x-ms-served-by': 'ef6d7439-e988-468f-a569-fd46bcc95faa_131260614325152837',
   'x-ms-request-id': '13298416-36c7-4db4-b220-94bc4ab2efce',
@@ -435,13 +435,13 @@ function (nock) {
 var result = 
 nock('https://management.azure.com:443')
   .filteringRequestBody(function (path) { return '*';})
-.put('/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/resourceGroups/xplatTstCntnGCreate4756/providers/Microsoft.ContainerService/containerServices/xplatContainer29931?api-version=2016-09-30', '*')
+.put('/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/resourceGroups/xplatTstCntnGCreate4756/providers/Microsoft.ContainerService/containerServices/xplatContainer29931?api-version=2017-01-31', '*')
   .reply(200, "{\r\n  \"id\": \"/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/resourceGroups/xplatTstCntnGCreate4756/providers/Microsoft.ContainerService/containerServices/xplatContainer29931\",\r\n  \"name\": \"xplatContainer29931\",\r\n  \"type\": \"Microsoft.ContainerService/ContainerServices\",\r\n  \"location\": \"eastus\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"provisioningState\": \"Updating\",\r\n    \"orchestratorProfile\": {\r\n      \"orchestratorType\": \"Swarm\"\r\n    },\r\n    \"masterProfile\": {\r\n      \"count\": 1,\r\n      \"dnsPrefix\": \"xplatContainer29931master\"\r\n    },\r\n    \"agentPoolProfiles\": [\r\n      {\r\n        \"name\": \"xplatContainer29931a1\",\r\n        \"count\": 4,\r\n        \"vmSize\": \"Standard_A1\",\r\n        \"dnsPrefix\": \"xplatContainer29931a2\",\r\n        \"osType\": \"Linux\"\r\n      }\r\n    ],\r\n    \"linuxProfile\": {\r\n      \"ssh\": {\r\n        \"publicKeys\": [\r\n          {\r\n            \"keyData\": \"ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEA1J/ZLar7bMxCr0eN1yAkMM8B7Z6eQP2P0LG5W/ATM/c7r5voER2N/xJ2JMyKRM73zX83nyTroGRynFsLTaizSQ2hNCAs15oxwspnFrlBZVsNhNs6DvPUDosJ81/ud5Emle8VYAWCwtAl0BVx+fWCygqKTXcYznuHTwnxYyk5hgPno3YD7/mk2j53EN6iY+ua0FNnxPQAHIXxwREOWSTr4zp40vEpfbww2GuabdACh5gg7rxtjCb2NAIKBmn8Bm0fpKzwtaPA6ihFfUwpBvhihdn7OIpss7G50VplX+h3xdyx31TFJ7rcqlsSrwXI1SNic0WWjnU1j/6Ely4Z1HnCYQ==\"\r\n          }\r\n        ]\r\n      },\r\n      \"adminUsername\": \"azureuser\"\r\n    },\r\n    \"diagnosticsProfile\": {\r\n      \"vmDiagnostics\": {\r\n        \"enabled\": true,\r\n        \"storageUri\": \"https://jofgz5tzjw2y4swarmdiag0.blob.core.windows.net/\"\r\n      }\r\n    }\r\n  }\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '1513',
   'content-type': 'application/json; charset=utf-8',
   expires: '-1',
-  'azure-asyncoperation': 'https://management.azure.com/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/providers/Microsoft.ContainerService/locations/eastus/operations/13298416-36c7-4db4-b220-94bc4ab2efce?api-version=2016-09-30',
+  'azure-asyncoperation': 'https://management.azure.com/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/providers/Microsoft.ContainerService/locations/eastus/operations/13298416-36c7-4db4-b220-94bc4ab2efce?api-version=2017-01-31',
   'strict-transport-security': 'max-age=31536000; includeSubDomains',
   'x-ms-served-by': 'ef6d7439-e988-468f-a569-fd46bcc95faa_131260614325152837',
   'x-ms-request-id': '13298416-36c7-4db4-b220-94bc4ab2efce',
@@ -455,7 +455,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/providers/Microsoft.ContainerService/locations/eastus/operations/13298416-36c7-4db4-b220-94bc4ab2efce?api-version=2016-09-30')
+  .get('/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/providers/Microsoft.ContainerService/locations/eastus/operations/13298416-36c7-4db4-b220-94bc4ab2efce?api-version=2017-01-31')
   .reply(200, "{\r\n  \"startTime\": \"2017-01-29T09:45:24.6195055+00:00\",\r\n  \"status\": \"InProgress\",\r\n  \"name\": \"13298416-36c7-4db4-b220-94bc4ab2efce\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '134',
@@ -474,7 +474,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/providers/Microsoft.ContainerService/locations/eastus/operations/13298416-36c7-4db4-b220-94bc4ab2efce?api-version=2016-09-30')
+  .get('/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/providers/Microsoft.ContainerService/locations/eastus/operations/13298416-36c7-4db4-b220-94bc4ab2efce?api-version=2017-01-31')
   .reply(200, "{\r\n  \"startTime\": \"2017-01-29T09:45:24.6195055+00:00\",\r\n  \"status\": \"InProgress\",\r\n  \"name\": \"13298416-36c7-4db4-b220-94bc4ab2efce\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '134',
@@ -493,7 +493,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/providers/Microsoft.ContainerService/locations/eastus/operations/13298416-36c7-4db4-b220-94bc4ab2efce?api-version=2016-09-30')
+  .get('/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/providers/Microsoft.ContainerService/locations/eastus/operations/13298416-36c7-4db4-b220-94bc4ab2efce?api-version=2017-01-31')
   .reply(200, "{\r\n  \"startTime\": \"2017-01-29T09:45:24.6195055+00:00\",\r\n  \"status\": \"InProgress\",\r\n  \"name\": \"13298416-36c7-4db4-b220-94bc4ab2efce\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '134',
@@ -512,7 +512,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/providers/Microsoft.ContainerService/locations/eastus/operations/13298416-36c7-4db4-b220-94bc4ab2efce?api-version=2016-09-30')
+  .get('/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/providers/Microsoft.ContainerService/locations/eastus/operations/13298416-36c7-4db4-b220-94bc4ab2efce?api-version=2017-01-31')
   .reply(200, "{\r\n  \"startTime\": \"2017-01-29T09:45:24.6195055+00:00\",\r\n  \"status\": \"InProgress\",\r\n  \"name\": \"13298416-36c7-4db4-b220-94bc4ab2efce\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '134',
@@ -531,7 +531,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/providers/Microsoft.ContainerService/locations/eastus/operations/13298416-36c7-4db4-b220-94bc4ab2efce?api-version=2016-09-30')
+  .get('/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/providers/Microsoft.ContainerService/locations/eastus/operations/13298416-36c7-4db4-b220-94bc4ab2efce?api-version=2017-01-31')
   .reply(200, "{\r\n  \"startTime\": \"2017-01-29T09:45:24.6195055+00:00\",\r\n  \"status\": \"InProgress\",\r\n  \"name\": \"13298416-36c7-4db4-b220-94bc4ab2efce\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '134',
@@ -550,7 +550,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/providers/Microsoft.ContainerService/locations/eastus/operations/13298416-36c7-4db4-b220-94bc4ab2efce?api-version=2016-09-30')
+  .get('/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/providers/Microsoft.ContainerService/locations/eastus/operations/13298416-36c7-4db4-b220-94bc4ab2efce?api-version=2017-01-31')
   .reply(200, "{\r\n  \"startTime\": \"2017-01-29T09:45:24.6195055+00:00\",\r\n  \"status\": \"InProgress\",\r\n  \"name\": \"13298416-36c7-4db4-b220-94bc4ab2efce\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '134',
@@ -569,7 +569,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/providers/Microsoft.ContainerService/locations/eastus/operations/13298416-36c7-4db4-b220-94bc4ab2efce?api-version=2016-09-30')
+  .get('/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/providers/Microsoft.ContainerService/locations/eastus/operations/13298416-36c7-4db4-b220-94bc4ab2efce?api-version=2017-01-31')
   .reply(200, "{\r\n  \"startTime\": \"2017-01-29T09:45:24.6195055+00:00\",\r\n  \"status\": \"InProgress\",\r\n  \"name\": \"13298416-36c7-4db4-b220-94bc4ab2efce\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '134',
@@ -588,7 +588,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/providers/Microsoft.ContainerService/locations/eastus/operations/13298416-36c7-4db4-b220-94bc4ab2efce?api-version=2016-09-30')
+  .get('/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/providers/Microsoft.ContainerService/locations/eastus/operations/13298416-36c7-4db4-b220-94bc4ab2efce?api-version=2017-01-31')
   .reply(200, "{\r\n  \"startTime\": \"2017-01-29T09:45:24.6195055+00:00\",\r\n  \"status\": \"InProgress\",\r\n  \"name\": \"13298416-36c7-4db4-b220-94bc4ab2efce\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '134',
@@ -607,7 +607,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/providers/Microsoft.ContainerService/locations/eastus/operations/13298416-36c7-4db4-b220-94bc4ab2efce?api-version=2016-09-30')
+  .get('/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/providers/Microsoft.ContainerService/locations/eastus/operations/13298416-36c7-4db4-b220-94bc4ab2efce?api-version=2017-01-31')
   .reply(200, "{\r\n  \"startTime\": \"2017-01-29T09:45:24.6195055+00:00\",\r\n  \"status\": \"InProgress\",\r\n  \"name\": \"13298416-36c7-4db4-b220-94bc4ab2efce\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '134',
@@ -626,7 +626,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/providers/Microsoft.ContainerService/locations/eastus/operations/13298416-36c7-4db4-b220-94bc4ab2efce?api-version=2016-09-30')
+  .get('/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/providers/Microsoft.ContainerService/locations/eastus/operations/13298416-36c7-4db4-b220-94bc4ab2efce?api-version=2017-01-31')
   .reply(200, "{\r\n  \"startTime\": \"2017-01-29T09:45:24.6195055+00:00\",\r\n  \"status\": \"InProgress\",\r\n  \"name\": \"13298416-36c7-4db4-b220-94bc4ab2efce\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '134',
@@ -645,7 +645,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/providers/Microsoft.ContainerService/locations/eastus/operations/13298416-36c7-4db4-b220-94bc4ab2efce?api-version=2016-09-30')
+  .get('/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/providers/Microsoft.ContainerService/locations/eastus/operations/13298416-36c7-4db4-b220-94bc4ab2efce?api-version=2017-01-31')
   .reply(200, "{\r\n  \"startTime\": \"2017-01-29T09:45:24.6195055+00:00\",\r\n  \"endTime\": \"2017-01-29T09:47:57.6891401+00:00\",\r\n  \"status\": \"Succeeded\",\r\n  \"name\": \"13298416-36c7-4db4-b220-94bc4ab2efce\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '184',
@@ -664,7 +664,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/providers/Microsoft.ContainerService/locations/eastus/operations/13298416-36c7-4db4-b220-94bc4ab2efce?api-version=2016-09-30')
+  .get('/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/providers/Microsoft.ContainerService/locations/eastus/operations/13298416-36c7-4db4-b220-94bc4ab2efce?api-version=2017-01-31')
   .reply(200, "{\r\n  \"startTime\": \"2017-01-29T09:45:24.6195055+00:00\",\r\n  \"endTime\": \"2017-01-29T09:47:57.6891401+00:00\",\r\n  \"status\": \"Succeeded\",\r\n  \"name\": \"13298416-36c7-4db4-b220-94bc4ab2efce\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '184',
@@ -683,7 +683,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/resourceGroups/xplatTstCntnGCreate4756/providers/Microsoft.ContainerService/containerServices/xplatContainer29931?api-version=2016-09-30')
+  .get('/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/resourceGroups/xplatTstCntnGCreate4756/providers/Microsoft.ContainerService/containerServices/xplatContainer29931?api-version=2017-01-31')
   .reply(200, "{\r\n  \"id\": \"/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/resourceGroups/xplatTstCntnGCreate4756/providers/Microsoft.ContainerService/containerServices/xplatContainer29931\",\r\n  \"name\": \"xplatContainer29931\",\r\n  \"type\": \"Microsoft.ContainerService/ContainerServices\",\r\n  \"location\": \"eastus\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"provisioningState\": \"Succeeded\",\r\n    \"orchestratorProfile\": {\r\n      \"orchestratorType\": \"Swarm\"\r\n    },\r\n    \"masterProfile\": {\r\n      \"count\": 1,\r\n      \"dnsPrefix\": \"xplatContainer29931master\",\r\n      \"fqdn\": \"xplatcontainer29931master.eastus.cloudapp.azure.com\"\r\n    },\r\n    \"agentPoolProfiles\": [\r\n      {\r\n        \"name\": \"xplatContainer29931a1\",\r\n        \"count\": 4,\r\n        \"vmSize\": \"Standard_A1\",\r\n        \"dnsPrefix\": \"xplatContainer29931a2\",\r\n        \"fqdn\": \"xplatcontainer29931a2.eastus.cloudapp.azure.com\",\r\n        \"osType\": \"Linux\"\r\n      }\r\n    ],\r\n    \"linuxProfile\": {\r\n      \"ssh\": {\r\n        \"publicKeys\": [\r\n          {\r\n            \"keyData\": \"ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEA1J/ZLar7bMxCr0eN1yAkMM8B7Z6eQP2P0LG5W/ATM/c7r5voER2N/xJ2JMyKRM73zX83nyTroGRynFsLTaizSQ2hNCAs15oxwspnFrlBZVsNhNs6DvPUDosJ81/ud5Emle8VYAWCwtAl0BVx+fWCygqKTXcYznuHTwnxYyk5hgPno3YD7/mk2j53EN6iY+ua0FNnxPQAHIXxwREOWSTr4zp40vEpfbww2GuabdACh5gg7rxtjCb2NAIKBmn8Bm0fpKzwtaPA6ihFfUwpBvhihdn7OIpss7G50VplX+h3xdyx31TFJ7rcqlsSrwXI1SNic0WWjnU1j/6Ely4Z1HnCYQ==\"\r\n          }\r\n        ]\r\n      },\r\n      \"adminUsername\": \"azureuser\"\r\n    },\r\n    \"diagnosticsProfile\": {\r\n      \"vmDiagnostics\": {\r\n        \"enabled\": true,\r\n        \"storageUri\": \"https://jofgz5tzjw2y4swarmdiag0.blob.core.windows.net/\"\r\n      }\r\n    }\r\n  }\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '1652',
@@ -702,7 +702,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/resourceGroups/xplatTstCntnGCreate4756/providers/Microsoft.ContainerService/containerServices/xplatContainer29931?api-version=2016-09-30')
+  .get('/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/resourceGroups/xplatTstCntnGCreate4756/providers/Microsoft.ContainerService/containerServices/xplatContainer29931?api-version=2017-01-31')
   .reply(200, "{\r\n  \"id\": \"/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/resourceGroups/xplatTstCntnGCreate4756/providers/Microsoft.ContainerService/containerServices/xplatContainer29931\",\r\n  \"name\": \"xplatContainer29931\",\r\n  \"type\": \"Microsoft.ContainerService/ContainerServices\",\r\n  \"location\": \"eastus\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"provisioningState\": \"Succeeded\",\r\n    \"orchestratorProfile\": {\r\n      \"orchestratorType\": \"Swarm\"\r\n    },\r\n    \"masterProfile\": {\r\n      \"count\": 1,\r\n      \"dnsPrefix\": \"xplatContainer29931master\",\r\n      \"fqdn\": \"xplatcontainer29931master.eastus.cloudapp.azure.com\"\r\n    },\r\n    \"agentPoolProfiles\": [\r\n      {\r\n        \"name\": \"xplatContainer29931a1\",\r\n        \"count\": 4,\r\n        \"vmSize\": \"Standard_A1\",\r\n        \"dnsPrefix\": \"xplatContainer29931a2\",\r\n        \"fqdn\": \"xplatcontainer29931a2.eastus.cloudapp.azure.com\",\r\n        \"osType\": \"Linux\"\r\n      }\r\n    ],\r\n    \"linuxProfile\": {\r\n      \"ssh\": {\r\n        \"publicKeys\": [\r\n          {\r\n            \"keyData\": \"ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEA1J/ZLar7bMxCr0eN1yAkMM8B7Z6eQP2P0LG5W/ATM/c7r5voER2N/xJ2JMyKRM73zX83nyTroGRynFsLTaizSQ2hNCAs15oxwspnFrlBZVsNhNs6DvPUDosJ81/ud5Emle8VYAWCwtAl0BVx+fWCygqKTXcYznuHTwnxYyk5hgPno3YD7/mk2j53EN6iY+ua0FNnxPQAHIXxwREOWSTr4zp40vEpfbww2GuabdACh5gg7rxtjCb2NAIKBmn8Bm0fpKzwtaPA6ihFfUwpBvhihdn7OIpss7G50VplX+h3xdyx31TFJ7rcqlsSrwXI1SNic0WWjnU1j/6Ely4Z1HnCYQ==\"\r\n          }\r\n        ]\r\n      },\r\n      \"adminUsername\": \"azureuser\"\r\n    },\r\n    \"diagnosticsProfile\": {\r\n      \"vmDiagnostics\": {\r\n        \"enabled\": true,\r\n        \"storageUri\": \"https://jofgz5tzjw2y4swarmdiag0.blob.core.windows.net/\"\r\n      }\r\n    }\r\n  }\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '1652',

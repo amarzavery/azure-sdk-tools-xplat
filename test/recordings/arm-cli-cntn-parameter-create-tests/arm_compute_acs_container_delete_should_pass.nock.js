@@ -29,13 +29,13 @@ exports.setEnvironment = function() {
 exports.scopes = [[function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .delete('/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/resourceGroups/xplatTstCntnGCreate4756/providers/Microsoft.ContainerService/containerServices/xplatContainer9457?api-version=2016-09-30')
+  .delete('/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/resourceGroups/xplatTstCntnGCreate4756/providers/Microsoft.ContainerService/containerServices/xplatContainer9457?api-version=2017-01-31')
   .reply(202, "", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '0',
   expires: '-1',
-  location: 'https://management.azure.com/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/providers/Microsoft.ContainerService/locations/eastus/operations/5374d076-d034-4bee-b8ae-652c57f753da?monitor=true&api-version=2016-09-30',
-  'azure-asyncoperation': 'https://management.azure.com/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/providers/Microsoft.ContainerService/locations/eastus/operations/5374d076-d034-4bee-b8ae-652c57f753da?api-version=2016-09-30',
+  location: 'https://management.azure.com/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/providers/Microsoft.ContainerService/locations/eastus/operations/5374d076-d034-4bee-b8ae-652c57f753da?monitor=true&api-version=2017-01-31',
+  'azure-asyncoperation': 'https://management.azure.com/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/providers/Microsoft.ContainerService/locations/eastus/operations/5374d076-d034-4bee-b8ae-652c57f753da?api-version=2017-01-31',
   'strict-transport-security': 'max-age=31536000; includeSubDomains',
   'x-ms-served-by': 'ef6d7439-e988-468f-a569-fd46bcc95faa_131260614325152837',
   'x-ms-request-id': '5374d076-d034-4bee-b8ae-652c57f753da',
@@ -49,13 +49,13 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .delete('/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/resourceGroups/xplatTstCntnGCreate4756/providers/Microsoft.ContainerService/containerServices/xplatContainer9457?api-version=2016-09-30')
+  .delete('/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/resourceGroups/xplatTstCntnGCreate4756/providers/Microsoft.ContainerService/containerServices/xplatContainer9457?api-version=2017-01-31')
   .reply(202, "", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '0',
   expires: '-1',
-  location: 'https://management.azure.com/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/providers/Microsoft.ContainerService/locations/eastus/operations/5374d076-d034-4bee-b8ae-652c57f753da?monitor=true&api-version=2016-09-30',
-  'azure-asyncoperation': 'https://management.azure.com/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/providers/Microsoft.ContainerService/locations/eastus/operations/5374d076-d034-4bee-b8ae-652c57f753da?api-version=2016-09-30',
+  location: 'https://management.azure.com/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/providers/Microsoft.ContainerService/locations/eastus/operations/5374d076-d034-4bee-b8ae-652c57f753da?monitor=true&api-version=2017-01-31',
+  'azure-asyncoperation': 'https://management.azure.com/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/providers/Microsoft.ContainerService/locations/eastus/operations/5374d076-d034-4bee-b8ae-652c57f753da?api-version=2017-01-31',
   'strict-transport-security': 'max-age=31536000; includeSubDomains',
   'x-ms-served-by': 'ef6d7439-e988-468f-a569-fd46bcc95faa_131260614325152837',
   'x-ms-request-id': '5374d076-d034-4bee-b8ae-652c57f753da',
@@ -69,7 +69,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/providers/Microsoft.ContainerService/locations/eastus/operations/5374d076-d034-4bee-b8ae-652c57f753da?api-version=2016-09-30')
+  .get('/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/providers/Microsoft.ContainerService/locations/eastus/operations/5374d076-d034-4bee-b8ae-652c57f753da?api-version=2017-01-31')
   .reply(200, "{\r\n  \"startTime\": \"2017-01-29T09:48:30.2590146+00:00\",\r\n  \"endTime\": \"2017-01-29T09:48:30.3214952+00:00\",\r\n  \"status\": \"Succeeded\",\r\n  \"name\": \"5374d076-d034-4bee-b8ae-652c57f753da\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '184',
@@ -88,7 +88,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/providers/Microsoft.ContainerService/locations/eastus/operations/5374d076-d034-4bee-b8ae-652c57f753da?api-version=2016-09-30')
+  .get('/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/providers/Microsoft.ContainerService/locations/eastus/operations/5374d076-d034-4bee-b8ae-652c57f753da?api-version=2017-01-31')
   .reply(200, "{\r\n  \"startTime\": \"2017-01-29T09:48:30.2590146+00:00\",\r\n  \"endTime\": \"2017-01-29T09:48:30.3214952+00:00\",\r\n  \"status\": \"Succeeded\",\r\n  \"name\": \"5374d076-d034-4bee-b8ae-652c57f753da\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '184',
@@ -107,13 +107,13 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .delete('/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/resourceGroups/xplatTstCntnGCreate4756/providers/Microsoft.ContainerService/containerServices/xplatContainer29931?api-version=2016-09-30')
+  .delete('/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/resourceGroups/xplatTstCntnGCreate4756/providers/Microsoft.ContainerService/containerServices/xplatContainer29931?api-version=2017-01-31')
   .reply(202, "", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '0',
   expires: '-1',
-  location: 'https://management.azure.com/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/providers/Microsoft.ContainerService/locations/eastus/operations/724e367f-bdec-4e6b-9bb5-3589a5e173ee?monitor=true&api-version=2016-09-30',
-  'azure-asyncoperation': 'https://management.azure.com/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/providers/Microsoft.ContainerService/locations/eastus/operations/724e367f-bdec-4e6b-9bb5-3589a5e173ee?api-version=2016-09-30',
+  location: 'https://management.azure.com/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/providers/Microsoft.ContainerService/locations/eastus/operations/724e367f-bdec-4e6b-9bb5-3589a5e173ee?monitor=true&api-version=2017-01-31',
+  'azure-asyncoperation': 'https://management.azure.com/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/providers/Microsoft.ContainerService/locations/eastus/operations/724e367f-bdec-4e6b-9bb5-3589a5e173ee?api-version=2017-01-31',
   'strict-transport-security': 'max-age=31536000; includeSubDomains',
   'x-ms-served-by': 'ef6d7439-e988-468f-a569-fd46bcc95faa_131260614325152837',
   'x-ms-request-id': '724e367f-bdec-4e6b-9bb5-3589a5e173ee',
@@ -127,13 +127,13 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .delete('/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/resourceGroups/xplatTstCntnGCreate4756/providers/Microsoft.ContainerService/containerServices/xplatContainer29931?api-version=2016-09-30')
+  .delete('/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/resourceGroups/xplatTstCntnGCreate4756/providers/Microsoft.ContainerService/containerServices/xplatContainer29931?api-version=2017-01-31')
   .reply(202, "", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '0',
   expires: '-1',
-  location: 'https://management.azure.com/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/providers/Microsoft.ContainerService/locations/eastus/operations/724e367f-bdec-4e6b-9bb5-3589a5e173ee?monitor=true&api-version=2016-09-30',
-  'azure-asyncoperation': 'https://management.azure.com/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/providers/Microsoft.ContainerService/locations/eastus/operations/724e367f-bdec-4e6b-9bb5-3589a5e173ee?api-version=2016-09-30',
+  location: 'https://management.azure.com/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/providers/Microsoft.ContainerService/locations/eastus/operations/724e367f-bdec-4e6b-9bb5-3589a5e173ee?monitor=true&api-version=2017-01-31',
+  'azure-asyncoperation': 'https://management.azure.com/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/providers/Microsoft.ContainerService/locations/eastus/operations/724e367f-bdec-4e6b-9bb5-3589a5e173ee?api-version=2017-01-31',
   'strict-transport-security': 'max-age=31536000; includeSubDomains',
   'x-ms-served-by': 'ef6d7439-e988-468f-a569-fd46bcc95faa_131260614325152837',
   'x-ms-request-id': '724e367f-bdec-4e6b-9bb5-3589a5e173ee',
@@ -147,7 +147,7 @@ nock('https://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('http://management.azure.com:443')
-  .get('/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/providers/Microsoft.ContainerService/locations/eastus/operations/724e367f-bdec-4e6b-9bb5-3589a5e173ee?api-version=2016-09-30')
+  .get('/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/providers/Microsoft.ContainerService/locations/eastus/operations/724e367f-bdec-4e6b-9bb5-3589a5e173ee?api-version=2017-01-31')
   .reply(200, "{\r\n  \"startTime\": \"2017-01-29T09:49:02.1729928+00:00\",\r\n  \"endTime\": \"2017-01-29T09:49:02.1886191+00:00\",\r\n  \"status\": \"Succeeded\",\r\n  \"name\": \"724e367f-bdec-4e6b-9bb5-3589a5e173ee\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '184',
@@ -166,7 +166,7 @@ nock('http://management.azure.com:443')
 function (nock) { 
 var result = 
 nock('https://management.azure.com:443')
-  .get('/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/providers/Microsoft.ContainerService/locations/eastus/operations/724e367f-bdec-4e6b-9bb5-3589a5e173ee?api-version=2016-09-30')
+  .get('/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/providers/Microsoft.ContainerService/locations/eastus/operations/724e367f-bdec-4e6b-9bb5-3589a5e173ee?api-version=2017-01-31')
   .reply(200, "{\r\n  \"startTime\": \"2017-01-29T09:49:02.1729928+00:00\",\r\n  \"endTime\": \"2017-01-29T09:49:02.1886191+00:00\",\r\n  \"status\": \"Succeeded\",\r\n  \"name\": \"724e367f-bdec-4e6b-9bb5-3589a5e173ee\"\r\n}", { 'cache-control': 'no-cache',
   pragma: 'no-cache',
   'content-length': '184',
